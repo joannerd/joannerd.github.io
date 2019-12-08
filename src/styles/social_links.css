@@ -1,0 +1,14 @@
+.social-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  left: 1%;
+  height: 100%;
+}
+
+.social-links * {
+  margin: 25%;
+}

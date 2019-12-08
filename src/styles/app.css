@@ -1,0 +1,48 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.fab, .fa {
+  padding: 2px;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.fab:hover, .fa:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.bars:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.bars i {
+  background: white;
+  height: 2px;
+  margin: 5px;
+  width: 40px;
+  transition: 0.3s;
+}
+
+.bars:hover i {
+  margin: 7px;
+}
