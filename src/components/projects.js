@@ -3,7 +3,7 @@ import React from "react";
 const projects = [
   {
     title: 'Boop Blocks',
-    tech: 'Pure JavaScript | D3 | Web Audio API',
+    tech: 'JavaScript | D3.js | Web Audio API',
     description: "BoopBlocks is an interactive browser instrument that teaches users about musical polyrhythms in a dynamic way. The application was inspired by a percussion for music therapists course where students workshopped meditative drum circles based on polyrhythms. Users can investigate and meditate on the characteristics of different polyrhythms. Users can also hover over or click blocks to make them boop!",
     action: "I utilized D3.js to create dynamic SVG elements that allow intuitive user interaction with Web Audio API. I also implemented logic with Vanilla DOM and JavaScript that initiates sound and animates a graphic representation of a polyrhythm for a dynamic user experience.",
     live: 'http://boopblocks.herokuapp.com/',

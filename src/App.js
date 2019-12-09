@@ -1,7 +1,7 @@
 import React from 'react';
 import SocialLinks from './components/social_links';
 import Home from './components/home';
-import About from './components/about';
+import Profile from './components/profile';
 import Projects from './components/projects';
 import Contact from './components/contact';
 
@@ -22,7 +22,7 @@ class App extends React.Component {
 
         <main>
           <Home />
-          <About />
+          <Profile />
           <Projects />
           <Contact />
           <footer>
@@ -36,7 +36,7 @@ class App extends React.Component {
           <i/>
           <nav className="hidden">
             <li><a href="#home" class="fas fa-angle-up">{null}</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#profile">Profile</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </nav>

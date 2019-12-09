@@ -22,7 +22,7 @@
 }
 
 .bars i {
-  background: white;
+  background: rgb(109, 105, 105);
   height: 2px;
   margin: 5px;
   width: 40px;
@@ -47,7 +47,9 @@ nav li {
 }
 
 nav a {
+  color: rgb(150, 150, 150);
   transition: 0.3s;
+  font-weight: bold;
 }
 
 nav a:hover {

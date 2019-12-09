@@ -1,0 +1,54 @@
+#profile * {
+  color: black;
+}
+
+#profile h3 {
+  margin-top: 3%;
+  margin-bottom: 1%;
+  font-size: 30px;
+  color: #74B2CE
+}
+
+#profile section {
+  text-align: center;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profile p, .skills {
+  padding: 0% 15% 0% 15%;
+  letter-spacing: 0;
+}
+
+#profile p {
+  font-size: 20px;
+}
+
+#profile a {
+  color: white;
+}
+
+.resume {
+  margin-top: 10%;
+  background: #74B2CE;
+  border: 1px solid #74B2CE;
+}
+
+.resume:hover {
+  background: white;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills * {
+  flex: 0 1 20%;
+  margin: 5px;
+}

@@ -24,6 +24,14 @@
   opacity: 0.5;
 }
 
+.fa-angellist {
+  background: white;
+  border-radius: 5px;
+  font-size: 35px;
+  height: 40px;
+  line-height: 40px;
+  color: black;
+}
 
 .fa-linkedin {
   color: #74B2CE;
