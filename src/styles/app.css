@@ -6,19 +6,6 @@
   height: 100%;
 }
 
-.fab, .fa {
-  padding: 2px;
-  font-size: 40px;
-  width: 40px;
-  height: 40px;
-  transition: 0.3s;
-}
-
-.fab:hover, .fa:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
 .bars {
   display: flex;
   flex-direction: column;
@@ -32,7 +19,7 @@
 
 .bars:hover {
   cursor: pointer;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .bars i {
@@ -45,4 +32,28 @@
 
 .bars:hover i {
   margin: 7px;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 75px 10px 10px 10px;
+}
+
+nav li {
+  list-style: none;
+  text-align: right;
+}
+
+nav a {
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+.hidden {
+  display: none;
 }

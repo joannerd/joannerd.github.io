@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from './media/Joanna_Chen_Resume.pdf';
 
 function SocialLinks() {
   return (
@@ -21,6 +22,10 @@ function SocialLinks() {
         rel="noopener noreferrer">{null}</a>
       <a href="mailto:x.chenj@gmail.com" 
         className="fa fa-envelope"
+        target="_blank"
+        rel="noopener noreferrer">{null}</a>
+      <a href={Resume} 
+        className="fa fa-file-text"
         target="_blank"
         rel="noopener noreferrer">{null}</a>
     </div>

@@ -2,13 +2,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 
   position: fixed;
   left: 1%;
   height: 100%;
+  text-align: center;
 }
 
-.social-links * {
+.fab, .fa {
   margin: 25%;
+  font-size: 40px;
+  width: 40px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.fab:hover, .fa:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }

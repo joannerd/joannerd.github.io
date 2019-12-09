@@ -12,13 +12,13 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    const roles = ['an innovator', 'a creative', 'an engineer'];
+    const roles = ['a web developer', 'a creative', 'an innovator', 'an engineer'];
 
-    let i = 0;
+    let i = 1;
     const interval = window.setInterval(() => {
       this.setState({ role: roles[i] });
       i++;
-      if (i === roles.length) window.clearInterval(interval);
+      if (i === roles.length) i = 0;
     }, 1200);
 
     this.setState({ interval });
@@ -26,11 +26,11 @@ class Home extends React.Component {
 
   render() {
     return(
-      <div className="home">
+      <article id="home">
         <h1>Hi, my name is Joanna.</h1>
         <h1>I'm {this.state.role}</h1>
         <div className="keyboard"></div>
-      </div>
+      </article>
     )
   } 
 }
