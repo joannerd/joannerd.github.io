@@ -16,9 +16,23 @@
   width: 40px;
   transition: 0.3s;
   box-sizing: border-box;
+  color: white;
 }
 
 .fab:hover, .fa:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+
+.fa-linkedin {
+  color: #74B2CE;
+}
+
+.fa-github {
+  color: #D7816A;
+}
+
+.fa-envelope {
+  color: #F0CF65
 }

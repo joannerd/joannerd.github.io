@@ -1,0 +1,13 @@
+#contact h2 {
+  color: #F0CF65
+}
+
+.fa-chevron-up {
+  font-size: 100px;
+  transition: 0.3s;
+}
+
+.fas:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}

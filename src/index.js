@@ -9,6 +9,8 @@ import './styles/app.css';
 import './styles/social_links.css';
 import './styles/home.css';
 import './styles/about.css';
+import './styles/projects.css';
+import './styles/contact.css';
 
 ReactDOM.render(
   <BrowserRouter>

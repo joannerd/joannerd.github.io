@@ -3,7 +3,8 @@ body {
   height: 100vh;
   background: black;
   color: white;
-  font-family: sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 0.2em;
 }
 
 #root {
@@ -14,4 +15,39 @@ body {
 article {
   width: 100%;
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about, #skills, #contact {
+  height: 80vh;
+}
+
+article h2 {
+  font-size: 50px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 20px;
+}
+
+.button {
+  width: 170px;
+  padding: 10px;
+  background: white;
+  color: black;
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #D7816A;
+  color: white;
 }

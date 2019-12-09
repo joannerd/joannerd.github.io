@@ -19,7 +19,6 @@
 
 .bars:hover {
   cursor: pointer;
-  /* opacity: 0.5; */
 }
 
 .bars i {
@@ -32,6 +31,7 @@
 
 .bars:hover i {
   margin: 7px;
+  background: #F0CF65;
 }
 
 nav {
@@ -51,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-  color: grey;
+  color: #D7816A;
 }
 
 .hidden {
