@@ -37,8 +37,7 @@
   width: 400px;
   height: 300px;
   background: black;
-
-  border: 1px solid red;
+  display: none;
 }
 
 .project-info-header {
@@ -54,4 +53,8 @@
 
 .project-info p {
   margin: 20px;
+}
+
+.projects .a {
+  margin: 10px;
 }

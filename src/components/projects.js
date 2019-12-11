@@ -38,10 +38,12 @@ class Projects extends React.Component {
                 rel="noopener noreferrer"><h3>{project.title}</h3></a>
               <span>{project.tech}</span>
 
-              <div className="button">LEARN MORE</div>
+              <a href={project.live} className="a button" target="_blank">LIVE SITE</a>
+              <a href={project.github} target="_blank" className="a button">GITHUB</a>
+              {/* <div className="button">LEARN MORE</div> */}
 
 
-              <div className="project-info">
+              {/* <div className="project-info">
                 <div className="project-info-header">
                   <span>
                     <a href={project.live}
@@ -53,7 +55,7 @@ class Projects extends React.Component {
                   <i class="fas fa-times"></i>
                 </div>
                 <p>{project.description}</p>
-              </div>
+              </div> */}
 
             </div>
           ))}
