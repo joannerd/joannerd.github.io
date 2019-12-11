@@ -19,7 +19,7 @@ class Home extends React.Component {
     let i = 0;
     let j = 0;
     let firstLine = "Hello, my name is Joanna.";
-    let secondLine = "Welcome to my portfolio!";
+    let secondLine = "Welcome to my portfolio.";
 
     const typeFirstLine = () => {
       if (i < firstLine.length) {
