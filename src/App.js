@@ -8,6 +8,8 @@ import Contact from './components/contact';
 
 class App extends React.Component {
   componentDidMount() {
+    window.scrollTo(0, 0);
+
     const nav = document.querySelector("nav");
     const bars = document.querySelector(".bars");
 
@@ -18,9 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        
         <SocialLinks />
-
         <main>
           <Home />
           <Profile />
@@ -31,7 +31,6 @@ class App extends React.Component {
             &copy; 2019 Joanna Chen. Made in San Francisco, CA.
           </footer>
         </main>
-
         <div className="bars">
           <i/>
           <i/>
@@ -44,7 +43,6 @@ class App extends React.Component {
             <li><a href="#contact">Contact</a></li>
           </nav>
         </div>
-
       </div>
     );
   }
