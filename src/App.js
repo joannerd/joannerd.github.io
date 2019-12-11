@@ -24,7 +24,7 @@ class App extends React.Component {
           <Home />
           <Profile />
           <Projects />
-          <Contact />
+          {/* <Contact /> */}
           <footer>
             &copy; 2019 Joanna Chen. Made in San Francisco, CA.
           </footer>
@@ -38,7 +38,7 @@ class App extends React.Component {
             <li><a href="#home" class="fas fa-angle-up">{null}</a></li>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            {/* <li><a href="#contact">Contact</a></li> */}
           </nav>
         </div>
 
