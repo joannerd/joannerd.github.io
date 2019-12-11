@@ -22,9 +22,12 @@ article {
   align-items: center;
 }
 
-#profile, #skills, #contact {
-  height: 100vh;
+#profile, #skills {
   background: white;
+}
+
+#contact {
+  height: 95vh;
 }
 
 article h2 {

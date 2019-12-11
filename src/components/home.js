@@ -4,31 +4,48 @@ class Home extends React.Component {
   constructor() {
     super();
     this.state = {
-      role: 'a web developer',
-      interval: ''
+      firstLine: '',
+      secondLine: ''
      };
 
     this.setState = this.setState.bind(this);
   }
 
+  update(field) {
+    return e => this.setState({ [field]: e.target.value });
+  }
+
   componentDidMount() {
-    const roles = ['a web developer', 'a creative', 'an innovator', 'an engineer'];
+    let i = 0;
+    let j = 0;
+    let firstLine = "Hello, my name is Joanna.";
+    let secondLine = "Welcome to my portfolio!";
 
-    let i = 1;
-    const interval = window.setInterval(() => {
-      this.setState({ role: roles[i] });
-      i++;
-      if (i === roles.length) i = 0;
-    }, 1200);
+    const typeFirstLine = () => {
+      if (i < firstLine.length) {
+        document.getElementById("first-line").value = firstLine.substr(0, i+1);
+        i++;
+        setTimeout(typeFirstLine, 75);
+      }
+    }
 
-    this.setState({ interval });
+    const typeSecondLine = () => {
+      if (j < secondLine.length) {
+        document.getElementById("second-line").value = secondLine.substr(0, j+1);
+        j++;
+        setTimeout(typeSecondLine, 75);
+      }
+    }
+
+    typeFirstLine();
+    window.setTimeout(typeSecondLine, 2000)
   }
 
   render() {
     return(
       <article id="home">
-        <h1>Hi, my name is Joanna.</h1>
-        <h1>I'm {this.state.role}</h1>
+        <input type="text" onChange={this.update("firstLine")} id="first-line" />
+        <input type="text" onChange={this.update("secondLine")} id="second-line" />
         <div className="keyboard"></div>
       </article>
     )

@@ -1,3 +1,8 @@
+#profile {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 #profile * {
   color: black;
 }
@@ -9,6 +14,11 @@
   color: #74B2CE
 }
 
+.joanna-img {
+  height: 100vh;
+}
+
+
 #profile section {
   text-align: center;
   width: 80%;
@@ -19,12 +29,13 @@
 }
 
 #profile p, .skills {
-  padding: 0% 15% 0% 15%;
+  padding: 0% 10% 0% 10%;
   letter-spacing: 0;
 }
 
 #profile p {
   font-size: 20px;
+  line-height: 1.3em;
 }
 
 #profile a {
@@ -39,16 +50,4 @@
 
 .resume:hover {
   background: white;
-}
-
-.skills {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.skills * {
-  flex: 0 1 20%;
-  margin: 5px;
 }

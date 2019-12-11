@@ -3,6 +3,7 @@ import SocialLinks from './components/social_links';
 import Home from './components/home';
 import Profile from './components/profile';
 import Projects from './components/projects';
+import Skills from './components/skills';
 import Contact from './components/contact';
 
 class App extends React.Component {
@@ -24,7 +25,8 @@ class App extends React.Component {
           <Home />
           <Profile />
           <Projects />
-          {/* <Contact /> */}
+          <Skills />
+          <Contact />
           <footer>
             &copy; 2019 Joanna Chen. Made in San Francisco, CA.
           </footer>
@@ -35,10 +37,11 @@ class App extends React.Component {
           <i/>
           <i/>
           <nav className="hidden">
-            <li><a href="#home" class="fas fa-angle-up">{null}</a></li>
+            <li><a href="#home" className="fas fa-angle-up">{null}</a></li>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#projects">Projects</a></li>
-            {/* <li><a href="#contact">Contact</a></li> */}
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
           </nav>
         </div>
 
