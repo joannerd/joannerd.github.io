@@ -3,11 +3,11 @@ import React from "react";
 const projects = [
   {
     id: 1,
-    title: 'Boop Blocks',
-    tech: 'JavaScript | D3.js | Web Audio API',
-    description: "BoopBlocks is an interactive browser instrument that teaches users about musical polyrhythms in a dynamic way. The application was inspired by a percussion for music therapists course where students workshopped meditative drum circles based on polyrhythms. I utilized D3.js to create dynamic SVG elements that allow intuitive user interaction with Web Audio API. Users can create sounds or investigate the characteristics of different polyrhythm blocks.",
-    live: 'http://boopblocks.herokuapp.com/',
-    github: 'https://github.com/junnac/boopblocks'
+    title: 'adAstra',
+    tech: 'MongoDB | Express.js | React | Node.js',
+    description: "adAstra is a cosmic event planning app, built to create a stargazing community and help users geolocate the best sites for stargazing events. As the main frontend engineer of the team, I designed a dynamic web page and interactive hover effects with CSS3 to render an eye-catching website and forum with intuitive UX. I developed filter logic integrated with Mapbox GL JS geolocation to map the reflective location of constellations on Earth and display all currently viewable constellations.",
+    live: 'http://ad--astra.herokuapp.com/',
+    github: 'https://github.com/jenn-jenn/adAstra'
   },
   {
     id: 2,
@@ -19,23 +19,28 @@ const projects = [
   },
   {
     id: 3,
-    title: 'adAstra',
-    tech: 'MongoDB | Express.js | React | Node.js',
-    description: "adAstra is a cosmic event planning app, built to create a stargazing community and help users geolocate the best sites for stargazing events. As the main frontend engineer of the team, I designed a dynamic web page and interactive hover effects with CSS3 to render an eye-catching website and forum with intuitive UX. I developed filter logic integrated with Mapbox GL JS geolocation to map the reflective location of constellations on Earth and display all currently viewable constellations.",
-    live: 'http://ad--astra.herokuapp.com/',
-    github: 'https://github.com/jenn-jenn/adAstra'
+    title: 'Boop Blocks',
+    tech: 'JavaScript | D3.js | Web Audio API',
+    description: "BoopBlocks is an interactive browser instrument that teaches users about musical polyrhythms in a dynamic way. The application was inspired by a percussion for music therapists course where students workshopped meditative drum circles based on polyrhythms. I utilized D3.js to create dynamic SVG elements that allow intuitive user interaction with Web Audio API. Users can create sounds or investigate the characteristics of different polyrhythm blocks.",
+    live: 'http://boopblocks.herokuapp.com/',
+    github: 'https://github.com/junnac/boopblocks'
   }
 ]
 
 class Projects extends React.Component {
   componentDidMount() {
-    for (let i = 1; i <= 3; i++) {  
+    for (let i = 1; i <= 3; i++) {
+      let projectBlurb = document.getElementById(`project-${i}`);
+
       document.getElementById(`button-${i}`).addEventListener("click", () => {
-        document.getElementById(`project-${i}`).classList.remove('hidden');
+        projectBlurb.classList.remove('hidden');
       });
       document.getElementById(`x-${i}`).addEventListener("click", () => {
-        document.getElementById(`project-${i}`).classList.add('hidden');
+        projectBlurb.classList.add('hidden');
       });
+      projectBlurb.addEventListener("click", () => {
+        projectBlurb.classList.add('hidden');
+      })
     }
   }
 
