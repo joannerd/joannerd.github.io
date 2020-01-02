@@ -28,7 +28,7 @@ class App extends React.Component {
           <Skills />
           <Contact />
           <footer>
-            &copy; 2019 Joanna Chen. Made in San Francisco, CA.
+            &copy; 2020 Joanna Chen, San Francisco
           </footer>
         </main>
         <div className="bars">
