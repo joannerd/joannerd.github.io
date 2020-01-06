@@ -11,7 +11,7 @@ const Profile = () => (
       <h2>Profile</h2>
       <h3>About</h3>
       <p>
-        As a former jack-of-all-trades logistics manager turned software engineer, I love to problem solve and work in teams. Before transitioning to technology, I majored in classical percussion performance. Even as a musician, I was always fascinated by technology. I worked intensively with audio and lighting hardware for 5 years as an Audio/Visual and Production team member.
+        Hi! My name is Joanna Chen and I am a recent bootcamp graduate, classical music major, and a former jack-of-all-trades logistics manager turned software engineer. I love to problem solve and work in teams. Before transitioning to technology, I majored in classical percussion performance. Even as a musician, I was always fascinated by technology. I worked intensively with audio and lighting hardware for 5 years as an Audio/Visual and Production team member while honing my ability to adapt and learn quickly.
       </p>
 
       <h3>Inspiration</h3>
