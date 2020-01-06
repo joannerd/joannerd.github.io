@@ -21,3 +21,9 @@
   width: 60vh;
   height: 60vh;
 }
+
+@media only screen and (max-width: 600px) { 
+  #home input {
+    width: 100vw;
+  }
+}

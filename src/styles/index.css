@@ -13,13 +13,15 @@ body {
 }
 
 article {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  scroll-snap-align: start;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  scroll-snap-stop: always;
 }
 
 #profile, #skills {
@@ -67,3 +69,8 @@ footer {
 input:focus, textarea:focus {
   outline: none;
 }
+
+/* @viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+} */

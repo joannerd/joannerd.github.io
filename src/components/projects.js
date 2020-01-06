@@ -53,7 +53,7 @@ class Projects extends React.Component {
   render() {
     return (
       <article id="projects">
-        <h2>Projects</h2>
+        <div id="project-h2"><h2>Projects</h2></div>
         <section className="projects">
           {projects.map((project, i) => (
             <div key={i} className="project">

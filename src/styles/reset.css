@@ -27,6 +27,7 @@ time, mark, audio, video {
 
 html {
 	scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 /* HTML5 display-role reset for older browsers */
