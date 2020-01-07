@@ -1,29 +1,15 @@
 import React from "react";
 
 class Home extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      firstLine: '',
-      secondLine: ''
-     };
-
-    this.setState = this.setState.bind(this);
-  }
-
-  update(field) {
-    return e => this.setState({ [field]: e.target.value });
-  }
-
   componentDidMount() {
     let i = 0;
     let j = 0;
     let firstLine = "joannaChen( );";
-    let secondLine = "[ innovation, creativity, problem solving, team building ]";
+    let secondLine = "innovation, creativity, problem solving, team building";
 
     const typeFirstLine = () => {
       if (i < firstLine.length) {
-        document.getElementById("first-line").value = firstLine.substr(0, i+1);
+        document.getElementById("first-line").innerHTML = firstLine.substr(0, i+1);
         i++;
         setTimeout(typeFirstLine, 75);
       }
@@ -31,7 +17,7 @@ class Home extends React.Component {
 
     const typeSecondLine = () => {
       if (j < secondLine.length) {
-        document.getElementById("second-line").value = secondLine.substr(0, j+1);
+        document.getElementById("second-line").innerHTML = secondLine.substr(0, j+1);
         j++;
         setTimeout(typeSecondLine, 75);
       }
@@ -44,9 +30,10 @@ class Home extends React.Component {
   render() {
     return(
       <article id="home">
-        <input type="text" onChange={this.update("firstLine")} id="first-line" />
-        <input type="text" onChange={this.update("secondLine")} id="second-line" />
         <div className="keyboard"></div>
+        <span id="first-line"></span>
+        <br/>
+        <span id="second-line"></span>
       </article>
     )
   } 

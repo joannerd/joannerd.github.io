@@ -1,16 +1,21 @@
+#home {
+  justify-content: flex-start;
+  padding-top: 8%;
+}
+
 #home h1 {
   font-family: 'IBM Plex Serif', serif;
   font-size: 50px;
 }
 
-#home input {
+#home span {
   font-family: 'IBM Plex Serif', serif;
   font-size: 40px;
   color: white;
   background: none;
   border: none;
-  text-align: center;
-  width: 100%;
+  width: 400px;
+  margin-left: 8%;
 }
 
 .keyboard {
@@ -18,12 +23,6 @@
   content: '';
   background: url(../media/keyboard.jpg) black no-repeat center;
   background-size: cover;
-  width: 60vh;
-  height: 60vh;
-}
-
-@media only screen and (max-width: 600px) { 
-  #home input {
-    width: 100vw;
-  }
+  width: 30vh;
+  height: 30vh;
 }

@@ -55,7 +55,7 @@
   background: white;
 }
 
-@media only screen and (max-width: 850px) { 
+@media only screen and (max-width: 1180px) { 
   #profile {
     flex-direction: column;
     height: auto;
@@ -64,6 +64,6 @@
 
   .joanna-img {
     margin-bottom: 10%;
-    height: 50vh;
+    height: 55vh;
   }
 }
