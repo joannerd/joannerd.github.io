@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e1a22f19.chunk.css",
+    "main.js": "/static/js/main.f9f3e6b7.chunk.js",
+    "main.js.map": "/static/js/main.f9f3e6b7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.170f8412.js",
+    "runtime-main.js.map": "/static/js/runtime-main.170f8412.js.map",
+    "static/js/2.8a254cd0.chunk.js": "/static/js/2.8a254cd0.chunk.js",
+    "static/js/2.8a254cd0.chunk.js.map": "/static/js/2.8a254cd0.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.60e5743c75e6a7a87c63e2f7f4ed64c3.js": "/precache-manifest.60e5743c75e6a7a87c63e2f7f4ed64c3.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e1a22f19.chunk.css.map": "/static/css/main.e1a22f19.chunk.css.map",
+    "static/js/2.8a254cd0.chunk.js.LICENSE": "/static/js/2.8a254cd0.chunk.js.LICENSE",
+    "static/media/Joanna_Chen_Resume.pdf": "/static/media/Joanna_Chen_Resume.01e46233.pdf",
+    "static/media/adastra.png": "/static/media/adastra.7c75c56c.png",
+    "static/media/aws.svg": "/static/media/aws.259e1339.svg",
+    "static/media/boopblocks.png": "/static/media/boopblocks.560b0f6b.png",
+    "static/media/brewer.png": "/static/media/brewer.888f61d8.png",
+    "static/media/css.svg": "/static/media/css.3707da3c.svg",
+    "static/media/d3.svg": "/static/media/d3.5e656126.svg",
+    "static/media/git.svg": "/static/media/git.ee6e3ff5.svg",
+    "static/media/html.svg": "/static/media/html.525f317f.svg",
+    "static/media/javascript.svg": "/static/media/javascript.87711407.svg",
+    "static/media/joanna.jpg": "/static/media/joanna.849f24be.jpg",
+    "static/media/jquery.svg": "/static/media/jquery.089f65dd.svg",
+    "static/media/home.css": "/static/media/keyboard.1ea927a2.jpg",
+    "static/media/mapbox.svg": "/static/media/mapbox.207e2faf.svg",
+    "static/media/mongodb.png": "/static/media/mongodb.e5eee315.png",
+    "static/media/nodejs.svg": "/static/media/nodejs.89ccb090.svg",
+    "static/media/postgresql.svg": "/static/media/postgresql.85ce8edf.svg",
+    "static/media/rails.svg": "/static/media/rails.8d9a2866.svg",
+    "static/media/ruby.svg": "/static/media/ruby.b065b718.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.170f8412.js",
+    "static/js/2.8a254cd0.chunk.js",
+    "static/css/main.e1a22f19.chunk.css",
+    "static/js/main.f9f3e6b7.chunk.js"
+  ]
+}
