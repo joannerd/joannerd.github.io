@@ -11,12 +11,12 @@ const Profile = () => (
       <h2>Profile</h2>
       <h3>About</h3>
       <p>
-        Hi! My name is Joanna Chen and I am a recent bootcamp graduate, classical music major, and a former jack-of-all-trades logistics manager turned software engineer. I love to problem solve and work in teams. Before transitioning to technology, I majored in classical percussion performance. Even as a musician, I was always fascinated by technology. I worked intensively with audio and lighting hardware for 5 years as an Audio/Visual and Production team member while honing my ability to adapt and learn quickly.
+        Hi! My name is Joanna Chen. I'm a musician and former jack-of-all-trades logistics manager turned software engineer. I love to problem solve and work in teams. I recently graduated from App Academy, where I honed my skills in React / Redux and Ruby on Rails. Before transitioning to technology, I was a gigging percussionist who also loved to work in concert production. I was constantly improving my ability to adapt and learn quickly in the practice room and on-the-job producing concerts. Even as a musician, I was always fascinated by technology. I worked intensively with audio and lighting hardware for 5 years as a Concert Services and Audio / Visual team member.
       </p>
 
       <h3>Inspiration</h3>
       <p>
-        I first learned to code in middle school, where I got really excited about manipulating HTML and CSS for a custom blog layout. In the last year of my music degree, I realized I hadn’t explored programming like how I did when I was younger. I took a Berklee ICE / MIT course for mixed reality development where I was deeply inspired by the innovative ideas and collaborative nature of my peers. I have been diving into software development ever since.
+        I first learned to code in middle school, where I got really excited about manipulating HTML and CSS for a custom blog layout. In my last year of undergrad, I realized I hadn’t explored programming like how I did when I was younger. I took a Berklee ICE / MIT course for mixed reality development where I was deeply inspired by the innovative mindset and collaborative nature of my peers. I have been diving into software development ever since!
       </p>
 
       <a href={Resume}

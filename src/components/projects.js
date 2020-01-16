@@ -6,21 +6,21 @@ import boopblocksScreenshot from '../media/boopblocks.png';
 const projects = [
   {
     id: 1,
-    title: 'adAstra',
-    tech: 'MongoDB | Express.js | React | Node.js',
-    description: "adAstra is a cosmic event planning app, built to create a stargazing community and help users geolocate the best sites for stargazing events. As the main frontend engineer of the team, I designed a dynamic web page and interactive hover effects with CSS3 to render an eye-catching website and forum with intuitive UX. I developed filter logic integrated with Mapbox GL JS geolocation to map the reflective location of constellations on Earth and display all currently viewable constellations.",
-    live: 'http://ad--astra.herokuapp.com/',
-    github: 'https://github.com/jenn-jenn/adAstra',
-    img: adAstraScreenshot
-  },
-  {
-    id: 2,
     title: 'Brewer',
     tech: 'React+Redux | Ruby on Rails',
     description: "Brewer is a single-page application inspired by Eater. Users can browse breweries, generate guides by city, and favorite generated guides. I implemented Mapbox GL JS and database calls to easily render each brewery's location on a city map.Brewer stores images on cloud with AWS S3 and Rails Active Storage to reduce server load and allow the app to scale.I developed an AJAX call to connect with my backend and parse a response that renders a guide and its respective breweries.",
     live: 'http://junnac-brewer.herokuapp.com/',
     github: 'https://github.com/junnac/Brewer',
     img: brewerScreenshot
+  },
+  {
+    id: 2,
+    title: 'adAstra',
+    tech: 'MongoDB | Express.js | React | Node.js',
+    description: "adAstra is a cosmic event planning app, built to create a stargazing community and help users geolocate the best sites for stargazing events. As the main frontend engineer of the team, I designed a dynamic web page and interactive hover effects with CSS3 to render an eye-catching website and forum with intuitive UX. I developed filter logic integrated with Mapbox GL JS geolocation to map the reflective location of constellations on Earth and display all currently viewable constellations.",
+    live: 'http://ad--astra.herokuapp.com/',
+    github: 'https://github.com/jenn-jenn/adAstra',
+    img: adAstraScreenshot
   },
   {
     id: 3,
