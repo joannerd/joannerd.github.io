@@ -1,10 +1,28 @@
 @media only screen and (max-width: 600px) {
   .social-links {
+    bottom: 0;
+    left: 0;
+
     margin: 0px;
-    width: 50px;
+    width: 100%;
+    height: 60px;
+    padding: 10px 0px 10px 0px;
+
+    flex-direction: row;
+    background: white;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+    z-index: 10;
   }
+
+  .fab, .fa {
+    font-size: 60px;
+    margin: 0;
+  }
+
   footer {
-    position: absolute;
+    display: none;
   }
   html {
     scroll-snap-type: none;
