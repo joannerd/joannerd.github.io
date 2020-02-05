@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0% 25% 0% 25%;
+  margin: 0% 20% 0% 20%;
 }
 
 .skill-list img {
@@ -15,4 +15,11 @@
   color: black;
   width: 30px;
   margin: 15px;
+  transition: 0.3s;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.skill-list img:hover {
+  box-shadow: 0px 0px 20px grey;
 }

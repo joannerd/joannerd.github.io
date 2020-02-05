@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SocialLinks from './components/social_links';
 import Home from './components/home';
 import Profile from './components/profile';
 import Projects from './components/projects';
 import Skills from './components/skills';
 import Contact from './components/contact';
+import NavBar from './components/navbar';
 
-class App extends React.Component {
-  componentDidMount() {
+const App = () => {
+  useEffect(() => {
     window.scrollTo(0, 0);
 
     const nav = document.querySelector("nav");
@@ -15,37 +16,21 @@ class App extends React.Component {
 
     bars.addEventListener("mouseover", () => nav.classList.remove("hidden"));
     bars.addEventListener("mouseout", () => nav.classList.add("hidden"));
-  }
+  });
 
-  render() {
-    return (
-      <div className="app">
-        <SocialLinks />
-        <main>
-          <Home />
-          <Profile />
-          <Projects />
-          <Skills />
-          <Contact />
-          <footer>
-            &copy; 2020 Joanna Chen, San Francisco
-          </footer>
-        </main>
-        <div className="bars">
-          <i/>
-          <i/>
-          <i/>
-          <nav className="hidden">
-            <li><a href="#home" className="fas fa-angle-up">{null}</a></li>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </nav>
-        </div>
-      </div>
-    );
-  }
+  return (
+    <div className="app">
+      <SocialLinks />
+      <main>
+        <Home />
+        <Profile />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <NavBar />
+    </div>
+  );
 }
 
 export default App;

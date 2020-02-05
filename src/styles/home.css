@@ -11,7 +11,7 @@
 #home span {
   font-family: 'IBM Plex Serif', serif;
   font-size: 40px;
-  color: white;
+  color: black;
   background: none;
   border: none;
   width: 400px;
@@ -21,8 +21,9 @@
 .keyboard {
   margin: 5px;
   content: '';
-  background: url(../media/keyboard.jpg) black no-repeat center;
+  background: url(../media/keyboard.jpg) white no-repeat center;
   background-size: cover;
   width: 30vh;
   height: 30vh;
+  filter: invert(100%)
 }

@@ -25,6 +25,9 @@ const Contact = () => (
     </section>
 
     <a href="#home" className="fas fa-chevron-up">{null}</a>
+    <footer>
+      &copy; 2020 Joanna Chen · LA
+    </footer>
   </article>
 )
 

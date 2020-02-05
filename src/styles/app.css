@@ -22,7 +22,7 @@
 }
 
 .bars i {
-  background: rgb(109, 105, 105);
+  background: black;
   height: 2px;
   margin: 5px;
   width: 40px;
@@ -30,8 +30,7 @@
 }
 
 .bars:hover i {
-  margin: 7px;
-  background: #F0CF65;
+  background: rgb(255, 196, 0);
 }
 
 nav {

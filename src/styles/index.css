@@ -1,8 +1,8 @@
 body {
   width: 100%;
   height: 100vh;
-  background: rgb(0, 0, 0);
-  color: white;
+  background: white;
+  color: black;
   font-family: 'Alegreya Sans SC', sans-serif;
   letter-spacing: 0.2em;
 }
@@ -13,7 +13,6 @@ body {
 }
 
 article {
-  width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
 
@@ -22,10 +21,6 @@ article {
   justify-content: center;
   align-items: center;
   scroll-snap-stop: always;
-}
-
-#profile, #skills {
-  background: white;
 }
 
 #contact {
@@ -43,9 +38,12 @@ article h3 {
 }
 
 footer {
-  text-align: center;
+  position: fixed;
+  line-height: 50px;
+  bottom: 0;
+  right: 1%;
   font-size: 12px;
-  margin: 20px;
+  color: grey;
 }
 
 .button {
@@ -63,14 +61,9 @@ footer {
 .button:hover {
   cursor: pointer;
   background: #D7816A;
-  color: white;
+  color: black;
 }
 
 input:focus, textarea:focus {
   outline: none;
 }
-
-/* @viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-} */

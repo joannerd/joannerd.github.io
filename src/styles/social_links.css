@@ -5,18 +5,21 @@
   align-content: center;
 
   position: fixed;
-  left: 1%;
+  left: 0;
   height: 100%;
   text-align: center;
+  background: black;
+
+  width: 60px;
 }
 
 .fab, .fa {
-  margin: 25%;
+  margin: 25% 5px 25% 5px;
   font-size: 40px;
   width: 40px;
   transition: 0.3s;
   box-sizing: border-box;
-  color: white;
+  color: black;
 }
 
 .fab:hover, .fa:hover {
@@ -39,6 +42,10 @@
 
 .fa-github {
   color: #D7816A;
+}
+
+.fa-instagram {
+  color: rgb(187, 132, 219)
 }
 
 .fa-envelope {
