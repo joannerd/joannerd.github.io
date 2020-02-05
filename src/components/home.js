@@ -17,8 +17,8 @@ const Home = () => {
 
   return(
     <article id="home">
-      <div className="keyboard"></div>
       <span id="first-line"></span>
+      <div className="keyboard"></div>
     </article>
   )
 }

@@ -51,9 +51,3 @@
 .fa-envelope {
   color: #F0CF65
 }
-
-@media only screen and (max-width: 600px) {
-  .social-links {
-    left: 88%;
-  }
-}

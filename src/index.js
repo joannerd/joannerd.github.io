@@ -12,6 +12,7 @@ import './styles/profile.css';
 import './styles/projects.css';
 import './styles/skills.css';
 import './styles/contact.css';
+import './styles/mobile.css';
 
 ReactDOM.render(
   <BrowserRouter>

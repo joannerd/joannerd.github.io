@@ -1,6 +1,8 @@
 #home {
-  justify-content: flex-start;
-  padding-top: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 #home h1 {
@@ -15,7 +17,6 @@
   background: none;
   border: none;
   width: 400px;
-  margin-left: 8%;
 }
 
 .keyboard {
@@ -23,7 +24,7 @@
   content: '';
   background: url(../media/keyboard.jpg) white no-repeat center;
   background-size: cover;
-  width: 30vh;
-  height: 30vh;
+  width: 50vh;
+  height: 50vh;
   filter: invert(100%)
 }

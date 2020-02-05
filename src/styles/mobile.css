@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+  .social-links {
+    margin: 0px;
+    width: 50px;
+  }
+  footer {
+    position: absolute;
+  }
+  html {
+    scroll-snap-type: none;
+}
+}
+
+@media only screen and (max-width: 1180px) { 
+  #profile {
+    flex-direction: column;
+    height: auto;
+    padding: 10% 0 10% 0;
+  }
+
+  .joanna-img {
+    margin-bottom: 10%;
+    height: 55vh;
+  }
+  
+}
