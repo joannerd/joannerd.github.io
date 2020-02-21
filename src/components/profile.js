@@ -11,12 +11,15 @@ const Profile = () => (
       <h2>Profile</h2>
       <h3>About</h3>
       <p>
-        Hi! My name is Joanna Chen. I'm a musician and former jack-of-all-trades logistics manager turned software engineer. I love to problem solve and work in teams. I recently graduated from App Academy, where I honed my skills in React / Redux and Ruby on Rails. Before transitioning to technology, I was a gigging percussionist who also loved to work in concert production. I was constantly improving my ability to adapt and learn quickly in the practice room and on-the-job producing concerts. Even as a musician, I was always fascinated by technology. I worked intensively with audio and lighting hardware for 5 years as a Concert Services and Audio / Visual team member.
+        Hi, I'm Joanna Chen and I'm a full stack software engineer! I have a wide background in creative and collaborative industries, ranging from classical percussion performance to client-facing interaction and team communication as a former jack-of-all-trades logistics manager. From coding to practicing music, it's always been my nature to constantly work towards improving myself. From debugging to fixing last-minute event logistic problems of all sorts, I've always loved to problem solve and work in teams.
       </p>
-
       <h3>Inspiration</h3>
       <p>
-        I first learned to code in middle school, where I got really excited about manipulating HTML and CSS for a custom blog layout. In my last year of undergrad, I realized I hadn’t explored programming like how I did when I was younger. I took a Berklee ICE / MIT course for mixed reality development where I was deeply inspired by the innovative mindset and collaborative nature of my peers. I have been diving into software development ever since!
+        I made the switch to technology so that I could have a life of problem solving, constant learning, and team collaboration. In my last year of music school, I took a VR/AR course at MIT that really sparked inspiration in me. The course gave Berklee musicians and MIT programmers the chance to collaborate and create sprint projects where we came up with a problem to solve, conducted user research, and coded out a minimum viable product.
+      </p>
+      <h3>Goal</h3>
+      <p>
+        Being a part of a fast-paced and growth-oriented community of skilled developers is exactly what I'm looking for! I'm looking for an autonomous junior role where I will be challenged to continuously grow at an exponential rate. I have strong skills in Ruby on Rails and React, so I'd love to hit the ground running with those frameworks to make meaningful contributions to a team. I'm also eager to expand my skill set, so I'm more than happy to get hands-on experience with different technologies!
       </p>
 
       <a href={Resume}
