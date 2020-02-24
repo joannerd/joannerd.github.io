@@ -21,6 +21,10 @@
     margin: 0 30px 30px 0;
   }
 
+  .fa-file {
+    color: black;
+  }
+
   footer {
     display: none;
   }

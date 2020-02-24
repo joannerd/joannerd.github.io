@@ -19,7 +19,7 @@
   width: 40px;
   transition: 0.3s;
   box-sizing: border-box;
-  color: black;
+  color: white;
 }
 
 .fab:hover, .fa:hover {
