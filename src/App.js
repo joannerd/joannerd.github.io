@@ -4,6 +4,8 @@ import Home from './components/home';
 import Profile from './components/profile';
 import Projects from './components/projects';
 import Skills from './components/skills';
+import Music from './components/music';
+import Photography from './components/photography';
 import Contact from './components/contact';
 import NavBar from './components/navbar';
 
@@ -26,6 +28,8 @@ const App = () => {
         <Profile />
         <Projects />
         <Skills />
+        <Music />
+        <Photography />
         <Contact />
       </main>
       <NavBar />

@@ -35,7 +35,7 @@ const skills = [
 
 const Skills = () => (
   <article id="skills">
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
     <ul className="skill-list">
       {skills.map((skill, i) => (
         <img src={skill} alt={skill} key={i} />

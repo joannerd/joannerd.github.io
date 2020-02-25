@@ -15,10 +15,6 @@ const SocialLinks = () => (
       className="fab fa-linkedin"
       target="_blank"
       rel="noopener noreferrer">{null}</a>
-    <a href="https://www.instagram.com/junnacphotos/"
-      className="fab fa-instagram"
-      target="_blank"
-      rel="noopener noreferrer">{null}</a>
     <a href={Resume}
       className="fa fa-file"
       target="_blank"

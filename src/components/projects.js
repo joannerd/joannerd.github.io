@@ -21,7 +21,7 @@ const Projects = () => {
 
   return (
     <article id="projects">
-      <h2>Projects</h2>
+      <h2>Coding Projects</h2>
       <section className="projects">
         {projects.map((project, i) => (
           <ProjectItem project={project} key={i} />

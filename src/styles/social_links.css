@@ -45,9 +45,18 @@
 }
 
 .fa-instagram {
-  color: rgb(187, 132, 219)
+  color: rgb(187, 132, 219);
 }
 
 .fa-envelope {
   color: #F0CF65
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.fa-instagram, .fa-youtube {
+  margin: 0 10px 0 0;
+  line-height: 50px;
 }

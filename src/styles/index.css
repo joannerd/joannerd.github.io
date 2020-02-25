@@ -51,7 +51,7 @@ footer {
   padding: 10px;
   background:#D7816A;
   color: black;
-  text-align: center;
+  align-self: center;
   transition: 0.3s;
   border-radius: 5px;
   font-size: 16px;

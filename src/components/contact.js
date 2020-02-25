@@ -5,7 +5,7 @@ const Contact = () => (
     <h2>Contact</h2>
     <section>
       <div>
-        Contact me about questions, collaboration opportunities, or just to say hi.
+        about questions, collaboration opportunities, or just to say hi.
       </div>
 
       <div className="contact-links">
