@@ -31,12 +31,15 @@
   html {
     scroll-snap-type: none;
   }
-  article {
-    min-height: 125vh;
-  }
 }
 
 @media only screen and (max-width: 1180px) { 
+  article {
+    min-height: 105vh;
+    height: auto;
+    margin-top: 20vh;
+  }
+
   #profile {
     flex-direction: column;
     height: auto;
@@ -47,5 +50,4 @@
     margin-bottom: 10%;
     height: 55vh;
   }
-  
 }
