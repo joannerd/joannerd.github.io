@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a355cf7afea19b62ff481a1929def10",
+    "revision": "49e91932c8bf676b0d1f10cbe564dbf3",
     "url": "/index.html"
   },
   {
-    "revision": "f470a4ec5ed5c5f07c56",
+    "revision": "906eebe55c2833c639ab",
     "url": "/static/css/main.a5468f34.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.6740455d.chunk.js.LICENSE"
   },
   {
-    "revision": "f470a4ec5ed5c5f07c56",
-    "url": "/static/js/main.c2e50de8.chunk.js"
+    "revision": "906eebe55c2833c639ab",
+    "url": "/static/js/main.cc29d9e1.chunk.js"
   },
   {
     "revision": "c9913191e565de632244",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/6.15703b54.png"
   },
   {
-    "revision": "129f046d4f15a0b4f5f477360373435b",
-    "url": "/static/media/Joanna_Chen_Resume.129f046d.pdf"
+    "revision": "6b4071b4c708a32faaad4d71f8e2e868",
+    "url": "/static/media/Joanna_Chen_Resume.6b4071b4.pdf"
   },
   {
     "revision": "7c75c56cc6d12985638dff942cabc717",
