@@ -2,21 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
-}
-
-#home h1 {
   font-family: 'IBM Plex Serif', serif;
-  font-size: 50px;
 }
 
 #home span {
-  font-family: 'IBM Plex Serif', serif;
   font-size: 40px;
-  color: black;
-  background: none;
-  border: none;
-  width: 400px;
+  width: 325px;
 }
 
 .keyboard {

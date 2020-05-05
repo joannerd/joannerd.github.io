@@ -1,23 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 
 const Home = () => {
-  let i = 0;
-  const typeFirstLine = () => {
-    let firstLine = "joannaChen( );";
-    if (i < firstLine.length) {
-      document.getElementById("first-line").innerHTML = firstLine.substr(0, i+1);
-      i += 1;
-      setTimeout(typeFirstLine, 100);
-    }
+  const firstLine = "joannaChen( );";
+  const [name, setName] = useState('');
+  const [i, setI] = useState(0);
+  if (name.length < 14) {
+    setTimeout(() => {
+      setName(name + firstLine[i]);
+      setI(i + 1);
+    }, 150);
   }
-
-  useEffect(() => {
-    typeFirstLine();
-  });
 
   return(
     <article id="home">
-      <span id="first-line"></span>
+      <span>{name}</span>
       <div className="keyboard"></div>
     </article>
   )
