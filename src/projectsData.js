@@ -1,9 +1,9 @@
-import adAstraScreenshot from '../media/adastra.png';
-import brewerScreenshot from '../media/brewer.gif';
-import boopblocksScreenshot from '../media/boopblocks.gif';
-import restaurantMenuGif from '../media/menu.gif';
-import bestJavascriptGif from '../media/bestjavascript.gif';
-import fppgGif from '../media/fppg.gif';
+import adAstraScreenshot from './media/adastra.png';
+import brewerScreenshot from './media/brewer.gif';
+import boopblocksScreenshot from './media/boopblocks.gif';
+import restaurantMenuGif from './media/menu.gif';
+import bestJavascriptGif from './media/bestjavascript.gif';
+import fppgGif from './media/fppg.gif';
 
 const projects = [
   {

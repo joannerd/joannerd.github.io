@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const youtubeIds = [
   "v6C7oUaxNec", // Volans
@@ -8,14 +8,6 @@ const youtubeIds = [
   "x4ldxK6fcNQ", // Lunsqui
   "e9e_p3SS1tA", // Hughes
 ];
-
-// const unusedLinks = [
-//   "0kCnhBc8Fvw", // LBT
-//   "8VwADzA7VAk", // Sueyoshi
-//   "x7xrRkymO74", // Mimura
-//   "YyGJr4vIvPQ", // Laurello
-//   "IKb75hEs1b8", // Lutoslawski
-// ];
 
 const Music = () => (
   <article id="music">
@@ -28,8 +20,15 @@ const Music = () => (
     </h2>
 
     <ul className="projects">
-      {youtubeIds.map((youtubeId, i) => (
-        <iframe className="project" width="400" height="250" title={youtubeId} src={`https://www.youtube.com/embed/${youtubeId}`} key={i} />
+      {youtubeIds.map(youtubeId => (
+        <iframe
+          className="project"
+          width="400"
+          height="250"
+          title={youtubeId}
+          src={`https://www.youtube.com/embed/${youtubeId}`}
+          key={youtubeId}
+        />
       ))}
     </ul>
   </article>

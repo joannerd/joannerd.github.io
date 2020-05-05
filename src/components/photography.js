@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import pic1 from '../media/1.png';
 import pic2 from '../media/2.png';
 import pic3 from '../media/3.png';
@@ -19,15 +19,22 @@ const Photography = () => (
   <article id="photography">
     <h2>
       <a href="https://www.instagram.com/junnacphotos/"
-      className="fab fa-instagram"
-      target="_blank"
-      rel="noopener noreferrer">{null}</a>
+        className="fab fa-instagram"
+        target="_blank"
+        rel="noopener noreferrer">
+        {null}
+      </a>
       Photography
     </h2>
 
     <ul className="projects">
       {photoLinks.map((link, i) => (
-        <img className="project" width="400px" src={link} alt={link} key={i} />
+        <img src={link}
+          className="project"
+          width="400px"
+          alt={link}
+          key={i}
+        />
       ))}
     </ul>
   </article>

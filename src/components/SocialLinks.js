@@ -3,7 +3,7 @@ import Resume from '../media/Joanna_Chen_Resume.pdf';
 
 const SocialLinks = () => (
   <aside className="social-links">
-    <a href="https://angel.co/xchenj"
+    <a href="https://angel.co/joannerd"
       className="fab fa-angellist"
       target="_blank"
       rel="noopener noreferrer">{null}</a>
@@ -11,7 +11,7 @@ const SocialLinks = () => (
       className="fab fa-github"
       target="_blank"
       rel="noopener noreferrer">{null}</a>
-    <a href="https://www.linkedin.com/in/xchenj/"
+    <a href="https://www.linkedin.com/in/joannerd/"
       className="fab fa-linkedin"
       target="_blank"
       rel="noopener noreferrer">{null}</a>
@@ -19,7 +19,7 @@ const SocialLinks = () => (
       className="fa fa-file"
       target="_blank"
       rel="noopener noreferrer">{null}</a>
-    <a href="mailto:x.chenj@gmail.com"
+    <a href="mailto:joannerdchen@gmail.com"
       className="fa fa-envelope"
       target="_blank"
       rel="noopener noreferrer">{null}</a>

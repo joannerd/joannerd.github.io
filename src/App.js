@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-import SocialLinks from './components/social_links';
-import Home from './components/home';
-import Profile from './components/profile';
-import Projects from './components/projects';
-import Skills from './components/skills';
-import Music from './components/music';
-import Photography from './components/photography';
-import Contact from './components/contact';
-import NavBar from './components/navbar';
+import SocialLinks from './components/SocialLinks';
+import Home from './components/Home';
+import Profile from './components/Profile';
+import ProjectsList from './components/ProjectsList';
+import SkillsList from './components/SkillsList';
+import Music from './components/Music';
+import Photography from './components/Photography';
+import Contact from './components/Contact';
+import NavBar from './components/Navbar';
 
 const App = () => {
   useEffect(() => {
@@ -26,8 +26,8 @@ const App = () => {
       <main>
         <Home />
         <Profile />
-        <Projects />
-        <Skills />
+        <ProjectsList />
+        <SkillsList />
         <Music />
         <Photography />
         <Contact />

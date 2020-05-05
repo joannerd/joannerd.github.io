@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
 const Home = () => {
   let i = 0;
@@ -6,7 +6,7 @@ const Home = () => {
     let firstLine = "joannaChen( );";
     if (i < firstLine.length) {
       document.getElementById("first-line").innerHTML = firstLine.substr(0, i+1);
-      i++;
+      i += 1;
       setTimeout(typeFirstLine, 100);
     }
   }

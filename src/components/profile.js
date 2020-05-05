@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Joanna from '../media/joanna.jpg';
 
 const Profile = () => (
@@ -10,15 +10,25 @@ const Profile = () => (
       <h2>Profile</h2>
       <h3>Hi, I'm Joanna Chen!</h3>
       <p>
-        I'm a full stack software engineer and problem-solving percussionist. I have a wide background in creative and collaborative industries, ranging from music performance to client-facing hospitality and team management as a former jack-of-all-trades logistics manager. From coding to music, it's always been my nature to constantly improve myself. From debugging to resolving last-minute logistics, I'm an avid problem solver and have always been a reliable team member.
+        I'm a software engineer and curriculum developer who loves to instill
+        passion for exploration! I have a background in creative and 
+        collaborative industries, ranging from percussion performance to 
+        client-facing team management. From coding to music, it's always been 
+        my nature to constantly grow and improve myself. As a curriculum 
+        developer, I’ve grown exponentially by diving in with fearless 
+        enthusiasm! I learned at a rapid pace to spearhead new coding projects 
+        and create instructional videos for the next generation of software 
+        engineers.
       </p>
       <h3>Inspiration</h3>
       <p>
-        I made the switch to technology so that I could have a life of problem solving, constant learning, and team collaboration. In my last year of music school, I took a VR/AR course at MIT that really sparked inspiration in me! The course gave Berklee musicians and MIT programmers the chance to collaborate and create sprint projects where we brainstormed problems to solve, conducted user research to validate proof of concept, and coded out minimum viable products.
-      </p>
-      <h3>Goal</h3>
-      <p>
-        Joining a fast-paced and growth-oriented community of skilled developers is exactly what I'm looking for! I'm seeking an autonomous junior role where I will be challenged to grow at an exponential rate. I have strong skills in Ruby on Rails and React, so I can definitely hit the ground running to make meaningful contributions to a team. As growth is very important to me, I'm eager to expand my skill set and would love to get hands-on experience with different technologies!
+        I made the switch to technology so that I could have a life of problem 
+        solving, constant learning, and team collaboration. In my last year of 
+        music school, I took a VR/AR course at MIT that really sparked 
+        inspiration in me! The course gave Berklee musicians and MIT programmers 
+        the chance to collaborate and create sprint projects where we 
+        brainstormed problems to solve, conducted user research to validate 
+        proof of concept, and coded out minimum viable products.
       </p>
     </section>
   </article>

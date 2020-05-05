@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Contact = () => (
   <article id="contact">
@@ -9,18 +9,26 @@ const Contact = () => (
       </div>
 
       <div className="contact-links">
-        <a href="mailto:x.chenj@gmail.com"
+        <a href="mailto:joannerdchen@gmail.com"
           target="_blank"
-          rel="noopener noreferrer">x.chenj@gmail.com</a>
-        <a href="https://www.linkedin.com/in/xchenj/"
+          rel="noopener noreferrer">
+          joannerdchen@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/joannerd/"
           target="_blank"
-          rel="noopener noreferrer">linkedin.com/in/xchenj</a>
-        <a href="https://angel.co/xchenj"
+          rel="noopener noreferrer">
+          linkedin.com/in/joannerd
+        </a>
+        <a href="https://angel.co/joannerd"
           target="_blank"
-          rel="noopener noreferrer">angel.co/xchenj</a>
+          rel="noopener noreferrer">
+          angel.co/joannerd
+        </a>
         <a href="https://github.com/junnac"
           target="_blank"
-          rel="noopener noreferrer">github.com/junnac</a>
+          rel="noopener noreferrer">
+          github.com/junnac
+        </a>
       </div>
     </section>
 

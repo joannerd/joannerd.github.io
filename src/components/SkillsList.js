@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import reactLogo from '../media/react.png';
 import reduxLogo from '../media/redux.png';
 import javaScriptLogo from '../media/javascript.svg';
