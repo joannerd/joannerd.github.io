@@ -38,12 +38,16 @@ article h3 {
 }
 
 footer {
+  z-index: 7;
   position: fixed;
   line-height: 50px;
   bottom: 0;
   right: 1%;
   font-size: 12px;
   color: grey;
+  background: rgba(255, 255, 255, 0.109);
+  padding: 0px 20px 0px 20px;
+  border-radius: 10px 0px 0px 0px;
 }
 
 .button {
