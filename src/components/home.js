@@ -1,19 +1,13 @@
 import React, { useState } from 'react';
 
 const Home = () => {
-  const firstLine = "joannaChen( );";
-  const [name, setName] = useState('');
+  const firstLine = 'joannaChen( );';
   const [i, setI] = useState(0);
-  if (name.length < 14) {
-    setTimeout(() => {
-      setName(name + firstLine[i]);
-      setI(i + 1);
-    }, 150);
-  }
+  setTimeout(() => setI(i + 1), 125);
 
-  return(
+  return (
     <article id="home">
-      <span>{name}</span>
+      <span>{firstLine.substring(0, i)}</span>
       <div className="keyboard"></div>
     </article>
   )

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import SocialLinks from './components/SocialLinks';
 import Home from './components/Home';
 import Profile from './components/Profile';
