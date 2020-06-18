@@ -1,46 +1,76 @@
 import React from 'react';
-import reactLogo from '../media/react.png';
-import reduxLogo from '../media/redux.png';
-import javaScriptLogo from '../media/javascript.svg';
-import rubyLogo from '../media/ruby.svg';
-import railsLogo from '../media/rails.svg';
-import awsLogo from '../media/aws.svg';
-import cssLogo from '../media/css.svg';
-import d3Logo from '../media/d3.svg';
-import gitLogo from '../media/git.svg';
-import htmlLogo from '../media/html.svg';
-import jqueryLogo from '../media/jquery.svg';
-import postgresqlLogo from '../media/postgresql.svg';
-import nodejsLogo from '../media/nodejs.svg';
-import mongodbLogo from '../media/mongodb.png';
-import mapboxLogo from '../media/mapbox.svg';
+import Resume from '../media/Joanna_Chen_Resume.pdf';
 
-const skills = [
-  reactLogo,
-  reduxLogo,
-  javaScriptLogo,
-  rubyLogo,
-  railsLogo,
-  nodejsLogo,
-  d3Logo,
-  jqueryLogo,
-  htmlLogo,
-  cssLogo,
-  awsLogo,
-  mapboxLogo,
-  gitLogo,
-  postgresqlLogo,
-  mongodbLogo,
+const languages = [
+  'JavaScript',
+  'Python',
+  'Ruby',
+  'C#',
+  'SQL',
+  'CSS3',
+  'HTML5',
+];
+
+const frameworks = [
+  'React',
+  'Rails',
+  'Flask',
+  'Node.js',
+  '.NET Core',
+  'Express.js',
+];
+
+const tools = [
+  'REST APIs',
+  'Docker',
+  'Redux',
+  'Git',
+  'Jira',
+  'Heroku',
+  'MongoDB',
+  'PostgreSQL',
+];
+
+const experiences = [
+  'Curriculum Developer',
+  'Technical Admissions Specialist',
+  'Production Manager',
+  'AV Technician',
+  'Admissions Assistant',
+  'Freelance Percussionist',
 ]
 
 const Skills = () => (
   <article id="skills">
-    <h2>Technical Skills</h2>
-    <ul className="skill-list">
-      {skills.map((skill, i) => (
-        <img src={skill} alt={skill} key={i} />
-      ))}
+    <a href={Resume}
+      target="_blank"
+      rel="noopener noreferrer">
+      <h2>Resume</h2>
+    </a>
+    <div className="resume-list">
+      <ul>
+        <h3>Frameworks</h3>
+        {frameworks.map((fw) => <li key={fw}>{fw}</li>)}
+      </ul>
+      <ul>
+        <h3>Languages</h3>
+        {languages.map((lang) => <li key={lang}>{lang}</li>)}
+      </ul>
+      <ul>
+        <h3>Tools</h3>
+        {tools.map((tool) => <li key={tool}>{tool}</li>)}
+      </ul>
+    </div>
+    <ul className="experience">
+      <h3>Experience</h3>
+      {experiences.map((exp) => <li key={exp}>{exp}</li>)}
     </ul>
+    <a href={Resume}
+      id="download-resume"
+      target="_blank"
+      rel="noopener noreferrer">
+      DOWNLOAD RESUME
+    </a>
   </article>
 )
 

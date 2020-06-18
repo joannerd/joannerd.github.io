@@ -8,27 +8,13 @@ const Profile = () => (
     </div>
     <section>
       <h2>Profile</h2>
-      <h3>Hi, I'm Joanna Chen!</h3>
+      <h3>Hi, I'm Joanna!</h3>
       <p>
-        I'm a software engineer and curriculum developer who loves to instill
-        passion for exploration! I have a background in creative and 
-        collaborative industries, ranging from percussion performance to 
-        client-facing team management. From coding to music, it's always been 
-        my nature to constantly grow and improve myself. As a curriculum 
-        developer, I’ve grown exponentially by diving in with fearless 
-        enthusiasm! I learned at a rapid pace to spearhead new coding projects 
-        and create instructional videos for the next generation of software 
-        engineers.
+        I'm a software engineer and percussionist with an eye for design and a specialty in fullstack development and marimba! As a software curriculum developer, I've been having great time with creating educational coding projects, documentation, and demo videos. I recently produced content to teach state management with React Context, implementation of basic React Hooks, backend API development with Express/Sequelize and Flask/SQLAlchemy, and containerization with Docker.
       </p>
-      <h3>Inspiration</h3>
-      <p>
-        I made the switch to technology so that I could have a life of problem 
-        solving, constant learning, and team collaboration. In my last year of 
-        music school, I took a VR/AR course at MIT that really sparked 
-        inspiration in me! The course gave Berklee musicians and MIT programmers 
-        the chance to collaborate and create sprint projects where we 
-        brainstormed problems to solve, conducted user research to validate 
-        proof of concept, and coded out minimum viable products.
+      <br/>
+      <p>        
+        As a concert production manager, my eye for elegant and functional stage design has naturally translated to attention and curiosity for web design. As a musician, I know the importance of practice and optimization to reach high performance. I attribute my success in learning new coding languages and frameworks to the fast-paced learning process I fine-tuned as a music major and gigging percussionist.
       </p>
     </section>
   </article>

@@ -4,9 +4,9 @@ const youtubeIds = [
   "v6C7oUaxNec", // Volans
   "nSkBmDacal8", // Allevi
   "iNYOCcg3GNA", // Black House
-  "Tbs8hpat8U8", // Cuong
   "x4ldxK6fcNQ", // Lunsqui
-  "e9e_p3SS1tA", // Hughes
+  // "Tbs8hpat8U8", // Cuong
+  // "e9e_p3SS1tA", // Hughes
 ];
 
 const Music = () => (

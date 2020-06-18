@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from '../media/Joanna_Chen_Resume.pdf';
 
 const Contact = () => (
   <article id="contact">
@@ -14,20 +15,25 @@ const Contact = () => (
           rel="noopener noreferrer">
           joannerdchen@gmail.com
         </a>
+        <a href="https://github.com/junnac"
+          target="_blank"
+          rel="noopener noreferrer">
+          github
+        </a>
         <a href="https://www.linkedin.com/in/joannerd/"
           target="_blank"
           rel="noopener noreferrer">
-          linkedin.com/in/joannerd
+          linkedin
         </a>
         <a href="https://angel.co/joannerd"
           target="_blank"
           rel="noopener noreferrer">
-          angel.co/joannerd
+          angel list
         </a>
-        <a href="https://github.com/junnac"
+        <a href={Resume}
           target="_blank"
           rel="noopener noreferrer">
-          github.com/junnac
+          resume
         </a>
       </div>
     </section>

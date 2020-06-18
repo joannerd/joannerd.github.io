@@ -1,4 +1,8 @@
 @media only screen and (max-width: 600px) {
+  html {
+    scroll-snap-type: none;
+  }
+  
   .social-links {
     bottom: 0;
     left: 0;
@@ -34,6 +38,10 @@
 }
 
 @media only screen and (max-width: 1180px) { 
+  html {
+    scroll-snap-type: none;
+  }
+  
   article {
     min-height: 105vh;
     height: auto;

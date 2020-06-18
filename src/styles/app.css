@@ -11,8 +11,8 @@
   flex-direction: column;
   justify-content: center;
   position: fixed;
-  top: 1%;
-  right: 1%;
+  top: 0;
+  right: 0;
   padding: 3px;
   box-sizing: border-box;
 }
@@ -38,6 +38,9 @@ nav {
   top: 0;
   right: 0;
   padding: 75px 10px 10px 10px;
+  background: rgba(165, 165, 165, 0.105);
+  transition: 0.3s;
+  border-radius: 10px;
 }
 
 nav li {
