@@ -10,7 +10,7 @@ const Profile = () => (
       <h2>Profile</h2>
       <h3>Hi, I'm Joanna!</h3>
       <p>
-        I'm a software engineer and percussionist with an eye for design and a specialty in fullstack development and marimba! As a software curriculum developer, I've been having great time with creating educational coding projects, documentation, and demo videos. I recently produced content to teach state management with React Context, implementation of basic React Hooks, backend API development with Express/Sequelize and Flask/SQLAlchemy, and containerization with Docker.
+        I'm a software engineer and percussionist with an eye for design and a specialty in React, Ruby on Rails, Flask, and marimba! As a software curriculum developer, I've been having great time with creating educational coding projects, documentation, and demo videos. I recently produced content to teach state management with React Context, implementation of basic React Hooks, backend API development with Express/Sequelize and Flask/SQLAlchemy, and containerization with Docker.
       </p>
       <br/>
       <p>        
