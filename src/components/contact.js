@@ -1,5 +1,4 @@
 import React from 'react';
-import Resume from '../media/Joanna_Chen_Resume.pdf';
 
 const Contact = () => (
   <article id="contact">
@@ -30,7 +29,7 @@ const Contact = () => (
           rel="noopener noreferrer">
           angel list
         </a>
-        <a href={Resume}
+        <a href="https://github.com/junnac/junnac.github.io/raw/master/static/media/Joanna_Chen_Resume.7f244744.pdf"
           target="_blank"
           rel="noopener noreferrer">
           resume

@@ -1,5 +1,4 @@
 import React from 'react';
-import Resume from '../media/Joanna_Chen_Resume.pdf';
 
 const SocialLinks = () => (
   <aside className="social-links">
@@ -15,7 +14,7 @@ const SocialLinks = () => (
       className="fab fa-linkedin"
       target="_blank"
       rel="noopener noreferrer">{null}</a>
-    <a href={Resume}
+    <a href="https://github.com/junnac/junnac.github.io/raw/master/static/media/Joanna_Chen_Resume.7f244744.pdf"
       className="fa fa-file"
       target="_blank"
       rel="noopener noreferrer">{null}</a>

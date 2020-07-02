@@ -1,5 +1,4 @@
 import React from 'react';
-import Resume from '../media/Joanna_Chen_Resume.pdf';
 
 const languages = [
   'JavaScript',
@@ -42,7 +41,7 @@ const experiences = [
 
 const Skills = () => (
   <article id="skills">
-    <a href={Resume}
+    <a href="https://github.com/junnac/junnac.github.io/raw/master/static/media/Joanna_Chen_Resume.7f244744.pdf"
       target="_blank"
       rel="noopener noreferrer">
       <h2>Resume</h2>
@@ -65,7 +64,7 @@ const Skills = () => (
       <h3>Experience</h3>
       {experiences.map((exp) => <li key={exp}>{exp}</li>)}
     </ul>
-    <a href={Resume}
+    <a href="https://github.com/junnac/junnac.github.io/raw/master/static/media/Joanna_Chen_Resume.7f244744.pdf"
       id="download-resume"
       target="_blank"
       rel="noopener noreferrer">
