@@ -1,17 +1,7 @@
-import React, { useState, useRef } from 'react';
-import ProjectModal from './ProjectModal';
+import React from 'react';
 
 const Project = ({ project }) => {
-  const [hiddenClass, setHiddenClass] = useState('hidden');
-  const projectBlurb = useRef();
-
-  const handleClick = () => {
-    projectBlurb.current.classList.contains('hidden')
-      ? setHiddenClass('')
-      : setHiddenClass('hidden');
-  };
-
-  const { live, github, description, title, tech, img } = project;
+  const { live, github, title, tech, img } = project;
 
   return (
     <div className="project">
@@ -22,19 +12,18 @@ const Project = ({ project }) => {
       </a>
       <span>{tech}</span>
       <img src={img} alt={title} />
-      <div onClick={handleClick} className="button">
-        LEARN MORE
-      </div>
-      <div ref={projectBlurb}
-        onClick={handleClick}
-        className={`project-info ${hiddenClass}`}>
-        <ProjectModal
-          handleClick={handleClick}
-          live={live}
-          github={github}
-          description={description}
-        />
-      </div>
+      <span>
+        <a href={live}
+          aria-label={`Visit ${title} at ${live}`}
+          className="fa fa-link"
+          target="_blank"
+          rel="noopener noreferrer">{null}</a>
+        <a href={github}
+          aria-label={`Visit ${title}'s GitHub at ${github}`}
+          className="fab fa-github"
+          target="_blank"
+          rel="noopener noreferrer">{null}</a>
+      </span>
     </div>
   );
 };

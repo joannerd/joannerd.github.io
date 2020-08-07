@@ -10,28 +10,18 @@ const youtubeIds = [
 ];
 
 const Music = () => (
-  <article id="music">
-    <h2>
-      <a href="https://www.youtube.com/c/joannachenpercussion"
-        className="fab fa-youtube"
-        target="_blank"
-        rel="noopener noreferrer">{null}</a>
-      Music
-    </h2>
-
-    <ul className="projects">
-      {youtubeIds.map(youtubeId => (
-        <iframe
-          className="project"
-          width="400"
-          height="250"
-          title={youtubeId}
-          src={`https://www.youtube.com/embed/${youtubeId}`}
-          key={youtubeId}
-        />
-      ))}
-    </ul>
-  </article>
+  <ul className="projects">
+    {youtubeIds.map(youtubeId => (
+      <iframe
+        className="project"
+        width="400"
+        height="250"
+        title={youtubeId}
+        src={`https://www.youtube.com/embed/${youtubeId}`}
+        key={youtubeId}
+      />
+    ))}
+  </ul>
 )
 
 export default Music;

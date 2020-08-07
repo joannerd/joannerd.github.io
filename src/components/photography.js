@@ -16,27 +16,23 @@ const photoLinks = [
 ];
 
 const Photography = () => (
-  <article id="photography">
-    <h2>
-      <a href="https://www.instagram.com/junnacphotos/"
-        className="fab fa-instagram"
-        target="_blank"
-        rel="noopener noreferrer">
-        {null}
-      </a>
-      Photography
-    </h2>
-
-    <ul className="projects">
-      {photoLinks.map((link, i) => (
-        <img src={link}
-          className="project"
-          width="400px"
-          alt={link}
-          key={i}
-        />
-      ))}
-    </ul>
+  <article>
+    <a href="https://www.instagram.com/junnacphotos/"
+      aria-label="Visit Joanna's Instagram at https://www.instagram.com/junnacphotos/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <ul className="projects">
+        {photoLinks.map((link, i) => (
+            <img src={link}
+              className="project"
+              width="400px"
+              alt={link}
+              key={i}
+            />
+        ))}
+      </ul>
+    </a>
   </article>
 )
 

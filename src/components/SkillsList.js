@@ -15,8 +15,8 @@ const frameworks = [
   'Rails',
   'Flask',
   'Node.js',
-  '.NET Core',
   'Express.js',
+  '.NET Core',
 ];
 
 const tools = [
@@ -26,49 +26,44 @@ const tools = [
   'Git',
   'Jira',
   'Heroku',
+  'CircleCI',
   'MongoDB',
   'PostgreSQL',
 ];
 
 const experiences = [
+  'Software Engineer Intern',
   'Curriculum Developer',
-  'Technical Admissions Specialist',
   'Production Manager',
   'AV Technician',
   'Admissions Assistant',
-  'Freelance Percussionist',
 ]
 
 const Skills = () => (
   <article id="skills">
-    <a href="https://github.com/junnac/junnac.github.io/raw/master/static/media/Joanna_Chen_Resume.7f244744.pdf"
-      target="_blank"
-      rel="noopener noreferrer">
-      <h2>Resume</h2>
-    </a>
     <div className="resume-list">
       <ul>
-        <h3>Frameworks</h3>
-        {frameworks.map((fw) => <li key={fw}>{fw}</li>)}
+        <h3>Experience</h3>
+        {experiences.map((exp) => <li key={exp}>{exp}</li>)}
       </ul>
       <ul>
         <h3>Languages</h3>
         {languages.map((lang) => <li key={lang}>{lang}</li>)}
       </ul>
       <ul>
+        <h3>Frameworks</h3>
+        {frameworks.map((fw) => <li key={fw}>{fw}</li>)}
+      </ul>
+      <ul>
         <h3>Tools</h3>
         {tools.map((tool) => <li key={tool}>{tool}</li>)}
       </ul>
     </div>
-    <ul className="experience">
-      <h3>Experience</h3>
-      {experiences.map((exp) => <li key={exp}>{exp}</li>)}
-    </ul>
-    <a href="https://github.com/junnac/junnac.github.io/raw/master/static/media/Joanna_Chen_Resume.7f244744.pdf"
-      id="download-resume"
+    <a href="https://brewer-dev.s3-us-west-1.amazonaws.com/portfolio/Joanna_Chen_Resume.pdf"
+      aria-label="Download Joanna's resume"
       target="_blank"
       rel="noopener noreferrer">
-      DOWNLOAD RESUME
+      download
     </a>
   </article>
 )

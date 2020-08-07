@@ -1,37 +1,28 @@
-#skills {
-  color: black;
-}
-
-#skills h3 {
-  color: black;
-  font-size: 30px;
-  padding-bottom: 5%;
-}
-
 .resume-list {
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .resume-list ul {
-  width: 130px;
+  padding: 0% 3% 0% 0%;
+  min-width: 200px;
+  box-sizing: border-box;
 }
 
-.resume-list > *, #download-resume {
-  padding: 2vw;
+.resume-list h3 {
+  padding: 0% 0% 3% 0%;
 }
 
-.experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#download-resume {
+#skills a {
+  font-weight: bold;
   font-size: 20px;
+  border: none;
 }
 
-#skills h2:hover, #download-resume:hover {
-  color: grey;
-  transition: 0.3s;
+#skills a:hover, #skills a:focus {
+  color: #D7816A;
+  border-bottom: 3px solid black;
+  width: 95px;
 }
