@@ -1,32 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.233d17d5.chunk.css",
-    "main.js": "/static/js/main.da37b925.chunk.js",
-    "main.js.map": "/static/js/main.da37b925.chunk.js.map",
+    "main.css": "/static/css/main.7fa2318c.chunk.css",
+    "main.js": "/static/js/main.828e5721.chunk.js",
+    "main.js.map": "/static/js/main.828e5721.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.170f8412.js",
     "runtime-main.js.map": "/static/js/runtime-main.170f8412.js.map",
-    "static/js/2.5c399268.chunk.js": "/static/js/2.5c399268.chunk.js",
-    "static/js/2.5c399268.chunk.js.map": "/static/js/2.5c399268.chunk.js.map",
+    "static/js/2.5b3403f8.chunk.js": "/static/js/2.5b3403f8.chunk.js",
+    "static/js/2.5b3403f8.chunk.js.map": "/static/js/2.5b3403f8.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7ca0681b52fa5874f0ac81b8ed0b8f62.js": "/precache-manifest.7ca0681b52fa5874f0ac81b8ed0b8f62.js",
+    "precache-manifest.bb0ac8b2b8831a1ec43632ad52f550b9.js": "/precache-manifest.bb0ac8b2b8831a1ec43632ad52f550b9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.233d17d5.chunk.css.map": "/static/css/main.233d17d5.chunk.css.map",
-    "static/js/2.5c399268.chunk.js.LICENSE": "/static/js/2.5c399268.chunk.js.LICENSE",
+    "static/css/main.7fa2318c.chunk.css.map": "/static/css/main.7fa2318c.chunk.css.map",
+    "static/js/2.5b3403f8.chunk.js.LICENSE": "/static/js/2.5b3403f8.chunk.js.LICENSE",
     "static/media/1.png": "/static/media/1.c2870477.png",
     "static/media/2.png": "/static/media/2.22d7a5a4.png",
     "static/media/3.png": "/static/media/3.df3962dd.png",
     "static/media/4.png": "/static/media/4.de2d39a7.png",
     "static/media/adastra.png": "/static/media/adastra.7c75c56c.png",
+    "static/media/boba-jo.jpg": "/static/media/boba-jo.dd0e9376.jpg",
     "static/media/boopblocks.gif": "/static/media/boopblocks.cde16f18.gif",
     "static/media/brewer.gif": "/static/media/brewer.1d17bf21.gif",
-    "static/media/joanna.jpg": "/static/media/joanna.1065e938.jpg",
-    "static/media/home.css": "/static/media/keyboard.1ea927a2.jpg",
+    "static/media/pomoplan.gif": "/static/media/pomoplan.b5449cd0.gif",
     "static/media/synewaveshi.gif": "/static/media/synewaveshi.f076e605.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.170f8412.js",
-    "static/js/2.5c399268.chunk.js",
-    "static/css/main.233d17d5.chunk.css",
-    "static/js/main.da37b925.chunk.js"
+    "static/js/2.5b3403f8.chunk.js",
+    "static/css/main.7fa2318c.chunk.css",
+    "static/js/main.828e5721.chunk.js"
   ]
 }
