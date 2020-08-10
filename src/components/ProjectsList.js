@@ -1,5 +1,4 @@
 import React from 'react';
-import Project from './Project';
 import adAstra from '../media/adastra.png';
 import brewer from '../media/brewer.gif';
 import boopblocks from '../media/boopblocks.gif';
@@ -53,6 +52,34 @@ const projects = [
     img: boopblocks
   },
 ];
+
+const Project = ({ project }) => {
+  const { live, github, title, tech, img } = project;
+
+  return (
+    <div className="project">
+      <a href={live}
+        target="_blank"
+        rel="noopener noreferrer">
+        <h3>{title}</h3>
+      </a>
+      <span>{tech}</span>
+      <img src={img} alt={title} />
+      <span id="info">
+        <a href={live}
+          aria-label={`Visit ${title} at ${live}`}
+          className="fa fa-link"
+          target="_blank"
+          rel="noopener noreferrer">{null}</a>
+        <a href={github}
+          aria-label={`Visit ${title}'s GitHub at ${github}`}
+          className="fab fa-github"
+          target="_blank"
+          rel="noopener noreferrer">{null}</a>
+      </span>
+    </div>
+  );
+};
 
 const ProjectsList = () => (
   <article className="projects">

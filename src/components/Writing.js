@@ -18,7 +18,7 @@ const months = {
 const writings = [
   {
     title: 'Why I decided to code',
-    pubDate: '2020-08-09 22:51:03',
+    pubDate: '2020-08-09',
     mediumId: '2da8e354705e',
     content: `For most of my life, I self-identified as a musician. In my job interviews, I was often asked, "Why did you make the switch from music to coding?"...`,
     tags: ['Music', 'Mental Health', 'Coding']
@@ -56,7 +56,7 @@ const Writing = () => (
           </a>
           <p>{content}</p>
           <h5>Tags:</h5>
-          <span>{tagLinks}</span>
+          <span id="info">{tagLinks}</span>
         </div>
       );
     })}

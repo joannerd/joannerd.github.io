@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1000px) {
-  #root, #profile, #profile div, body *:not(.project) {
+  #root, #profile, #profile div, #root *:not(.project) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@
     margin: 5px;
   }
 
-  .project span {
+  .project #info {
     display: flex;
     flex-direction: row;
   }
