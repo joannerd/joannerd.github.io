@@ -3,37 +3,52 @@ import pic1 from '../media/1.png';
 import pic2 from '../media/2.png';
 import pic3 from '../media/3.png';
 import pic4 from '../media/4.png';
-// import pic5 from '../media/5.png';
-// import pic6 from '../media/6.png';
+import pic5 from '../media/5.png';
+import pic6 from '../media/6.png';
 
-const photoLinks = [
-  pic1,
-  pic2,
-  pic3,
-  pic4,
-  // pic5,
-  // pic6
+const photos = [
+  {
+    link: pic1,
+    id: 'B7FMuw2AOaT',
+  },
+  {
+    link: pic2,
+    id: 'B6zNMYGAyBC',
+  },
+  {
+    link: pic3,
+    id: 'B69tjFagAOT',
+  },
+  {
+    link: pic4,
+    id: 'Bnv_r6Bjmn4',
+  },
+  {
+    link: pic5,
+    id: 'B641_kjAQNM',
+  },
+  {
+    link: pic6,
+    id: 'BlCUgmrjFhM',
+  }
 ];
 
 const Photography = () => (
-  <article>
-    <a href="https://www.instagram.com/junnacphotos/"
-      aria-label="Visit Joanna's Instagram at https://www.instagram.com/junnacphotos/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <ul className="projects">
-        {photoLinks.map((link, i) => (
-            <img src={link}
-              className="project"
-              width="400px"
-              alt={link}
-              key={i}
-            />
-        ))}
-      </ul>
-    </a>
-  </article>
-)
+  <ul className="projects photo">
+    {photos.map(({ link, id }) => (
+      <a href={`https://www.instagram.com/p/${id}`}
+        aria-label={`Visit photo #${id} on Joanna's Instagram`}
+        target="_blank"
+        rel="noopener noreferrer"
+        key={id}
+      >
+        <img src={link}
+          className="project"
+          alt={link}
+        />
+      </a>
+    ))}
+  </ul>
+);
 
 export default Photography;

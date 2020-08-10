@@ -25,11 +25,6 @@ time, mark, audio, video {
   color: black;
 }
 
-/* html {
-	scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-} */
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {

@@ -4,6 +4,18 @@
   flex-wrap: wrap;
 }
 
+#writings .project {
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.projects.photo a:hover, .project a, .project a:hover, .project a:focus {
+  border: none;
+}
+
+.projects.photo a:focus, .project:hover {
+  box-shadow: 0px 0px 20px grey;
+}
+
 .project {
   width: 400px;
   height: 250px;
@@ -19,7 +31,7 @@
 }
 
 .project *:not(img) {
-  margin: 10px 10px 10px 0px;
+  margin: 10px;
   z-index: 1;
   color: black;
 }
@@ -32,23 +44,41 @@
   z-index: 0;
 }
 
-.project:hover {
-  box-shadow: 0px 0px 20px grey;
-}
-
 .project h3 {
   display: inline;
   font-size: 35px;
+}
+
+.project h4 {
+  text-align: center;
+}
+
+.project h5 {
+  margin: 0;
+  margin-top: 3%;
 }
 
 .project a {
   color: grey;
 }
 
-.project a, .project a:hover, .project a:focus {
-  border: none;
+.project p {
+  margin: 0% 12% 0% 12%;
+  color: rgb(189, 189, 189);
 }
 
 .fa-link:hover, .fa-link:focus {
   color: black;
+}
+
+#photography {
+  width: inherit;
+}
+
+#photography span {
+  text-align: right;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  max-width: inherit;
 }

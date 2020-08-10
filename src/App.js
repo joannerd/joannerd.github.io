@@ -4,12 +4,14 @@ import ProjectsList from './components/ProjectsList';
 import SkillsList from './components/SkillsList';
 import Music from './components/Music';
 import Photography from './components/Photography';
+import Writing from './components/Writing';
 
 const COMPONENTS = {
   profile: 'Profile',
   resume: 'Resume',
   coding: 'Coding',
   music: 'Music',
+  writing: 'Writing',
   photography: 'Photography',
 };
 
@@ -32,6 +34,8 @@ const App = () => {
         return <ProjectsList />;
       case COMPONENTS.music:
         return <Music />;
+      case COMPONENTS.writing:
+        return <Writing />;
       case COMPONENTS.photography:
         return <Photography />;
       default:
@@ -65,6 +69,11 @@ const App = () => {
             className="fab fa-github"
             target="_blank"
             rel="noopener noreferrer">{null}</a>
+          <a href="https://medium.com/@joannerd"
+            aria-label="Visit Joanna's Medium at https://medium.com/@joannerd"
+            className="fab fa-medium"
+            target="_blank"
+            rel="noopener noreferrer">{null}</a>
           <a href="https://www.linkedin.com/in/joannerd/"
             aria-label="Visit Joanna's LinkedIn at https://www.linkedin.com/in/joannerd/"
             className="fab fa-linkedin"
@@ -79,9 +88,7 @@ const App = () => {
         {renderComponent()}
       </main>
 
-      <footer>
-        &copy; 2020 Joanna Chen · LA
-    </footer>
+      <footer>&copy; 2020 Joanna Chen · LA</footer>
     </>
   );
 };

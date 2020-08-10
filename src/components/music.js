@@ -1,12 +1,13 @@
 import React from 'react';
 
 const youtubeIds = [
-  "v6C7oUaxNec", // Volans
+  "0kCnhBc8Fvw", // LBT
   "nSkBmDacal8", // Allevi
-  "iNYOCcg3GNA", // Black House
+  "v6C7oUaxNec", // Volans
+  "x7xrRkymO74", // Pachelbel
   "x4ldxK6fcNQ", // Lunsqui
-  // "Tbs8hpat8U8", // Cuong
-  // "e9e_p3SS1tA", // Hughes
+  "iNYOCcg3GNA", // Black House
+  "e9e_p3SS1tA", // Hughes
 ];
 
 const Music = () => (
