@@ -22,7 +22,6 @@ nav {
 article {
   display: flex;
   flex-direction: column;
-  margin: 1%;
 }
 
 h1 {
@@ -50,6 +49,8 @@ button {
   font-weight: bold;
   letter-spacing: -0.05em;
   border-bottom: 3px solid white;
+  padding: 0px;
+  margin-right: 10px;
 }
 
 button:focus, button:hover, a:focus, a:hover {

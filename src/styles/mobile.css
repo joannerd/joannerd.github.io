@@ -8,7 +8,6 @@
   }
 
   #profile section {
-    padding-left: 10%;
     padding-top: 5%;
   }
 
@@ -54,6 +53,7 @@
     top: 0;
     left: 0;
     width: 40px;
+    padding-right: 1px;
   }
 
   .resume-list ul {
@@ -65,17 +65,15 @@
   }
 
   ul.youtube.projects, ul.events, #writings .project {
-    margin-left: 50px;
-    width: 75vw;
     height: 100%;
+  }
+
+  .bandcamp, .soundcloud {
+    margin-right: 17px;
   }
 
   #writings .project {
     padding: 5px;
-  }
-  
-  .event {
-    width: 75vw;
   }
 
   #music span {
@@ -96,5 +94,16 @@
 
   #music h2, .location, #writings h5 {
     font-size: 0px;
+  }
+  
+  article.projects, .projects.photo, #music, #writings {
+    margin-left: 50px;
+  }
+
+  #music ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

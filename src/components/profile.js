@@ -17,6 +17,17 @@ const Profile = () => (
     <section>
       <h3>Software engineer and percussionist</h3>
       {blurbs.map((blurb, i) => <p key={i}>{blurb}</p>)}
+      <p key="scmarimba">
+        On the weekends, I volunteer as&nbsp;
+        <a href="https://scmarimba.org/"
+          aria-label="Visit Southern California Marimba at https://scmarimba.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <strong>Southern California Marimba</strong>
+        </a>        
+        's Production/Media Manager.
+      </p>
     </section>
   </article>
 )

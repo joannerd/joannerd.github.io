@@ -3,6 +3,7 @@ import React from 'react';
 const youtubeIds = [
   "iNYOCcg3GNA", // Black House
   "v6C7oUaxNec", // Volans
+  "mcVL4ERG-XY", // Tabata
   // "nSkBmDacal8", // Allevi
   // "0kCnhBc8Fvw", // LBT
   // "x7xrRkymO74", // Pachelbel
@@ -11,6 +12,23 @@ const youtubeIds = [
 ];
 
 const musicEvents = [
+  {
+    year: "2020",
+    events: [
+      {
+        name: "Southern California Marimba Livestream Concert",
+        location: "scmarimba.org",
+      },
+      {
+        name: "Less Than 10 Music Livestream Concert",
+        location: "lessthan10music.com",
+      },
+      {
+        name: "Began role as SCM's Production/Media Manager",
+        location: "scmarimba.org",
+      },
+    ],
+  },
   {
     year: "2019",
     events: [
@@ -23,7 +41,7 @@ const musicEvents = [
         location: "Toronto, ON",
       },
       {
-        name: "Southern California Marimba IAC",
+        name: "Southern California Marimba International Artist Competition",
         location: "Orange, CA",
       },
       {
@@ -31,7 +49,7 @@ const musicEvents = [
         location: "Irvine, CA",
       },
       {
-        name: "K2O: Cambridge Science Festival",
+        name: "Kendall Square Orchestral: Cambridge Science Festival",
         location: "Cambridge, MA",
       },
       {
@@ -72,7 +90,7 @@ const musicEvents = [
         location: "Lexington, MA",
       },
       {
-        name: "More than a Riot: Women’s Equality",
+        name: "More than a Riot: Women’s Equality Day",
         location: "Boston, MA",
       },
       {
@@ -89,11 +107,11 @@ const musicEvents = [
     year: "2017",
     events: [
       {
-        name: "Amid the Noise, Kadence Arts",
+        name: "Amid the Noise with Kadence Arts",
         location: "Boston, MA",
       },
       {
-        name: "PASIC: Amid the Noise, So Percussion",
+        name: "PASIC: Amid the Noise with So Percussion",
         location: "Indianapolis, IN",
       },
       {
@@ -111,6 +129,10 @@ const musicEvents = [
       {
         name: "Inuksuit by John Luther Adams",
         location: "San Francisco, CA",
+      },
+      {
+        name: "Clinic at Paramount High School",
+        location: "Paramount, CA",
       },
       {
         name: "JACCC Kotohajime",
@@ -173,9 +195,10 @@ const MusicRecordings = () => (
   <ul className="youtube projects">
     <h2>Recordings</h2>
     <iframe
-      className="bandcamp"
-      title="tcml"
-      src="https://bandcamp.com/EmbeddedPlayer/album=3488803080/size=small/bgcol=ffffff/linkcol=0687f5/track=3057141196/transparent=true/" seamless />
+      title="mend"
+      className="soundcloud"
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/678236268&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" />
     <iframe
       title="lalullaby"
       className="soundcloud"
