@@ -48,9 +48,18 @@
   font-size: 35px;
 }
 
-.project h4 {
+.project h4, .project h5 {
   font-weight: normal;
   text-align: center;
+  margin: 5px;
+}
+
+#info * {
+  margin: 5px;
+}
+
+#info {
+  margin-top: 5px;
 }
 
 .project h5 {
