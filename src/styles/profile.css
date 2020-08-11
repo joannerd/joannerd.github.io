@@ -9,6 +9,7 @@
 
 #profile section {
   margin: 0% 0% 0% 5%;
+  max-width: 600px;
 }
 
 #profile p {

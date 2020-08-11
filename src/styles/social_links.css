@@ -5,12 +5,13 @@
   align-content: center;
 
   position: fixed;
-  top: 20vh;
+  top: 25%;
   right: 0;
-  height: 100%;
+  height: 100vh;
   text-align: center;
   width: 70px;
-  z-index: 100;
+  z-index: 3;
+  background-color: white;
 }
 
 .fab, .fa {

@@ -1,17 +1,18 @@
-#root * {
-  transition: 0.3s;
-}
-
-body {
+#root {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 10%;
   background: white;
   color: black;
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-#root {
-  margin-top: 5%;
-  margin-left: 15%;
-  margin-right: 10%;
+#root * {
+  transition: 0.3s;
+}
+
+span {
+  font-size: 15px;
 }
 
 nav {
@@ -64,7 +65,7 @@ nav .active {
 }
 
 footer {
-  z-index: 7;
+  z-index: 4;
   position: fixed;
   line-height: 50px;
   bottom: 0;

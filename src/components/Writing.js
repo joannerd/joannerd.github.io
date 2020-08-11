@@ -44,12 +44,11 @@ const Writing = () => (
       ));
 
       return (
-        <div className="project">
+        <div className="project" key={mediumId}>
           <a href={`https://medium.com/p/${mediumId}`}
             aria-label={`Read ${title} on Joanna's Medium.`}
             target="_blank"
             rel="noopener noreferrer"
-            key={mediumId}
           >
             <h3>{title}</h3>
             <h4>{`${M} ${D}, ${Y}`}</h4>

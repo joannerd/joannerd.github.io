@@ -1,5 +1,5 @@
-@media only screen and (max-width: 1000px) {
-  #root, #profile, #profile div, #root *:not(.project) {
+@media only screen and (max-width: 600px) {
+  #root, #profile, #profile div, #root *:not(.project):not(.youtube) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,17 +21,18 @@
     margin-left: 50px;
   }
 
+  h1 {
+    text-align: center;
+  }
+
   .project h3 {
     margin: 10px;
   }
 
-  .project span * {
-    margin: 5px;
-  }
-
-  .project #info {
-    display: flex;
-    flex-direction: row;
+  .project span *, .project span {
+    font-size: 0px;
+    padding: 0px;
+    margin: 0px;
   }
 
   nav {
@@ -52,10 +53,48 @@
   .social-links {
     top: 0;
     left: 0;
-    background: black;
+    width: 40px;
   }
 
   .resume-list ul {
     padding: 0% 0% 5% 0%;
+  }
+
+  .resume-list li {
+    font-size: 15px;
+  }
+
+  ul.youtube.projects, ul.events, #writings .project {
+    margin-left: 50px;
+    width: 75vw;
+    height: 100%;
+  }
+
+  #writings .project {
+    padding: 5px;
+  }
+  
+  .event {
+    width: 75vw;
+  }
+
+  #music span {
+    font-size: 10px;
+  }
+
+  #writings h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #writings h4 {
+    font-size: 15px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #music h2, .location, #writings h5 {
+    font-size: 0px;
   }
 }
