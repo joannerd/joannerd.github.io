@@ -32,11 +32,11 @@ const tools = [
 ];
 
 const experiences = [
-  'Software Engineer Intern',
+  'Software Engineer',
   'Curriculum Developer',
+  'Technical Interviewer',
   'Production Manager',
   'AV Technician',
-  'Admissions Assistant',
 ]
 
 const Skills = () => (

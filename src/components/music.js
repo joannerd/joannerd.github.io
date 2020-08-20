@@ -3,32 +3,15 @@ import React from 'react';
 const youtubeIds = [
   "iNYOCcg3GNA", // Black House
   "v6C7oUaxNec", // Volans
-  "mcVL4ERG-XY", // Tabata
+  "0kCnhBc8Fvw", // LBT
+  // "mcVL4ERG-XY", // Tabata
   // "nSkBmDacal8", // Allevi
-  // "0kCnhBc8Fvw", // LBT
   // "x7xrRkymO74", // Pachelbel
   // "x4ldxK6fcNQ", // Lunsqui
   // "e9e_p3SS1tA", // Hughes
 ];
 
 const musicEvents = [
-  {
-    year: "2020",
-    events: [
-      {
-        name: "Southern California Marimba Livestream Concert",
-        location: "scmarimba.org",
-      },
-      {
-        name: "Less Than 10 Music Livestream Concert",
-        location: "lessthan10music.com",
-      },
-      {
-        name: "Began role as SCM's Production/Media Manager",
-        location: "scmarimba.org",
-      },
-    ],
-  },
   {
     year: "2019",
     events: [
