@@ -14,6 +14,7 @@ const frameworks = [
   'React',
   'Rails',
   'Flask',
+  'Next.js',
   'Node.js',
   'Express.js',
   '.NET Core',
@@ -22,22 +23,20 @@ const frameworks = [
 const tools = [
   'REST APIs',
   'Docker',
-  'Redux',
   'Git',
   'Jira',
-  'Heroku',
-  'CircleCI',
   'MongoDB',
   'PostgreSQL',
 ];
 
 const experiences = [
   'Software Engineer',
+  'App Academy Instructor',
   'Curriculum Developer',
   'Technical Interviewer',
   'Production Manager',
   'AV Technician',
-]
+];
 
 const Skills = () => (
   <article id="skills">

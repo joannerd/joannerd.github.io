@@ -1,3 +1,3 @@
 # Personal Website
 
-Visit the live website at junnac.github.io!
+Visit the live website at joannerd.github.io!
