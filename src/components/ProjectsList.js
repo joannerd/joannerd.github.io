@@ -60,37 +60,35 @@ const projects = [
     title: 'AccountaPal',
     tech: 'React (Next.js) | MongoDB',
     description: '',
-    live: '',
+    live: 'https://accountapal.vercel.app/',
     github: 'https://github.com/joannerd/accountapal',
     img: '',
   },
 ];
 
-const LiveLink = ({ live, title }) =>
-  live.length ? (
-    <a
-      href={live}
-      aria-label={`Visit ${title} at ${live}`}
-      className="fa fa-link"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {null}
-    </a>
-  ) : null;
+const LiveLink = ({ live, title }) => (
+  <a
+    href={live}
+    aria-label={`Visit ${title} at ${live}`}
+    className="fa fa-link"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {null}
+  </a>
+);
 
-const GitHubLink = ({ github, title }) =>
-  github.length ? (
-    <a
-      href={github}
-      aria-label={`Visit ${title}'s GitHub at ${github}`}
-      className="fab fa-github"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {null}
-    </a>
-  ) : null;
+const GitHubLink = ({ github, title }) => (
+  <a
+    href={github}
+    aria-label={`Visit ${title}'s GitHub at ${github}`}
+    className="fab fa-github"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {null}
+  </a>
+);
 
 const Img = ({ img, title }) =>
   img.length ? <img src={img} alt={title} /> : null;
