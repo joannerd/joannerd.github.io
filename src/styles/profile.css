@@ -18,16 +18,18 @@
   margin: 3% 0% 3% 0%;
 }
 
-#profile a {
+#profile section span {
+  font-size: 18px;
   color: #D7816A;
   transition: 0.3s;
 }
 
-#profile a:hover {
+#profile section span:hover {
   border-bottom: 0px solid black;
   opacity: 0.5;
+  cursor: pointer;
 }
 
-#profile a:focus {
+#profile section span:focus {
   border-bottom: 0px solid black;
 }

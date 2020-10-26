@@ -7,6 +7,7 @@ import './styles/index.css';
 import './styles/social_links.css';
 import './styles/profile.css';
 import './styles/projects.css';
+import './styles/blog.css';
 import './styles/skills.css';
 import './styles/mobile.css';
 

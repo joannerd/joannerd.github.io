@@ -16,6 +16,8 @@ span {
 }
 
 nav {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 2%;
 }
 

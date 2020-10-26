@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import Profile from './components/Profile';
-import ProjectsList from './components/ProjectsList';
+import CodeProjects from './components/CodeProjects';
 import SkillsList from './components/SkillsList';
 import Music from './components/Music';
-import Photography from './components/Photography';
-import Writing from './components/Writing';
+import Photo from './components/Photo';
+import Blog from './components/Blog';
 
 const COMPONENTS = {
   profile: 'Profile',
   resume: 'Resume',
-  coding: 'Coding',
+  code: 'Code',
   music: 'Music',
-  writing: 'Writing',
-  photography: 'Photography',
+  photo: 'Photo',
+  blog: 'Blog',
 };
 
 const App = () => {
@@ -29,14 +29,14 @@ const App = () => {
     switch (activeComponent) {
       case COMPONENTS.resume:
         return <SkillsList />;
-      case COMPONENTS.coding:
-        return <ProjectsList />;
+      case COMPONENTS.code:
+        return <CodeProjects />;
       case COMPONENTS.music:
         return <Music />;
-      case COMPONENTS.writing:
-        return <Writing />;
-      case COMPONENTS.photography:
-        return <Photography />;
+      case COMPONENTS.blog:
+        return <Blog />;
+      case COMPONENTS.photo:
+        return <Photo />;
       default:
         return <Profile />;
     }
@@ -61,7 +61,7 @@ const App = () => {
       </nav>
 
       <main>
-        <h2 className="social-links">
+        <div className="social-links">
           <a
             href="mailto:joannerdchen@gmail.com"
             aria-label="Email Joanna at joannerdchen@gmail.com"
@@ -107,7 +107,7 @@ const App = () => {
           >
             {null}
           </a>
-        </h2>
+        </div>
         {renderComponent()}
       </main>
 

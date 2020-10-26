@@ -33,7 +33,7 @@ const photos = [
   }
 ];
 
-const Photography = () => (
+const Photo = () => (
   <ul className="projects photo">
     {photos.map(({ link, id }) => (
       <a href={`https://www.instagram.com/p/${id}`}
@@ -51,4 +51,4 @@ const Photography = () => (
   </ul>
 );
 
-export default Photography;
+export default Photo;

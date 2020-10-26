@@ -103,7 +103,7 @@ const Project = ({ project }) => {
       </a>
       <span>{tech}</span>
       <Img img={img} title={title} />
-      <span id="info">
+      <span className="info">
         <LiveLink live={live} title={title} />
         <GitHubLink github={github} title={title} />
       </span>
@@ -112,7 +112,7 @@ const Project = ({ project }) => {
 };
 
 const ProjectsList = () => (
-  <article className="projects">
+  <article id="code" className="projects">
     {projects.map(project => (
       <Project project={project} key={project.id} />
     ))}

@@ -15,15 +15,17 @@
   padding: 0% 0% 3% 0%;
 }
 
-#skills a {
-  margin-top: 5%;
+#skills button {
+  width: 85px;
+  height: 25px;
+  text-align: left;
+  color: #D7816A;
   font-weight: bold;
   font-size: 20px;
-  border: none;
+  outline: none;
+  align-self: stretch;
 }
 
-#skills a:hover, #skills a:focus {
-  color: #D7816A;
-  border-bottom: 3px solid black;
-  width: 95px;
+#skills button:hover, #skills button:focus {
+  opacity: 0.8;
 }
