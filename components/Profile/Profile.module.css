@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.image img {
+  border-radius: 100%;
+}
+
+.profile {
+  margin-left: 5%;
+}
+
+.subtitle {
+  font-size: 30px;
+}
+
+.paragraph {
+  font-size: 18px;
+  margin: 24px 0;
+}
+
+.link {
+  font-size: 18px;
+  color: #d7816a;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 920px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .subtitle {
+    margin: 24px 0;
+  }
+
+  .profile {
+    margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .image img {
+    width: 20px;
+  }
+
+  .subtitle {
+    font-size: 5vw;
+  }
+}

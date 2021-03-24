@@ -1,0 +1,50 @@
+.skills {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.skills li {
+  font-size: 22px;
+}
+
+.resume {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.resume:hover *,
+.resume:focus * {
+  transform: scale(1.2);
+  border-radius: 100%;
+  background: rgba(130, 130, 130, 0.105);
+}
+
+@media (max-width: 920px) {
+  .skills {
+    grid-template-columns: auto auto;
+  }
+
+  .skills ul {
+    margin-bottom: 16px;
+  }
+
+  .title {
+    font-size: 5vw;
+  }
+
+  .skills li {
+    font-size: 4vw;
+  }
+
+  .resume {
+    margin-top: 16px;
+  }
+}

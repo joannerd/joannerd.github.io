@@ -1,0 +1,25 @@
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project {
+  position: relative;
+  margin: 0 24px 24px 0;
+  width: 47%;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 1060px) {
+  .projects {
+    margin-right: 30px;
+  }
+
+  .project {
+    width: 100%;
+  }
+}
