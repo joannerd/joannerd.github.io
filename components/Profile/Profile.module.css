@@ -50,4 +50,10 @@
   .subtitle {
     font-size: 5vw;
   }
+
+  .image {
+    border-radius: 100%;
+    height: 75vw;
+    width: 75vw;
+  }
 }
