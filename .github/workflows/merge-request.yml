@@ -1,6 +1,6 @@
 name: merge-request
 on:
-  pull_request:
+  push:
     branches: [ staging ]
 jobs:
   prettier:
