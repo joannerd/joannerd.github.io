@@ -1,5 +1,5 @@
-import styles from './Coding.module.css';
-import * as gtag from '../../lib/gtag';
+import styles from '../styles/Code.module.css';
+import * as gtag from '../lib/gtag';
 
 const projects = [
   {
@@ -85,6 +85,7 @@ const LiveLink = ({
     }
     href={live}
     aria-label={title}
+    aria-hidden
     className="fa fa-link"
     target="_blank"
     rel="noopener noreferrer"
@@ -108,6 +109,7 @@ const GitHubLink = ({
     }
     href={github}
     aria-label={`${title} GitHub`}
+    aria-hidden
     className="fab fa-github"
     target="_blank"
     rel="noopener noreferrer"
@@ -142,7 +144,7 @@ const Project = ({
         aria-label={title}
       >
         {title}
-        <i className="fas fa-external-link-alt" />
+        <i aria-hidden className="fas fa-external-link-alt" />
       </a>
       <span className={styles.tech}>{tech}</span>
       <span className={styles.info}>

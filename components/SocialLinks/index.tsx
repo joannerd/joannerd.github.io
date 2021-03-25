@@ -36,6 +36,7 @@ const SocialLinks = ({
   <section className={hasScrolledToBottom ? styles.hiddenLinks : styles.links}>
     {links.map(({ href, label, className }) => (
       <a
+        aria-hidden
         key={href}
         href={href}
         aria-label={label}
