@@ -3,7 +3,7 @@ on:
   push:
     branches: [ staging ]
 jobs:
-  prettier:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
