@@ -1,0 +1,58 @@
+html,
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  transition: 0.3s;
+  outline: none;
+}
+
+.fab, .fa, .fas {
+  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.fab:hover, .fa:hover, .fab:focus, .fa:focus {
+  cursor: pointer;
+  transform: scale(1.2);
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.fa-angellist, .fa-medium {
+  color: black;
+}
+
+.fa-linkedin  {
+  color: #74B2CE;
+}
+
+.fa-github, .fa-file-download {
+  color: #D7816A;
+}
+
+.fa-instagram {
+  color: rgb(187, 132, 219);
+}
+
+.fa-envelope {
+  color: #F0CF65
+}
+
+.fa-link {
+  color: grey;
+}
+
+.fa-external-link-alt {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin-left: 10px;
+}

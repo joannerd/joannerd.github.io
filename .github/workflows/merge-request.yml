@@ -1,0 +1,20 @@
+name: merge-request
+on:
+  pull_request:
+    branches: [ staging ]
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - name: Install packages
+        run: yarn
+      - name: Run prettier
+        run: yarn check:prettier
+      - name: Run linter
+        run: yarn check:lint
+      - name: Run type check
+        run: yarn check:type
+      - name: Test build
+        run: yarn build

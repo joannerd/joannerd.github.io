@@ -1,0 +1,78 @@
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project {
+  position: relative;
+  margin: 0 24px 24px 0;
+  min-height: 220px;
+  width: 47%;
+}
+
+.soundcloud {
+  position: relative;
+  margin: 0 24px 24px 0;
+  min-height: 80px;
+  width: 47%;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.events {
+  width: 97%;
+  margin-bottom: 70px;
+}
+
+.event {
+  margin-bottom: 3%;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1% 0% 1% 0%;
+}
+
+.mobileEventName {
+  display: none;
+}
+
+.location {
+  color: rgb(189, 189, 189);
+}
+
+@media (max-width: 1060px) {
+  .projects {
+    margin-right: 55px;
+  }
+
+  .project,
+  .soundcloud {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .eventName {
+    display: none;
+  }
+
+  .mobileEventName {
+    display: block;
+  }
+}
