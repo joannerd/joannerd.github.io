@@ -47,7 +47,7 @@ const projects = [
       'adAstra is a cosmic event planning app, built to create a stargazing community and help users geolocate the best sites for stargazing events. As the main frontend engineer of the team, I designed a dynamic web page and interactive hover effects with CSS3 to render an eye-catching website and forum with intuitive UX. I developed filter logic integrated with Mapbox GL JS geolocation to map the reflective location of constellations on Earth and display all currently viewable constellations.',
     live: 'https://ad--astra.herokuapp.com/',
     github: 'https://github.com/jenn-jenn/adAstra',
-    img: '/images/adAstra.png',
+    img: '/images/adastra.png',
   },
   {
     id: 5,
