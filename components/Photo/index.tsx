@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './Photo.module.css';
 
 const photos = [
@@ -39,12 +38,8 @@ const Photo = (): JSX.Element => (
         rel="noopener noreferrer"
         key={id}
       >
-        <Image
-          priority
-          layout="responsive"
-          quality={100}
-          height={250}
-          width={400}
+        <img
+          className={styles.image}
           src={link}
           alt={link}
         />

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from './Coding.module.css';
 
 const projects = [
@@ -109,15 +108,10 @@ const Project = ({
 }: ProjectProps): JSX.Element => (
   <article className={styles.project}>
     {img.length ? (
-      <Image
-        priority
-        layout="responsive"
-        quality={100}
-        height={250}
-        width={400}
+      <img
+        className={styles.image}
         src={img}
         alt={title}
-        objectFit="fill"
       />
     ) : null}
     <section className={styles.content}>

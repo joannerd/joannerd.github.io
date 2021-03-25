@@ -1,19 +1,12 @@
-import Image from 'next/image';
 import styles from './Profile.module.css';
 
 const Profile = (): JSX.Element => (
   <article className={styles.container}>
-    <div className={styles.image}>
-      <Image
-        priority
-        layout="fixed"
-        quality={100}
-        width={380}
-        height={380}
-        src="/images/boba-jo.jpg"
-        alt="Joanna Chen"
-      />
-    </div>
+    <img
+      className={styles.image}
+      src="/images/boba-jo.jpg"
+      alt="Joanna Chen"
+    />
     <section className={styles.profile}>
       <h2 className={styles.subtitle}>Software engineer and percussionist</h2>
       <p className={styles.paragraph}>
