@@ -12,5 +12,10 @@ jobs:
         run: yarn
       - name: Build
         run: yarn build
-      - name: Deploy to GitHub pages
-        run: yarn deploy
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: main
+          FOLDER: out
+          CLEAN: true
