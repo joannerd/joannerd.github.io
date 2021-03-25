@@ -5,7 +5,7 @@
   "homepage": "https://joannerd.github.io",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build && next export && cp .nojekyll out/.nojekyll",
     "start": "next start",
     "check:lint": "eslint './**/*.ts*' --fix",
     "check:type": "$(npm bin)/tsc --noEmit",
