@@ -1,13 +1,48 @@
-import styles from './Music.module.css';
+/* eslint-disable jsx-a11y/click-events-have-key-events,
+jsx-a11y/no-noninteractive-element-interactions */
 
-const youtubeIds = [
-  'iNYOCcg3GNA', // Black House
-  'v6C7oUaxNec', // Volans
-  // '0kCnhBc8Fvw', // LBT
-  'nSkBmDacal8', // Allevi
-  // "x7xrRkymO74", // Pachelbel
-  'x4ldxK6fcNQ', // Lunsqui
-  // 'e9e_p3SS1tA', // Hughes
+import styles from './Music.module.css';
+import * as gtag from '../../lib/gtag';
+
+const musicIds = [
+  {
+    id: '678236268',
+    name: 'Takashi - Mend (SoundCloud)',
+    isSoundCloud: true,
+  },
+  {
+    id: '463480023',
+    name: 'Allvi - LA Lullaby (SoundCloud)',
+    isSoundCloud: true,
+  },
+  {
+    id: 'iNYOCcg3GNA',
+    name: 'Black House',
+  },
+  {
+    id: 'v6C7oUaxNec',
+    name: 'Volans - She Who Sleeps With A Small Blanket',
+  },
+  {
+    id: '0kCnhBc8Fvw',
+    name: 'LBT - If We Hold On Together',
+  },
+  {
+    id: 'nSkBmDacal8',
+    name: 'Allevi - LA Lullaby',
+  },
+  {
+    id: 'x7xrRkymO74',
+    name: "Mimura - Transformation of Pachelbel's Canon",
+  },
+  {
+    id: 'x4ldxK6fcNQ',
+    name: 'Lunsqui - Shi',
+  },
+  {
+    id: 'e9e_p3SS1tA',
+    name: 'Hughes - Antechamber',
+  },
 ];
 
 const musicEvents = [
@@ -209,24 +244,24 @@ const MusicEvents = (): JSX.Element => (
 
 const MusicRecordings = (): JSX.Element => (
   <ul className={styles.projects}>
-    <iframe
-      title="mend"
-      className={styles.soundcloud}
-      allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/678236268&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-    />
-    <iframe
-      title="lalullaby"
-      className={styles.soundcloud}
-      allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/463480023&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-    />
-    {youtubeIds.map((youtubeId) => (
+    {musicIds.map(({ id, name, isSoundCloud }) => (
       <iframe
-        className={styles.project}
-        title={youtubeId}
-        src={`https://www.youtube.com/embed/${youtubeId}`}
-        key={youtubeId}
+        key={name}
+        onClick={() =>
+          gtag.event({
+            action: 'play_music',
+            category: 'engagement',
+            label: `Play ${name}`,
+            value: 1,
+          })
+        }
+        className={isSoundCloud ? styles.soundcloud : styles.project}
+        title={name}
+        src={
+          isSoundCloud
+            ? `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${id}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`
+            : `https://www.youtube.com/embed/${id}`
+        }
       />
     ))}
   </ul>

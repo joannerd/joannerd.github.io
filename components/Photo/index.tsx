@@ -1,4 +1,5 @@
 import styles from './Photo.module.css';
+import * as gtag from '../../lib/gtag';
 
 const photos = [
   {
@@ -31,6 +32,14 @@ const Photo = (): JSX.Element => (
   <ul className={styles.projects}>
     {photos.map(({ link, id }) => (
       <a
+        onClick={() =>
+          gtag.event({
+            action: 'visit_instagram',
+            category: 'engagement',
+            label: `Visit https://www.instagram.com/p/${id}`,
+            value: 1,
+          })
+        }
         href={`https://www.instagram.com/p/${id}`}
         className={styles.project}
         aria-label={`Photo #${id}`}
@@ -38,11 +47,7 @@ const Photo = (): JSX.Element => (
         rel="noopener noreferrer"
         key={id}
       >
-        <img
-          className={styles.image}
-          src={link}
-          alt={link}
-        />
+        <img className={styles.image} src={link} alt={link} />
       </a>
     ))}
   </ul>

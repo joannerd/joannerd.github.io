@@ -1,4 +1,5 @@
 import styles from './Coding.module.css';
+import * as gtag from '../../lib/gtag';
 
 const projects = [
   {
@@ -74,6 +75,14 @@ const LiveLink = ({
   title,
 }: Pick<ProjectProps, 'live' | 'title'>): JSX.Element => (
   <a
+    onClick={() =>
+      gtag.event({
+        action: 'visit_coding_project',
+        category: 'engagement',
+        label: `Visit ${title} live through icon`,
+        value: 1,
+      })
+    }
     href={live}
     aria-label={title}
     className="fa fa-link"
@@ -89,6 +98,14 @@ const GitHubLink = ({
   title,
 }: Pick<ProjectProps, 'github' | 'title'>): JSX.Element => (
   <a
+    onClick={() =>
+      gtag.event({
+        action: 'visit_github',
+        category: 'engagement',
+        label: `Visit ${title}'s GitHub`,
+        value: 1,
+      })
+    }
     href={github}
     aria-label={`${title} GitHub`}
     className="fab fa-github"
@@ -107,15 +124,17 @@ const Project = ({
   img,
 }: ProjectProps): JSX.Element => (
   <article className={styles.project}>
-    {img.length ? (
-      <img
-        className={styles.image}
-        src={img}
-        alt={title}
-      />
-    ) : null}
+    {img.length ? <img className={styles.image} src={img} alt={title} /> : null}
     <section className={styles.content}>
       <a
+        onClick={() =>
+          gtag.event({
+            action: 'visit_coding_project',
+            category: 'engagement',
+            label: `Visit ${title} live through title`,
+            value: 1,
+          })
+        }
         className={styles.title}
         href={live}
         target="_blank"

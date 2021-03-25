@@ -7,10 +7,10 @@
     "dev": "next dev",
     "build": "next build && next export && cp .nojekyll out/.nojekyll",
     "start": "next start",
-    "check:lint": "eslint './**/*.ts*' --fix",
+    "check:lint": "eslint './**/*.ts*'",
     "check:type": "$(npm bin)/tsc --noEmit",
     "check:prettier": "prettier --write components pages",
-    "check:all": "yarn check:lint && yarn check:type && yarn check:prettier",
+    "check:all": "yarn check:prettier && yarn check:lint && yarn check:type",
     "deploy": "gh-pages -b main -d .next"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.4",
     "@types/node": "^14.14.35",
     "@types/react": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.19.0",

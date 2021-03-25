@@ -35,6 +35,8 @@
         "import/extensions": "off",
         "object-curly-newline": "off",
         "comma-dangle": "off",
+        "implicit-arrow-linebreak": "off",
+        "react/jsx-curly-newline": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }]
     },
     "settings": {

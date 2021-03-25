@@ -1,4 +1,7 @@
+/* eslint-disable react/no-danger */
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+
+const isProduction = process.env.NODE_ENV === 'production';
 
 class MyDocument extends Document {
   render() {
@@ -23,12 +26,34 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {images.map((image) => (
-            <link key={image} rel="prefetch" href={`https://joannerd.github.io/images/${image}`} />
+            <link
+              key={image}
+              rel="prefetch"
+              href={`https://joannerd.github.io/images/${image}`}
+            />
           ))}
           <script
             src="https://kit.fontawesome.com/51da45b07a.js"
             crossOrigin="anonymous"
           />
+          {isProduction && (
+            <>
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', ${process.env.NEXT_PUBLIC_GA_TRACKING_ID});
+              `,
+                }}
+              />
+            </>
+          )}
         </Head>
         <body>
           <Main />
