@@ -17,4 +17,6 @@ jobs:
       - name: Run type check
         run: yarn check:type
       - name: Test build
+        env:
+          NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.NEXT_PUBLIC_GA_TRACKING_ID }}
         run: yarn build

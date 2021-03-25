@@ -1,4 +1,5 @@
 import styles from './Resume.module.css';
+import * as gtag from '../../lib/gtag';
 
 const skills = [
   {
@@ -55,6 +56,12 @@ const skills = [
 
 const Skills = (): JSX.Element => {
   const viewResume = () => {
+    gtag.event({
+      action: 'view_resume',
+      category: 'engagement',
+      label: 'View resume',
+      value: 1,
+    });
     window.open(
       'https://brewer-dev.s3-us-west-1.amazonaws.com/portfolio/Joanna_Chen_Resume.pdf'
     );

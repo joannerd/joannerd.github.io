@@ -1,6 +1,6 @@
 const basePath = process.env.NODE_ENV === 'production' ? '/repo' : '';
 
-export default {
+module.exports = {
   basePath,
   assetPrefix: `${basePath}/`
 };

@@ -1,12 +1,9 @@
 import styles from './Profile.module.css';
+import * as gtag from '../../lib/gtag';
 
 const Profile = (): JSX.Element => (
   <article className={styles.container}>
-    <img
-      className={styles.image}
-      src="/images/boba-jo.jpg"
-      alt="Joanna Chen"
-    />
+    <img className={styles.image} src="/images/boba-jo.jpg" alt="Joanna Chen" />
     <section className={styles.profile}>
       <h2 className={styles.subtitle}>Software engineer and percussionist</h2>
       <p className={styles.paragraph}>
@@ -16,17 +13,18 @@ const Profile = (): JSX.Element => (
         industry.
       </p>
       <p className={styles.paragraph}>
-        {"She's currently a software engineer at "}
+        {
+          "She's currently a software engineer at Metal, pioneering the exciting world of "
+        }
         <a
-          className={styles.link}
-          href="http://www.metalpay.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Metal
-        </a>
-        {', pioneering the exciting world of '}
-        <a
+          onClick={() =>
+            gtag.event({
+              action: 'open_link',
+              category: 'engagement',
+              label: 'Visit https://www.protonchain.com/',
+              value: 1,
+            })
+          }
           className={styles.link}
           href="https://www.protonchain.com/"
           target="_blank"
@@ -43,6 +41,14 @@ const Profile = (): JSX.Element => (
           'On the weekends, she connects her crafty coding skills to her musical roots by architecting internal tools for '
         }
         <a
+          onClick={() =>
+            gtag.event({
+              action: 'open_link',
+              category: 'engagement',
+              label: 'Visit https://scmarimba.org/',
+              value: 1,
+            })
+          }
           className={styles.link}
           href="https://scmarimba.org/"
           target="_blank"
