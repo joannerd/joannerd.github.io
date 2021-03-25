@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events,
 jsx-a11y/no-noninteractive-element-interactions */
 
-import styles from './Music.module.css';
-import * as gtag from '../../lib/gtag';
+import styles from '../styles/Music.module.css';
+import * as gtag from '../lib/gtag';
 
 const musicIds = [
   {

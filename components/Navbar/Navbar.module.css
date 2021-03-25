@@ -1,15 +1,3 @@
-.container {
-  max-width: 950px;
-  margin: 7vh auto;
-}
-
-.title {
-  font-size: 50px;
-  letter-spacing: -0.05em;
-  margin-bottom: 1%;
-  font-weight: normal;
-}
-
 .nav {
   display: flex;
   flex-direction: row;
@@ -40,17 +28,13 @@
 }
 
 @media (max-width: 1080px) {
-  .container {
-    max-width: 80%;
-  }
-
   .button, .activeButton {
     font-size: 4vw;
   }
 }
 
 @media (max-width: 920px) {
-  .title, .nav {
+  .nav {
     margin: 0 0 18px;
   }
 
@@ -60,10 +44,6 @@
 }
 
 @media (max-width: 600px) {
-  .container {
-    max-width: 90%;
-  }
-
   .button, .activeButton {
     font-size: 5.7vw;
   }

@@ -1,5 +1,5 @@
-import styles from './Resume.module.css';
-import * as gtag from '../../lib/gtag';
+import styles from '../styles/Resume.module.css';
+import * as gtag from '../lib/gtag';
 
 const skills = [
   {
@@ -86,7 +86,7 @@ const Skills = (): JSX.Element => {
         className={styles.resume}
         onClick={viewResume}
       >
-        <i className="fas fa-file-download" />
+        <i aria-hidden className="fas fa-file-download" />
       </button>
     </article>
   );

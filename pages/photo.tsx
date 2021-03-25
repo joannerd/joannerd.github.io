@@ -1,5 +1,5 @@
-import styles from './Photo.module.css';
-import * as gtag from '../../lib/gtag';
+import styles from '../styles/Photo.module.css';
+import * as gtag from '../lib/gtag';
 
 const photos = [
   {

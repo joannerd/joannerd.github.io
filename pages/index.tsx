@@ -1,82 +1,65 @@
-import { useState, useEffect } from 'react';
-import SocialLinks from '../components/SocialLinks';
-import Footer from '../components/Footer';
-import Profile from '../components/Profile';
-import Coding from '../components/Coding';
-import Resume from '../components/Resume';
-import Music from '../components/Music';
-import Photo from '../components/Photo';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Profile.module.css';
+import * as gtag from '../lib/gtag';
 
-const COMPONENTS = {
-  profile: 'Profile',
-  resume: 'Resume',
-  code: 'Code',
-  music: 'Music',
-  photo: 'Photo',
-};
+const Profile = (): JSX.Element => (
+  <article className={styles.container}>
+    <img className={styles.image} src="/images/boba-jo.jpg" alt="Joanna Chen" />
+    <section className={styles.profile}>
+      <h2 className={styles.subtitle}>Software engineer and percussionist</h2>
+      <p className={styles.paragraph}>
+        Los Angeles based software engineer and percussionist with a diverse
+        professional background ranging from the innovative crypto/blockchain
+        space, mission-driven EdTech field, and client-oriented live events
+        industry.
+      </p>
+      <p className={styles.paragraph}>
+        {
+          "She's currently a software engineer at Metal, pioneering the exciting world of "
+        }
+        <a
+          onClick={() =>
+            gtag.event({
+              action: 'open_link',
+              category: 'engagement',
+              label: 'Visit https://www.protonchain.com/',
+              value: 1,
+            })
+          }
+          className={styles.link}
+          href="https://www.protonchain.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          blockchain DApps
+        </a>
+        ! As a former concert producer, she has an eye for elegant and
+        functional design as well as a knack for clear and effective
+        communication.
+      </p>
+      <p className={styles.paragraph}>
+        {
+          'On the weekends, she connects her crafty coding skills to her musical roots by architecting internal tools for '
+        }
+        <a
+          onClick={() =>
+            gtag.event({
+              action: 'open_link',
+              category: 'engagement',
+              label: 'Visit https://scmarimba.org/',
+              value: 1,
+            })
+          }
+          className={styles.link}
+          href="https://scmarimba.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Southern California Marimba
+        </a>
+        , where she volunteers as their Production and Media Manager.
+      </p>
+    </section>
+  </article>
+);
 
-const App = () => {
-  const [activeComponent, setActiveComponent] = useState<string>(
-    COMPONENTS.profile
-  );
-  const [hasScrolledToBottom, setHasScrolledToBottom] = useState<boolean>(
-    false
-  );
-
-  const scrollListener = () => {
-    const totalHeight = window.innerHeight + window.scrollY;
-    const hasScrolled = totalHeight >= document.body.offsetHeight;
-    setHasScrolledToBottom(hasScrolled);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', scrollListener);
-    return () => window.removeEventListener('scroll', scrollListener);
-  }, []);
-
-  const renderComponent = () => {
-    switch (activeComponent) {
-      case COMPONENTS.resume:
-        return <Resume />;
-      case COMPONENTS.code:
-        return <Coding />;
-      case COMPONENTS.music:
-        return <Music />;
-      case COMPONENTS.photo:
-        return <Photo />;
-      default:
-        return <Profile />;
-    }
-  };
-
-  return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Joanna Chen</h1>
-      <nav className={styles.nav}>
-        {Object.values(COMPONENTS).map((page) => {
-          const isActive = page === activeComponent;
-          return (
-            <button
-              type="button"
-              onClick={() => setActiveComponent(page)}
-              name={page}
-              key={page}
-              className={isActive ? styles.activeButton : styles.button}
-            >
-              {page}
-            </button>
-          );
-        })}
-      </nav>
-
-      <main>
-        <SocialLinks hasScrolledToBottom={hasScrolledToBottom} />
-        {renderComponent()}
-      </main>
-      <Footer hasScrolledToBottom={hasScrolledToBottom} />
-    </div>
-  );
-};
-
-export default App;
+export default Profile;
