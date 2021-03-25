@@ -32,7 +32,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     return () => {
       window.removeEventListener('scroll', scrollListener);
       Router.events.off('routeChangeComplete', updateGa);
-    }
+    };
   }, []);
 
   return (

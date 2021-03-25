@@ -23,14 +23,14 @@ const musicIds = [
     id: 'v6C7oUaxNec',
     name: 'Volans - She Who Sleeps With A Small Blanket',
   },
-  {
-    id: '0kCnhBc8Fvw',
-    name: 'LBT - If We Hold On Together',
-  },
-  {
-    id: 'nSkBmDacal8',
-    name: 'Allevi - LA Lullaby',
-  },
+  // {
+  //   id: '0kCnhBc8Fvw',
+  //   name: 'LBT - If We Hold On Together',
+  // },
+  // {
+  //   id: 'nSkBmDacal8',
+  //   name: 'Allevi - LA Lullaby',
+  // },
   {
     id: 'x7xrRkymO74',
     name: "Mimura - Transformation of Pachelbel's Canon",
@@ -39,10 +39,10 @@ const musicIds = [
     id: 'x4ldxK6fcNQ',
     name: 'Lunsqui - Shi',
   },
-  {
-    id: 'e9e_p3SS1tA',
-    name: 'Hughes - Antechamber',
-  },
+  // {
+  //   id: 'e9e_p3SS1tA',
+  //   name: 'Hughes - Antechamber',
+  // },
 ];
 
 const musicEvents = [
