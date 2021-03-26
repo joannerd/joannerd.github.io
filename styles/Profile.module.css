@@ -28,8 +28,8 @@
   text-decoration: none;
 }
 
-.link:hover {
-  opacity: 0.5;
+.link:hover, .link:focus-visible {
+  text-decoration: underline;
 }
 
 @media (max-width: 920px) {

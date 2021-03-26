@@ -18,6 +18,10 @@
   width: 47%;
 }
 
+.project:hover, .soundcloud:hover, .project:focus-visible, .soundcloud:focus-visible {
+  transform: scale(1.02);
+}
+
 .title {
   font-size: 32px;
   margin-bottom: 16px;

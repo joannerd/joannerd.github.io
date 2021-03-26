@@ -21,8 +21,8 @@
 }
 
 .resume:hover *,
-.resume:focus * {
-  transform: scale(1.2);
+.resume:focus-visible * {
+  transform: scale(1.1);
   border-radius: 100%;
   background: rgba(130, 130, 130, 0.105);
 }

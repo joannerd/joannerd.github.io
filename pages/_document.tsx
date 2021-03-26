@@ -24,15 +24,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta charSet="utf-8" />
-          <title>Joanna Chen - Software Engineer | Percussionist</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="description" content="Joanna Chen is a software
-          engineer and percussionist." />
-          <meta name="keywords" content="software engineer development app academy web
-          frontend fullstack programming ruby javascript c# node rails react redux
-          express .net core percussionist percussion marimba"/>
-          <link rel='icon' href='favicon.ico' type='image/x-icon' />
           {images.map((image) => (
             <link
               key={image}
@@ -56,7 +47,7 @@ class MyDocument extends Document {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', ${process.env.NEXT_PUBLIC_GA_TRACKING_ID});
+                gtag('config', ${`${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`});
               `,
                 }}
               />

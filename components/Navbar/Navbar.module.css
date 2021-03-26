@@ -16,8 +16,8 @@
   margin-right: 10px;
 }
 
-.button:focus,
-.button:hover {
+.button:hover,
+.button:focus-visible {
   cursor: pointer;
   outline: none;
   color: #d7816a;

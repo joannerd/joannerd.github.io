@@ -5,7 +5,7 @@ body {
 
 * {
   box-sizing: border-box;
-  transition: 0.3s;
+  transition: 0.3s; 
   outline: none;
 }
 
@@ -18,9 +18,9 @@ body {
   padding: 5px;
 }
 
-.fab:hover, .fa:hover, .fab:focus, .fa:focus {
+.fab:hover, .fa:hover, .fab:focus, .fa:focus, .fab:focus-visible, .fa:focus-visible {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.4);
 }
