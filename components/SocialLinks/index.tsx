@@ -1,4 +1,5 @@
 import styles from './SocialLinks.module.css';
+import * as gtag from '../../lib/gtag';
 
 const links = [
   {
@@ -36,6 +37,14 @@ const SocialLinks = ({
   <section className={hasScrolledToBottom ? styles.hiddenLinks : styles.links}>
     {links.map(({ href, label, className }) => (
       <a
+        onClick={() =>
+          gtag.event({
+            action: 'open_link',
+            category: 'engagement',
+            label: `Open ${href}`,
+            value: 1,
+          })
+        }
         aria-hidden
         key={href}
         href={href}
