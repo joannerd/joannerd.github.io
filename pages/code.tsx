@@ -85,7 +85,6 @@ const LiveLink = ({
     }
     href={live}
     aria-label={title}
-    aria-hidden
     className="fa fa-link"
     target="_blank"
     rel="noopener noreferrer"
@@ -109,7 +108,6 @@ const GitHubLink = ({
     }
     href={github}
     aria-label={`${title} GitHub`}
-    aria-hidden
     className="fab fa-github"
     target="_blank"
     rel="noopener noreferrer"
@@ -128,24 +126,7 @@ const Project = ({
   <article className={styles.project}>
     {img.length ? <img className={styles.image} src={img} alt={title} /> : null}
     <section className={styles.content}>
-      <a
-        onClick={() =>
-          gtag.event({
-            action: 'visit_coding_project',
-            category: 'engagement',
-            label: `Visit ${title} live through title`,
-            value: 1,
-          })
-        }
-        className={styles.title}
-        href={live}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={title}
-      >
-        {title}
-        <i aria-hidden className="fas fa-external-link-alt" />
-      </a>
+      <h2 className={styles.title}>{title}</h2>
       <span className={styles.tech}>{tech}</span>
       <span className={styles.info}>
         <LiveLink live={live} title={title} />

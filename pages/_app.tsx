@@ -2,15 +2,16 @@ import { useState, useEffect } from 'react';
 import type { AppProps } from 'next/app';
 import Router from 'next/router';
 import Head from 'next/head';
+import { init } from 'emailjs-com';
 import '../styles/reset.css';
 import '../styles/globals.css';
-import * as gtag from '../lib/gtag';
+import { pageview } from '../lib/gtag';
+import { emailUserId } from '../lib/config';
 import styles from '../styles/App.module.css';
 import Navbar from '../components/Navbar';
 import SocialLinks from '../components/SocialLinks';
 import Footer from '../components/Footer';
-
-const isProduction = process.env.NODE_ENV === 'production';
+import ModalProvider from '../components/ModalProvider';
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   const [hasScrolledToBottom, setHasScrolledToBottom] = useState<boolean>(
@@ -23,11 +24,10 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     setHasScrolledToBottom(hasScrolled);
   };
 
-  const updateGa = (url: URL) => {
-    if (isProduction) gtag.pageview(url);
-  };
+  const updateGa = (url: URL) => pageview(url);
 
   useEffect(() => {
+    init(emailUserId);
     window.addEventListener('scroll', scrollListener);
     Router.events.on('routeChangeComplete', updateGa);
     return () => {
@@ -58,8 +58,10 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
       <h1 className={styles.title}>Joanna Chen</h1>
       <Navbar />
       <main>
-        <SocialLinks hasScrolledToBottom={hasScrolledToBottom} />
-        <Component {...pageProps} />
+        <ModalProvider>
+          <Component {...pageProps} />
+          <SocialLinks hasScrolledToBottom={hasScrolledToBottom} />
+        </ModalProvider>
       </main>
       <Footer hasScrolledToBottom={hasScrolledToBottom} />
     </div>

@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import { isProduction, gaTrackingId } from './config';
 
 declare global {
   interface Window {
@@ -15,8 +16,8 @@ type GTagEvent = {
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url: URL) => {
-  if (typeof window !== 'undefined') {
-    window.gtag('config', process.env.NEXT_PUBLIC_GA_TRACKING_ID, {
+  if (isProduction) {
+    window.gtag('config', gaTrackingId, {
       page_path: url,
     });
   }
@@ -24,7 +25,7 @@ export const pageview = (url: URL) => {
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = ({ action, category, label, value }: GTagEvent) => {
-  if (typeof window !== 'undefined') {
+  if (isProduction) {
     window.gtag('event', action, {
       event_category: category,
       event_label: label,
