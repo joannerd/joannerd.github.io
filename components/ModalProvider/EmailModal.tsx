@@ -114,7 +114,7 @@ const EmailModal = (): JSX.Element => {
       name,
       email,
       subject,
-      message,
+      message: message.replace(/\r\n|\r|\n/g, '<br>'),
       from_email: shouldSendToSelf ? email : '',
     };
 
