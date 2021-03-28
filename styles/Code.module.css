@@ -87,11 +87,33 @@
   .title {
     font-size: 7vw;
     margin: 0;
+    font-weight: bold;
   }
 
-  .image,
-  .project:hover .content,
-  .project:focus-visible .content {
-    height: 25vh;
+  .info {
+    margin-top: 0;
+    display: flex;
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: grey 0px 4px 8px 0px;
+    animation-duration: 0.3s;
+    animation-name: fadeIn;
+    animation-timing-function: linear;
+  }
+
+  .image {
+    height: 150px;
   }
 }

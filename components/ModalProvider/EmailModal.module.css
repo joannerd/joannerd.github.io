@@ -64,6 +64,7 @@
 
 .textarea {
   white-space: pre-wrap;
+  width: 460px;
 }
 
 .label {
@@ -168,4 +169,32 @@
 .closeContainer:focus-visible .rightLeft {
   transform: rotate(45deg);
   background-color: black;
+}
+
+
+@media (max-width: 600px) {
+  .modal {
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .input,
+  .textarea,
+  .label {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .submit {
+    font-size: 18px;
+  }
+
+  .closeContainer,
+  .leftRight,
+  .rightLeft {
+    width: 20px
+  }
 }

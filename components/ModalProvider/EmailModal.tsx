@@ -203,7 +203,6 @@ const EmailModal = (): JSX.Element => {
           aria-label="Message"
           placeholder="Message"
           rows={6}
-          cols={48}
           className={styles.textarea}
           onChange={(e: ChangeEvent<HTMLTextAreaElement>) => {
             setMessage(e.target.value);
