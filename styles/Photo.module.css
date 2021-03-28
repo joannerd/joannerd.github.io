@@ -13,20 +13,23 @@
   position: relative;
   margin: 0 24px 24px 0;
   width: 47%;
+  height: 250px;
   animation-duration: 0.3s;
   animation-name: fadeIn;
   animation-timing-function: linear;
 }
 
-.project:hover, .project:focus-visible {
+.image:hover,
+.image:focus-visible {
   transform: scale(1.02);
+  box-shadow: grey 0px 4px 8px 0px;
 }
 
 .image {
   width: 100%;
-  border-radius: 5px;
-  height: 250px;
+  height: 100%;
   object-fit: cover;
+  object-position: 100% 100%;
 }
 
 @media (max-width: 1060px) {
@@ -36,9 +39,6 @@
 
   .project {
     width: 100%;
-  }
-
-  .image {
-    height: unset;
+    height: 100%;
   }
 }

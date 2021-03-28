@@ -86,7 +86,7 @@ const Skills = (): JSX.Element => {
         className={styles.resume}
         onClick={viewResume}
       >
-        <i aria-hidden className="fas fa-file-download" />
+        <i className="fas fa-file-download" />
       </button>
     </article>
   );

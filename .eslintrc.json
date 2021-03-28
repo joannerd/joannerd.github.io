@@ -37,7 +37,9 @@
         "comma-dangle": "off",
         "implicit-arrow-linebreak": "off",
         "react/jsx-curly-newline": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }]
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }],
+        "jsx-a11y/label-has-associated-control": "off",
+        "jsx-a11y/tabindex-no-positive": "off"
     },
     "settings": {
         "import/resolver": {

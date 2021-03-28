@@ -3,7 +3,7 @@ on:
   pull_request:
     branches: [ staging ]
 jobs:
-  prettier:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -19,4 +19,5 @@ jobs:
       - name: Test build
         env:
           NEXT_PUBLIC_GA_TRACKING_ID: ${{ secrets.NEXT_PUBLIC_GA_TRACKING_ID }}
+          NEXT_PUBLIC_EMAIL_USER_ID: ${{ secrets.NEXT_PUBLIC_EMAIL_USER_ID }}
         run: yarn build

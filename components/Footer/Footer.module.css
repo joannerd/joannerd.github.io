@@ -1,6 +1,6 @@
 .footer,
 .hiddenFooter {
-  z-index: 2;
+  z-index: 1;
   position: fixed;
   line-height: 50px;
   bottom: 0;

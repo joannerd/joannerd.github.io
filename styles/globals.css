@@ -14,8 +14,10 @@ body {
   height: 50px;
   width: 50px;
   text-decoration: none;
-  box-sizing: border-box;
-  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 
 .fab:hover, .fa:hover, .fab:focus, .fa:focus, .fab:focus-visible, .fa:focus-visible {
@@ -46,13 +48,5 @@ body {
 }
 
 .fa-link {
-  color: grey;
-}
-
-.fa-external-link-alt {
-  font-size: 20px;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  margin-left: 10px;
+  color: rgb(255, 255, 255);
 }

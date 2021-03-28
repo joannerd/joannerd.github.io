@@ -21,7 +21,6 @@
   cursor: pointer;
   outline: none;
   color: #d7816a;
-  border-bottom: 3px solid black;
 }
 
 .activeButton {
