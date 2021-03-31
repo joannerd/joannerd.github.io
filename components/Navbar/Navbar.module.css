@@ -14,11 +14,11 @@
   border-bottom: 3px solid white;
   padding: 0px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .button:hover,
 .button:focus-visible {
-  cursor: pointer;
   outline: none;
   color: #d7816a;
 }

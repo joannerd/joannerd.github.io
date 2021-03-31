@@ -18,10 +18,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 30px;
+  cursor: pointer;
 }
 
 .fab:hover, .fa:hover, .fab:focus, .fa:focus, .fab:focus-visible, .fa:focus-visible {
-  cursor: pointer;
   transform: scale(1.1);
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.4);
