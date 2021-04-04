@@ -62,3 +62,9 @@ body {
 img {
   pointer-events: none;
 }
+
+@media (max-width: 920px) {
+  .fa-share-square {
+    display: none;
+  }
+}
