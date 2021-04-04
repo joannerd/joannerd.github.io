@@ -9,11 +9,14 @@ import { pageview } from '../lib/gtag';
 import { emailUserId } from '../lib/config';
 import styles from '../styles/App.module.css';
 import Navbar from '../components/Navbar';
-import SocialLinks from '../components/SocialLinks';
+import SocialLinks, { COLORS } from '../components/SocialLinks';
 import Footer from '../components/Footer';
+import Canvas from '../components/Canvas';
 import ModalProvider from '../components/ModalProvider';
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+  const [isColorSelected, setIsColorSelected] = useState<boolean>(false)
+  const [brushColor, setBrushColor] = useState<string>(COLORS.grey);
   const [hasScrolledToBottom, setHasScrolledToBottom] = useState<boolean>(
     false
   );
@@ -37,7 +40,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <meta charSet="utf-8" />
         <title>Joanna Chen - Software Engineer | Percussionist</title>
@@ -55,16 +58,32 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
       </Head>
-      <h1 className={styles.title}>Joanna Chen</h1>
-      <Navbar />
-      <main>
+      <div className={styles.background}>
         <ModalProvider>
-          <Component {...pageProps} />
-          <SocialLinks hasScrolledToBottom={hasScrolledToBottom} />
+          <Canvas
+            brushColor={brushColor}
+            isColorSelected={isColorSelected}
+            setIsColorSelected={setIsColorSelected}
+          />
+          <div className={styles.container}>
+            <h1 className={styles.title}>Joanna Chen</h1>
+            <Navbar />
+            <main>
+                <Component {...pageProps} />
+              <SocialLinks
+                hasScrolledToBottom={hasScrolledToBottom}
+                brushColor={brushColor}
+                setColor={(color: string) => {
+                  setBrushColor(color);
+                  setIsColorSelected(true);
+                }}
+              />
+            </main>
+            <Footer hasScrolledToBottom={hasScrolledToBottom} />
+          </div>
         </ModalProvider>
-      </main>
-      <Footer hasScrolledToBottom={hasScrolledToBottom} />
-    </div>
+      </div>
+    </>
   );
 };
 

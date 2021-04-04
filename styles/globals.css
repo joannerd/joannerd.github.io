@@ -21,7 +21,15 @@ body {
   cursor: pointer;
 }
 
-.fab:hover, .fa:hover, .fab:focus, .fa:focus, .fab:focus-visible, .fa:focus-visible {
+.fab:hover,
+.fa:hover,
+.fas:hover,
+.fab:focus,
+.fa:focus,
+.fas:focus,
+.fab:focus-visible,
+.fas:focus-visible,
+.fa:focus-visible {
   transform: scale(1.1);
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.4);
@@ -43,10 +51,14 @@ body {
   color: rgb(187, 132, 219);
 }
 
-.fa-envelope {
+.fa-envelope, .fa-share-square {
   color: #F0CF65
 }
 
 .fa-link {
   color: rgb(255, 255, 255);
+}
+
+img {
+  pointer-events: none;
 }
