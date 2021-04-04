@@ -21,37 +21,45 @@ interface Field {
   update: Dispatch<SetStateAction<string>>;
   placeholder: string;
   label: string;
-  isRequired: boolean;
   ref?: RefObject<HTMLInputElement>;
 }
 
-const EmailModal = (): JSX.Element => {
+interface Props {
+  title?: string;
+  messageTemplate?: string;
+  imageAttachment?: string;
+}
+
+const EmailModal = ({
+  title,
+  messageTemplate,
+  imageAttachment,
+}: Props): JSX.Element => {
   const nameRef = useRef<HTMLInputElement>() as RefObject<HTMLInputElement>;
   const closeRef = useRef<HTMLButtonElement>() as RefObject<HTMLButtonElement>;
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
-  const [message, setMessage] = useState<string>('');
+  const [message, setMessage] = useState<string>(messageTemplate || '');
   const [subject, setSubject] = useState<string>('');
   const [error, setError] = useState<string>('');
   const [shouldSendToSelf, setShouldSendToSelf] = useState<boolean>(false);
   const [isEmailSent, setIsEmailSent] = useState<boolean>(false);
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
-  const { isOpen, closeModal } = useModal();
+  const { closeModal } = useModal();
 
   useEffect(() => {
-    if (isOpen && nameRef && nameRef.current) {
+    if (nameRef && nameRef.current) {
       nameRef.current.focus();
     }
-  }, [isOpen, nameRef]);
+  }, [nameRef]);
 
-  const fields: Field[] = [
+  const halfFields: Field[] = [
     {
       type: 'text',
       value: name,
       update: setName,
       placeholder: 'Name',
       label: 'Full Name Required',
-      isRequired: true,
       ref: nameRef,
     },
     {
@@ -60,15 +68,6 @@ const EmailModal = (): JSX.Element => {
       update: setEmail,
       placeholder: 'Email Address',
       label: 'Email Address Required',
-      isRequired: true,
-    },
-    {
-      type: 'text',
-      value: subject,
-      update: setSubject,
-      placeholder: 'Subject (Optional)',
-      label: 'Subject',
-      isRequired: false,
     },
   ];
 
@@ -114,6 +113,9 @@ const EmailModal = (): JSX.Element => {
       name,
       email,
       subject,
+      image: imageAttachment
+        ? `<img src="${imageAttachment}" width="300px" />`
+        : '',
       message: message.replace(/\r\n|\r|\n/g, '<br>'),
       from_email: shouldSendToSelf ? email : '',
     };
@@ -144,24 +146,14 @@ const EmailModal = (): JSX.Element => {
   };
 
   const modalContent = isEmailSent ? (
-    <article
-      role="dialog"
-      aria-modal="true"
-      aria-hidden={!isOpen}
-      className={styles.success}
-    >
+    <article role="dialog" aria-modal="true" className={styles.success}>
       <i className="fas fa-check-circle" />
       <span>Your message has been sent.</span>
     </article>
   ) : (
-    <article
-      role="dialog"
-      aria-modal="true"
-      aria-hidden={!isOpen}
-      className={styles.modal}
-    >
+    <article role="dialog" aria-modal="true" className={styles.modal}>
       <section className={styles.modalTop}>
-        <h1 className={styles.title}>Contact</h1>
+        <h1 className={styles.title}>{title}</h1>
         <button
           ref={closeRef}
           tabIndex={2}
@@ -175,25 +167,49 @@ const EmailModal = (): JSX.Element => {
         </button>
       </section>
       <form className={styles.form} onSubmit={sendEmail}>
-        {fields.map(
-          ({ update, value, label, placeholder, type, isRequired, ref }) => (
-            <input
-              tabIndex={2}
-              ref={ref}
-              required={isRequired}
-              aria-required={isRequired}
-              type={type}
-              value={value}
-              key={placeholder}
-              aria-label={label}
-              placeholder={placeholder}
-              className={styles.input}
-              onChange={(e: ChangeEvent<HTMLInputElement>) => {
-                setError('');
-                update(e.target.value);
-              }}
-            />
-          )
+        <div
+          className={imageAttachment ? styles.halfInputs : styles.fullInputs}
+        >
+          {halfFields.map(
+            ({ update, value, label, placeholder, type, ref }) => (
+              <input
+                tabIndex={2}
+                ref={ref}
+                required
+                aria-required
+                type={type}
+                value={value}
+                key={placeholder}
+                aria-label={label}
+                placeholder={placeholder}
+                className={styles.input}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                  setError('');
+                  update(e.target.value);
+                }}
+              />
+            )
+          )}
+        </div>
+        <input
+          tabIndex={2}
+          type="text"
+          value={subject}
+          key="Subject"
+          aria-label="Subject"
+          placeholder="Subject (Optional)"
+          className={styles.input}
+          onChange={(e: ChangeEvent<HTMLInputElement>) => {
+            setError('');
+            setSubject(e.target.value);
+          }}
+        />
+        {imageAttachment && (
+          <img
+            src={imageAttachment}
+            className={styles.previewImage}
+            alt="Doodle email preview"
+          />
         )}
         <textarea
           tabIndex={2}
@@ -234,13 +250,19 @@ const EmailModal = (): JSX.Element => {
   return (
     <div
       aria-hidden
-      className={isOpen ? styles.background : styles.hidden}
+      className={styles.background}
       onClick={handleBackgroundClick}
       onKeyDown={handleModalKeydown}
     >
       {modalContent}
     </div>
   );
+};
+
+EmailModal.defaultProps = {
+  title: 'Contact',
+  messageTemplate: '',
+  imageAttachment: '',
 };
 
 export default EmailModal;

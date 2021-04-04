@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import styles from '../styles/Code.module.css';
 import * as gtag from '../lib/gtag';
 
@@ -138,22 +137,13 @@ const Project = ({
 );
 
 const ProjectsList = (): JSX.Element => {
-  const [isSafari, setIsSafari] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const isBrowserSafari = window.navigator.userAgent.toLowerCase().includes('safari');
-      setIsSafari(isBrowserSafari);
-    }
-  }, []);
-
   return (
-    <article className={isSafari ? styles.safariProjects : styles.projects}>
+    <article className={styles.projects}>
       {projects.map((project) => (
         <Project {...project} key={project.id} />
       ))}
     </article>
   );
-  };
+};
 
 export default ProjectsList;

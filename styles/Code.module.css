@@ -29,29 +29,6 @@
   object-position: 50% 0%;
 }
 
-.content {
-  display: none;
-}
-
-.project:hover .content,
-.project:focus-visible .content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 250px;
-  color: white;
-  background: rgba(0, 0, 0, 0.8);
-  box-shadow: grey 0px 4px 8px 0px;
-  animation-duration: 0.3s;
-  animation-name: fadeIn;
-  animation-timing-function: linear;
-}
-
 .info {
   margin-top: 16px;
   display: flex;
@@ -63,13 +40,7 @@
   margin-bottom: 16px;
 }
 
-.safariProjects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.safariProjects .content {
+.content {
   position: absolute;
   top: 0;
   left: 0;
@@ -119,29 +90,7 @@
     display: flex;
   }
 
-  .safariContent {
-    height: 150px;
-  }
-
-  .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
-    color: white;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: grey 0px 4px 8px 0px;
-    animation-duration: 0.3s;
-    animation-name: fadeIn;
-    animation-timing-function: linear;
-  }
-
-  .image {
+  .image, .content {
     height: 150px;
   }
 }

@@ -1,0 +1,24 @@
+.canvas,
+.canvasBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas {
+  z-index: 2;
+  cursor: crosshair;
+}
+
+.canvasBackground {
+  z-index: -1;
+}
+
+@media (max-width: 920px) {
+  .canvas,
+  .canvasBackground {
+    display: none;
+  }
+}

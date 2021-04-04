@@ -11,10 +11,6 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.hidden {
-  display: none;
-}
-
 .modal {
   padding: 48px;
   border-radius: 5px;
@@ -54,17 +50,38 @@
   align-items: center;
 }
 
-.input,
+.input {
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 12px;
+  border: 2px solid #f2f2f2;
+}
+
+.halfInputs .input {
+  width: 50%;
+}
+
+.fullInputs {
+  display: flex;
+  flex-direction: column;
+}
+
 .textarea {
   border-radius: 3px;
   font-size: 16px;
   margin-bottom: 12px;
   padding: 12px;
-}
-
-.textarea {
   white-space: pre-wrap;
   width: 460px;
+  border: 2px solid #f2f2f2;
+}
+
+.previewImage {
+  height: 250px;
+  width: auto;
+  z-index: 2;
+  background: white;
+  border: 2px solid #f2f2f2;
 }
 
 .label {
@@ -101,6 +118,7 @@
   background: #f1c021;
   font-weight: bold;
   letter-spacing: -0.03em;
+  border: 2px solid #f2f2f2;
 }
 
 .error {
@@ -111,13 +129,6 @@
 
 .submitWithError {
   margin-top: 16px;
-}
-
-.input,
-.textarea,
-.submit,
-.submitWithError {
-  border: 2px solid #f2f2f2;
 }
 
 .input:focus,
@@ -171,7 +182,6 @@
   background-color: black;
 }
 
-
 @media (max-width: 600px) {
   .modal {
     padding: 24px;
@@ -195,6 +205,6 @@
   .closeContainer,
   .leftRight,
   .rightLeft {
-    width: 20px
+    width: 20px;
   }
 }
