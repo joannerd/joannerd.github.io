@@ -14,7 +14,7 @@ import useScrollLock from '../../lib/hooks';
 export interface ModalContextValue {
   modalType: string;
   imageUrl: string;
-  openModal: (type: string) => void;
+  openModal: (type: string) => void; // eslint-disable-line no-unused-vars
   closeModal: () => void;
   setImageUrl: Dispatch<SetStateAction<string>>;
 }
@@ -44,13 +44,16 @@ const ModalProvider = ({ children }: { children: ReactNode }): JSX.Element => {
   const closeModal = () => setModalType(MODAL_TYPES.HIDDEN);
   useScrollLock(modalType !== MODAL_TYPES.HIDDEN);
 
-  const value = useMemo(() => ({
-    imageUrl,
-    modalType,
-    openModal,
-    closeModal,
-    setImageUrl,
-  }), [modalType, imageUrl]);
+  const value = useMemo(
+    () => ({
+      imageUrl,
+      modalType,
+      openModal,
+      closeModal,
+      setImageUrl,
+    }),
+    [modalType, imageUrl]
+  );
 
   const renderModal = () => {
     switch (modalType) {
@@ -61,7 +64,7 @@ const ModalProvider = ({ children }: { children: ReactNode }): JSX.Element => {
       default:
         return null;
     }
-  }
+  };
 
   return (
     <ModalContext.Provider value={value}>

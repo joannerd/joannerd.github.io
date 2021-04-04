@@ -17,15 +17,7 @@ interface Props {
 const Canvas = ({ brushColor, isColorSelected, setIsColorSelected }: Props) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const contextRef = useRef<CanvasRenderingContext2D | null>(null);
-  const [isDrawing, setIsDrawing] = useState<boolean>(false)
-
-  useEffect(() => {
-    prepareCanvas();
-  }, []);
-
-  useEffect(() => {
-    (contextRef.current as CanvasRenderingContext2D).strokeStyle = brushColor;
-  }, [brushColor]);
+  const [isDrawing, setIsDrawing] = useState<boolean>(false);
 
   const prepareCanvas = () => {
     const canvas = canvasRef.current as HTMLCanvasElement;
@@ -65,6 +57,14 @@ const Canvas = ({ brushColor, isColorSelected, setIsColorSelected }: Props) => {
     context.lineTo(offsetX, offsetY);
     context.stroke();
   };
+
+  useEffect(() => {
+    prepareCanvas();
+  }, []);
+
+  useEffect(() => {
+    (contextRef.current as CanvasRenderingContext2D).strokeStyle = brushColor;
+  }, [brushColor]);
 
   return (
     <canvas

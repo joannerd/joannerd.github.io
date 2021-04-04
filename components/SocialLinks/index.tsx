@@ -9,7 +9,7 @@ import initializeFirebase from '../../lib/firebase';
 interface Props {
   hasScrolledToBottom: boolean;
   brushColor: string;
-  setColor: (color: string) => void;
+  setColor: (color: string) => void; // eslint-disable-line no-unused-vars
 }
 
 interface Colors {
@@ -89,7 +89,6 @@ const SocialLinks = ({
     });
   };
 
-
   return (
     <section
       className={hasScrolledToBottom ? styles.hiddenLinks : styles.links}
@@ -128,19 +127,28 @@ const SocialLinks = ({
         </a>
       ))}
       <section className={styles.paintBucketSection}>
-        <i className="fas fa-palette" style={{ color: brushColor }}/>
+        <i className="fas fa-palette" style={{ color: brushColor }} />
         <article className={styles.paintBucket}>
-          {Object.values(COLORS).map((color) => (
+          {Object.keys(COLORS).map((colorName) => (
             <div
-              key={color}
+              key={colorName}
               role="button"
+              tabIndex={1}
               className={styles.color}
-              style={{ backgroundColor: color }}
-              onClick={() => setColor(color)}
+              aria-label={`Change paintbrush color to ${colorName}`}
+              style={{ backgroundColor: COLORS[colorName] }}
+              onClick={() => setColor(COLORS[colorName])}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  setColor(COLORS[colorName]);
+                }
+              }}
             />
           ))}
         </article>
-        <h1 className={styles.paintBucketText}>Select a color to start drawing!</h1>
+        <h1 className={styles.paintBucketText}>
+          Select a color to start drawing!
+        </h1>
       </section>
       <i
         className="fas fa-share-square"

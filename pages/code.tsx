@@ -144,6 +144,6 @@ const ProjectsList = (): JSX.Element => {
       ))}
     </article>
   );
-  };
+};
 
 export default ProjectsList;

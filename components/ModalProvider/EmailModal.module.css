@@ -182,7 +182,6 @@
   background-color: black;
 }
 
-
 @media (max-width: 600px) {
   .modal {
     padding: 24px;
@@ -206,6 +205,6 @@
   .closeContainer,
   .leftRight,
   .rightLeft {
-    width: 20px
+    width: 20px;
   }
 }

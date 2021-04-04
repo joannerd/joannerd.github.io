@@ -15,7 +15,7 @@ import Canvas from '../components/Canvas';
 import ModalProvider from '../components/ModalProvider';
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
-  const [isColorSelected, setIsColorSelected] = useState<boolean>(false)
+  const [isColorSelected, setIsColorSelected] = useState<boolean>(false);
   const [brushColor, setBrushColor] = useState<string>(COLORS.grey);
   const [hasScrolledToBottom, setHasScrolledToBottom] = useState<boolean>(
     false
@@ -69,7 +69,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
             <h1 className={styles.title}>Joanna Chen</h1>
             <Navbar />
             <main>
-                <Component {...pageProps} />
+              <Component {...pageProps} />
               <SocialLinks
                 hasScrolledToBottom={hasScrolledToBottom}
                 brushColor={brushColor}

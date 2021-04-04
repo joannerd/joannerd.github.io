@@ -25,17 +25,21 @@ interface Field {
 }
 
 interface Props {
-  title: string;
-  messageTemplate: string;
-  imageAttachment: string;
+  title?: string;
+  messageTemplate?: string;
+  imageAttachment?: string;
 }
 
-const EmailModal = ({ title, messageTemplate, imageAttachment }: Props): JSX.Element => {
+const EmailModal = ({
+  title,
+  messageTemplate,
+  imageAttachment,
+}: Props): JSX.Element => {
   const nameRef = useRef<HTMLInputElement>() as RefObject<HTMLInputElement>;
   const closeRef = useRef<HTMLButtonElement>() as RefObject<HTMLButtonElement>;
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
-  const [message, setMessage] = useState<string>(messageTemplate);
+  const [message, setMessage] = useState<string>(messageTemplate || '');
   const [subject, setSubject] = useState<string>('');
   const [error, setError] = useState<string>('');
   const [shouldSendToSelf, setShouldSendToSelf] = useState<boolean>(false);
@@ -109,7 +113,9 @@ const EmailModal = ({ title, messageTemplate, imageAttachment }: Props): JSX.Ele
       name,
       email,
       subject,
-      image: `<img src="${imageAttachment}" width="300px" />`,
+      image: imageAttachment
+        ? `<img src="${imageAttachment}" width="300px" />`
+        : '',
       message: message.replace(/\r\n|\r|\n/g, '<br>'),
       from_email: shouldSendToSelf ? email : '',
     };
@@ -140,20 +146,12 @@ const EmailModal = ({ title, messageTemplate, imageAttachment }: Props): JSX.Ele
   };
 
   const modalContent = isEmailSent ? (
-    <article
-      role="dialog"
-      aria-modal="true"
-      className={styles.success}
-    >
+    <article role="dialog" aria-modal="true" className={styles.success}>
       <i className="fas fa-check-circle" />
       <span>Your message has been sent.</span>
     </article>
   ) : (
-    <article
-      role="dialog"
-      aria-modal="true"
-      className={styles.modal}
-    >
+    <article role="dialog" aria-modal="true" className={styles.modal}>
       <section className={styles.modalTop}>
         <h1 className={styles.title}>{title}</h1>
         <button
@@ -169,7 +167,9 @@ const EmailModal = ({ title, messageTemplate, imageAttachment }: Props): JSX.Ele
         </button>
       </section>
       <form className={styles.form} onSubmit={sendEmail}>
-        <div className={imageAttachment ? styles.halfInputs : styles.fullInputs}>
+        <div
+          className={imageAttachment ? styles.halfInputs : styles.fullInputs}
+        >
           {halfFields.map(
             ({ update, value, label, placeholder, type, ref }) => (
               <input
@@ -204,7 +204,13 @@ const EmailModal = ({ title, messageTemplate, imageAttachment }: Props): JSX.Ele
             setSubject(e.target.value);
           }}
         />
-        {imageAttachment && <img src={imageAttachment} className={styles.previewImage} />}
+        {imageAttachment && (
+          <img
+            src={imageAttachment}
+            className={styles.previewImage}
+            alt="Doodle email preview"
+          />
+        )}
         <textarea
           tabIndex={2}
           required
