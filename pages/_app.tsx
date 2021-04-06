@@ -11,7 +11,7 @@ import styles from '../styles/App.module.css';
 import Navbar from '../components/Navbar';
 import SocialLinks, { COLORS } from '../components/SocialLinks';
 import Footer from '../components/Footer';
-import Canvas from '../components/Canvas';
+// import Canvas from '../components/Canvas';
 import ModalProvider from '../components/ModalProvider';
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
@@ -58,13 +58,13 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
         />
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
       </Head>
-      <div className={styles.background}>
+      {/* <div className={styles.background}> */}
         <ModalProvider>
-          <Canvas
+          {/* <Canvas
             brushColor={brushColor}
             isColorSelected={isColorSelected}
             setIsColorSelected={setIsColorSelected}
-          />
+          /> */}
           <div className={styles.container}>
             <h1 className={styles.title}>Joanna Chen</h1>
             <Navbar />
@@ -82,7 +82,7 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
             <Footer hasScrolledToBottom={hasScrolledToBottom} />
           </div>
         </ModalProvider>
-      </div>
+      {/* </div> */}
     </>
   );
 };

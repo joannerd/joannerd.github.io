@@ -30,21 +30,21 @@ const links = [
     label: 'Open https://github.com/joannerd',
     className: 'fab fa-github',
   },
-  {
-    href: 'https://medium.com/@joannerd',
-    label: 'Open https://medium.com/@joannerd',
-    className: 'fab fa-medium',
-  },
+  // {
+  //   href: 'https://medium.com/@joannerd',
+  //   label: 'Open https://medium.com/@joannerd',
+  //   className: 'fab fa-medium',
+  // },
   {
     href: 'https://www.linkedin.com/in/joannerd/',
     label: 'Open https://www.linkedin.com/in/joannerd/',
     className: 'fab fa-linkedin',
   },
-  {
-    href: 'https://angel.co/joannerd',
-    label: 'Open https://angel.co/joannerd',
-    className: 'fab fa-angellist',
-  },
+  // {
+  //   href: 'https://angel.co/joannerd',
+  //   label: 'Open https://angel.co/joannerd',
+  //   className: 'fab fa-angellist',
+  // },
 ];
 
 const SocialLinks = ({
@@ -126,8 +126,8 @@ const SocialLinks = ({
           {null}
         </a>
       ))}
-      <section className={styles.paintBucketSection}>
-        <i className="fas fa-palette" style={{ color: brushColor }} />
+      {/* <section className={styles.paintBucketSection}>
+        <i tabIndex={1} className="fas fa-palette" style={{ color: brushColor }} />
         <article className={styles.paintBucket}>
           {Object.keys(COLORS).map((colorName) => (
             <div
@@ -162,7 +162,7 @@ const SocialLinks = ({
         tabIndex={1}
         key="Email drawing"
         aria-label="Email drawing"
-      />
+      /> */}
     </section>
   );
 };

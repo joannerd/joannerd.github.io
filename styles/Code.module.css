@@ -68,8 +68,7 @@
   }
 
   .image,
-  .project:hover .content,
-  .project:focus-visible .content {
+  .content {
     height: 100%;
   }
 }
@@ -88,9 +87,5 @@
   .info {
     margin-top: 0;
     display: flex;
-  }
-
-  .image, .content {
-    height: 150px;
   }
 }

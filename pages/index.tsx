@@ -30,7 +30,7 @@ const Profile = (): JSX.Element => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          blockchain DApps
+          blockchain dApps
         </a>
         ! As a former concert producer, she has an eye for elegant and
         functional design as well as a knack for clear and effective
