@@ -91,7 +91,7 @@ const SocialLinks = ({
     <section
       className={hasScrolledToBottom ? styles.hiddenLinks : styles.links}
     >
-      <span role="button" tabIndex={0} className={styles.icon}>
+      <span role="button" tabIndex={0} className={styles.icon} aria-label="Email Joanna">
         <i
           onClick={sendEmailGaEvent}
           role="button"
@@ -100,14 +100,14 @@ const SocialLinks = ({
               sendEmailGaEvent();
             }
           }}
-          key="Email Joanna at joannerdchen@gmail.com"
-          aria-label="Email Joanna at joannerdchen@gmail.com"
+          key="Email Joanna"
+          aria-label="Email Joanna"
           className="fa fa-envelope"
         />
         <span className={styles.tooltip}>Email</span>
       </span>
       {links.map(({ href, label, className }) => (
-        <span role="button" key={href} className={styles.icon}>
+        <span role="button" key={href} className={styles.icon} aria-label={label}>
           <a
             onClick={() =>
               gtag.event({
@@ -117,12 +117,13 @@ const SocialLinks = ({
                 value: 1,
               })
             }
+            aria-hidden="false"
             href={href}
             aria-label={label}
-            className={className}
             target="_blank"
             rel="noopener noreferrer"
           >
+            <i className={className} />
             {null}
           </a>
           <span className={styles.tooltip}>{label}</span>

@@ -61,12 +61,12 @@
   margin: 18px 0 12px;
 }
 
-.jobTitle {
+.subtitle {
   font-size: 20px;
 }
 
-.dates {
-  color: rgb(189, 189, 189);
+.dates, .technologies {
+  color: rgb(88, 88, 88);
 }
 
 .bullets {
@@ -100,5 +100,16 @@
 
   .resume {
     margin-top: 16px;
+  }
+
+  .resume:hover .tooltip,
+  .resume:focus-visible .tooltip {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .technologies {
+    display: none;
   }
 }

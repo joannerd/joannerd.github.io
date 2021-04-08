@@ -229,7 +229,7 @@ const musicEvents = [
 const MusicEvents = (): JSX.Element => (
   <ul className={styles.events}>
     {musicEvents.map(({ year, events }) => (
-      <div className={styles.event} key={year}>
+      <li className={styles.event} key={year}>
         <h3 className={styles.subtitle}>{year}</h3>
         {events.map(({ name, location, shortName }) => (
           <span key={name} className={styles.info}>
@@ -238,7 +238,7 @@ const MusicEvents = (): JSX.Element => (
             <p className={styles.location}>{location}</p>
           </span>
         ))}
-      </div>
+      </li>
     ))}
   </ul>
 );
@@ -263,6 +263,7 @@ const MusicRecordings = (): JSX.Element => (
             ? `https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${id}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`
             : `https://www.youtube.com/embed/${id}`
         }
+        role="listitem"
       />
     ))}
   </ul>

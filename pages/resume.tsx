@@ -108,15 +108,15 @@ const Resume = (): JSX.Element => {
   return (
     <article>
       <Title pageTitle="Resume | Joanna Chen" />
-      <h3 className={styles.title}>Experience</h3>
+      <h2 className={styles.title}>Experience</h2>
       <ul>
         {experiences.map(({ company, dates, jobs }) => (
-          <div className={styles.experience} key={company}>
+          <li className={styles.experience} key={company}>
             <h3 className={styles.company}>{company}</h3>
             {jobs.map(({ title, dates, bullets }) => (
               <div key={title}>
                 <span className={styles.info}>
-                  <h4 className={styles.jobTitle}>{title}</h4>
+                  <h4 className={styles.subtitle}>{title}</h4>
                   <p className={styles.dates}>{dates}</p>
                 </span>
                 <ul className={styles.bullets}>
@@ -128,16 +128,16 @@ const Resume = (): JSX.Element => {
                 </ul>
               </div>
             ))}
-          </div>
+          </li>
         ))}
       </ul>
-      <h3 className={styles.title}>Projects</h3>
+      <h2 className={styles.title}>Projects</h2>
       <ul>
         {projects.map(({ title, technologies, description, bullets }) => (
-          <div className={styles.experience} key={title}>
+          <li className={styles.experience} key={title}>
             <span className={styles.info}>
-              <h3 className={styles.jobTitle}>{title}</h3>
-              <p className={styles.dates}>{technologies}</p>
+              <h3 className={styles.subtitle}>{title}</h3>
+              <p className={styles.technologies}>{technologies}</p>
             </span>
             <ul className={styles.bullets}>
               <li key="description">
@@ -149,19 +149,19 @@ const Resume = (): JSX.Element => {
                 </li>
               ))}
             </ul>
-          </div>
+          </li>
         ))}
       </ul>
-      <h3 className={styles.title}>Education</h3>
+      <h2 className={styles.title}>Education</h2>
       <ul>
         {education.map(({ school, description, dates }) => (
-          <div className={styles.experience} key={school}>
+          <li className={styles.experience} key={school}>
             <span className={styles.info}>
-              <h3 className={styles.jobTitle}>{school}</h3>
+              <h3 className={styles.subtitle}>{school}</h3>
               <p className={styles.dates}>{dates}</p>
             </span>
             <p>{description}</p>
-          </div>
+          </li>
         ))}
       </ul>
       <button

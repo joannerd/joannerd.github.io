@@ -30,7 +30,7 @@ const photos = [
 ];
 
 const Photo = (): JSX.Element => (
-  <ul className={styles.projects}>
+  <article className={styles.projects}>
     <Title pageTitle="Photography | Joanna Chen" />
     {photos.map(({ link, id }) => (
       <a
@@ -52,7 +52,7 @@ const Photo = (): JSX.Element => (
         <img className={styles.image} src={link} alt={link} />
       </a>
     ))}
-  </ul>
+  </article>
 );
 
 export default Photo;

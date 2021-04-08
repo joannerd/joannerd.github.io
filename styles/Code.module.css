@@ -58,6 +58,10 @@
   animation-timing-function: linear;
 }
 
+.icon {
+  text-decoration: none;
+}
+
 @media (max-width: 1060px) {
   .projects {
     margin-right: 30px;

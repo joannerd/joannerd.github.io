@@ -86,10 +86,11 @@ const LiveLink = ({
     }
     href={live}
     aria-label={title}
-    className="fa fa-link"
+    className={styles.icon}
     target="_blank"
     rel="noopener noreferrer"
   >
+    <i className="fa fa-link" />
     {null}
   </a>
 );
@@ -109,10 +110,12 @@ const GitHubLink = ({
     }
     href={github}
     aria-label={`${title} GitHub`}
-    className="fab fa-github"
+    className={styles.icon}
+    
     target="_blank"
     rel="noopener noreferrer"
   >
+    <i className="fab fa-github" />
     {null}
   </a>
 );

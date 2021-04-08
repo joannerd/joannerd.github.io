@@ -11,10 +11,15 @@
   border-radius: 5px;
   text-align: center;
   background: white;
+  z-index: 1;
 }
 
 .icon {
   position: relative;
+}
+
+.icon a {
+  text-decoration: none;
 }
 
 .tooltip {
@@ -92,6 +97,10 @@
 
   .hiddenLinks {
     opacity: 0;
+  }
+
+  .icon:hover .tooltip {
+    display: none;
   }
 }
 

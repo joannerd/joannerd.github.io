@@ -9,7 +9,7 @@
 .nav::before {
   content: "";
   position: absolute;
-  width: 1000px;
+  width: calc(100% + 20px);
   height: calc(100% + 40px);
   bottom: 0;
   left: -20px;
