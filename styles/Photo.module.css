@@ -19,8 +19,8 @@
   animation-timing-function: linear;
 }
 
-.image:hover,
-.image:focus-visible {
+.project:hover .image,
+.project:focus-visible .image {
   transform: scale(1.02);
   box-shadow: grey 0px 4px 8px 0px;
 }

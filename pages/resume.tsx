@@ -1,60 +1,98 @@
+import Title from '../components/Title';
 import styles from '../styles/Resume.module.css';
 import * as gtag from '../lib/gtag';
 
-const skills = [
+const experiences = [
   {
-    title: 'Experience',
-    list: [
-      'Software Engineer',
-      'App Academy Instructor',
-      'Curriculum Developer',
-      'Technical Interviewer',
-      'Production Manager',
-      'AV Technician',
+    company: 'Metallicus Inc.',
+    dates: 'Oct 2020 - present',
+    jobs: [
+      {
+        title: 'Software Engineer',
+        dates: 'Oct 2020 - present',
+        bullets: [
+          'Built 7 greenfield dApps, an internal dashboard, and a web SDK as a core member of the Proton team',
+          'Drove the adoption of TypeScript, Next.js, React hooks, and accessibility testing and spearheaded team group learning to inspire engineering growth (topics: EOSIO blockchain, web accessibility)',
+          'Exhibited leadership by communicating with other teams to resolve prod issues while manager was away',
+          `Mentored intern through educational calls and thorough code-reviews (received public feedback for being a “great teacher who inspires them to be a better programmer”)`,
+          'Hosted a game night to help HR promote collaboration, bonding, and cross-departmental communication',
+        ],
+      },
     ],
   },
   {
-    title: 'Languages',
-    list: [
-      'TypeScript',
-      'JavaScript',
-      'Python',
-      'Ruby',
-      'C#',
-      'SQL',
-      'CSS3',
-      'HTML5',
-    ],
-  },
-  {
-    title: 'Frameworks',
-    list: [
-      'React',
-      'Flask',
-      'Gatsby',
-      'Next.js',
-      'Node.js',
-      '.NET Core',
-      'Express.js',
-      'Ruby on Rails',
-    ],
-  },
-  {
-    title: 'Tools',
-    list: [
-      'Git',
-      'Jira',
-      'Zeplin',
-      'Docker',
-      'GraphQL',
-      'MongoDB',
-      'PostgreSQL',
-      'Google Cloud',
+    company: 'App Academy',
+    dates: 'March 2020 - Oct 2020',
+    jobs: [
+      {
+        title: 'Software Engineer Intern',
+        dates: 'June 2020 - Sep 2020',
+        bullets: [
+          'Architected frontend for learning management system with modern tech (TypeScript, React, Material-UI)',
+          'Developed API endpoints in C# following test-driven development (.NET Core, CQRS)',
+          'Contributed to domain-model planning to solidify domain-driven-design before app development',
+        ],
+      },
+      {
+        title: 'Curriculum Developer',
+        dates: 'March 2020 - Oct 2020',
+        bullets: [
+          'Rapidly researched and taught React, Node.js, Flask, and OOP with educational projects and tutorials',
+          'Launched new React, Redux, and Hooks curriculum and managed team of senior developer contractors',
+          'Presented lectures on React lifecycle methods, React hooks, frontend state management, and user auth',
+        ],
+      },
     ],
   },
 ];
 
-const Skills = (): JSX.Element => {
+const projects = [
+  {
+    title: 'SCMIAC',
+    technologies: 'Next.js, React (TypeScript), Google Drive API (Python, Node.js)',
+    description: 'Built for Southern California Marimba’s 2021 International Artist Competition to streamline anonymous applicant material navigation in the judging process of 200 preliminary round participants',
+    bullets: [
+      'Single-handedly designed, developed, and tested an intuitive web app to easily listen to an anonymous applicant’s MP3 files while reviewing their PDF sheet music',
+      'Developed Python script as proof of concept to bulk-anonymize applicant files with Google Drive API',
+      'Used Node.js Google Drive API in server-side Next.js code to fetch real-time Google Form updates',
+      'Implemented light-weight data processing to extract and organize data from Google Spreadsheets',
+    ],
+  },
+  {
+    title: 'Synewaveshi',
+    technologies: 'Express.js, React, Web Speech API, Socket.io, Tone.js',
+    description: 'Pet project to explore voice-controlled music generation and co-creation of sounds via web browser',
+    bullets: [
+      'Set up WebSocket connection for users to co-create musical tones with real-time voice input',
+      'Managed chat history storage with linked list for organized WebSocket interaction in the backend API',
+    ],
+  },
+  {
+    title: 'Brewer',
+    technologies: 'Ruby on Rails, PostgreSQL, React/Redux, Mapbox API, Yelp REST API',
+    description: 'Full-stack content platform that connects craft beer enthusiasts through a forum and top brewery travel guides',
+    bullets: [
+      'Autonomously developed and designed the database schema, web API, and frontend application',
+      'Utilized AWS S3 and Rails Active Storage to reduce server load and allow app to scale',
+    ],
+  },
+];
+
+
+const education = [
+  {
+    school: 'App Academy',
+    description: 'Software development intensive (Ruby, JavaScript, SQL)',
+    dates: 'Aug 2019 - Dec 2019',
+  },
+  {
+    school: 'Boston Conservatory at Berklee',
+    description: 'Bachelor of Music: Percussion (3.87 GPA)',
+    dates: 'Aug 2014 - May 2018',
+  },
+];
+
+const Resume = (): JSX.Element => {
   const viewResume = () => {
     gtag.event({
       action: 'view_resume',
@@ -69,16 +107,63 @@ const Skills = (): JSX.Element => {
 
   return (
     <article>
-      <div className={styles.skills}>
-        {skills.map(({ title, list }) => (
-          <ul key={title}>
-            <h3 className={styles.title}>{title}</h3>
-            {list.map((item) => (
-              <li key={item}>{item}</li>
+      <Title pageTitle="Resume | Joanna Chen" />
+      <h3 className={styles.title}>Experience</h3>
+      <ul>
+        {experiences.map(({ company, dates, jobs }) => (
+          <div className={styles.experience} key={company}>
+            <h3 className={styles.company}>{company}</h3>
+            {jobs.map(({ title, dates, bullets }) => (
+              <div key={title}>
+                <span className={styles.info}>
+                  <h4 className={styles.jobTitle}>{title}</h4>
+                  <p className={styles.dates}>{dates}</p>
+                </span>
+                <ul className={styles.bullets}>
+                  {bullets.map((bullet, i) => (
+                    <li key={i}>
+                      <p className={styles.bullet}>{bullet}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         ))}
-      </div>
+      </ul>
+      <h3 className={styles.title}>Projects</h3>
+      <ul>
+        {projects.map(({ title, technologies, description, bullets }) => (
+          <div className={styles.experience} key={title}>
+            <span className={styles.info}>
+              <h3 className={styles.jobTitle}>{title}</h3>
+              <p className={styles.dates}>{technologies}</p>
+            </span>
+            <ul className={styles.bullets}>
+              <li key="description">
+                <p className={styles.bullet}>{description}</p>
+              </li>
+              {bullets.map((bullet, i) => (
+                <li key={i}>
+                  <p className={styles.bullet}>{bullet}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </ul>
+      <h3 className={styles.title}>Education</h3>
+      <ul>
+        {education.map(({ school, description, dates }) => (
+          <div className={styles.experience} key={school}>
+            <span className={styles.info}>
+              <h3 className={styles.jobTitle}>{school}</h3>
+              <p className={styles.dates}>{dates}</p>
+            </span>
+            <p>{description}</p>
+          </div>
+        ))}
+      </ul>
       <button
         role="link"
         type="button"
@@ -87,9 +172,10 @@ const Skills = (): JSX.Element => {
         onClick={viewResume}
       >
         <i className="fas fa-file-download" />
+        <span className={styles.tooltip}>Download resume</span>
       </button>
     </article>
   );
 };
 
-export default Skills;
+export default Resume;

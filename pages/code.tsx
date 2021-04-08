@@ -1,3 +1,4 @@
+import Title from '../components/Title';
 import styles from '../styles/Code.module.css';
 import * as gtag from '../lib/gtag';
 
@@ -139,6 +140,7 @@ const Project = ({
 const ProjectsList = (): JSX.Element => {
   return (
     <article className={styles.projects}>
+      <Title pageTitle="Code | Joanna Chen" />
       {projects.map((project) => (
         <Project {...project} key={project.id} />
       ))}

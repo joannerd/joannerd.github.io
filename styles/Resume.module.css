@@ -18,13 +18,67 @@
   background: none;
   cursor: pointer;
   padding: 0;
+  position: relative;
 }
 
-.resume:hover *,
-.resume:focus-visible * {
+.tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  left: 72px;
+  color: grey;
+  background: rgba(130, 130, 130, 0.105);
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: none;
+}
+
+.resume:hover i,
+.resume:focus-visible i {
   transform: scale(1.1);
   border-radius: 100%;
   background: rgba(130, 130, 130, 0.105);
+}
+
+.resume:hover .tooltip,
+.resume:focus-visible .tooltip {
+  display: inline-block;
+}
+
+.experience {
+  margin-bottom: 3%;
+}
+
+.company {
+  font-size: 24px;
+  margin: 24px 0 12px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 18px 0 12px;
+}
+
+.jobTitle {
+  font-size: 20px;
+}
+
+.dates {
+  color: rgb(189, 189, 189);
+}
+
+.bullets {
+  list-style: square;
+  margin-left: 30px;
+  max-width: 780px;
+}
+
+.bullet {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 6px;
 }
 
 @media (max-width: 920px) {

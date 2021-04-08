@@ -1,7 +1,26 @@
 .nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+  background: white;
+  z-index: 1;
+}
+
+.nav::before {
+  content: "";
+  position: absolute;
+  width: 1000px;
+  height: calc(100% + 40px);
+  bottom: 0;
+  left: -20px;
+  z-index: -1;
+  background-color: white;
+}
+
+.navLinks {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2%;
+  padding-bottom: 2%;
 }
 
 .button,
@@ -28,6 +47,13 @@
   color: #d7816a;
 }
 
+.title {
+  font-size: 50px;
+  letter-spacing: -0.05em;
+  margin-bottom: 1%;
+  font-weight: normal;
+}
+
 @media (max-width: 1080px) {
   .button,
   .activeButton {
@@ -36,13 +62,17 @@
 }
 
 @media (max-width: 920px) {
-  .nav {
-    margin: 0 0 18px;
+  .navLinks {
+    margin-bottom: 18px;
   }
 
   .button,
   .activeButton {
     font-size: 5vw;
+  }
+
+  .title {
+    margin: 0 0 18px;
   }
 }
 

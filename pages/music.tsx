@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events,
 jsx-a11y/no-noninteractive-element-interactions */
 
+import Title from '../components/Title';
 import styles from '../styles/Music.module.css';
 import * as gtag from '../lib/gtag';
 
@@ -269,10 +270,11 @@ const MusicRecordings = (): JSX.Element => (
 
 const Music = (): JSX.Element => (
   <article>
-    <h2 className={styles.title}>Recordings</h2>
-    <MusicRecordings />
+    <Title pageTitle="Music | Joanna Chen" />
     <h2 className={styles.title}>Events</h2>
     <MusicEvents />
+    <h2 className={styles.title}>Recordings</h2>
+    <MusicRecordings />
   </article>
 );
 

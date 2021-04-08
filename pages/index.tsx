@@ -1,8 +1,10 @@
 import styles from '../styles/Profile.module.css';
 import * as gtag from '../lib/gtag';
+import Title from '../components/Title';
 
 const Profile = (): JSX.Element => (
   <article className={styles.container}>
+    <Title pageTitle="Joanna Chen - Software Engineer and Percussionist" />
     <img className={styles.image} src="/images/boba-jo.jpg" alt="Joanna Chen" />
     <section className={styles.profile}>
       <h2 className={styles.subtitle}>Software engineer and percussionist</h2>

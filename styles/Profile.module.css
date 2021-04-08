@@ -28,6 +28,7 @@
 .paragraph {
   font-size: 18px;
   margin: 24px 0;
+  line-height: 24px;
 }
 
 .link {

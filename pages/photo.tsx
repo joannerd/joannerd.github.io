@@ -1,3 +1,4 @@
+import Title from '../components/Title';
 import styles from '../styles/Photo.module.css';
 import * as gtag from '../lib/gtag';
 
@@ -30,6 +31,7 @@ const photos = [
 
 const Photo = (): JSX.Element => (
   <ul className={styles.projects}>
+    <Title pageTitle="Photography | Joanna Chen" />
     {photos.map(({ link, id }) => (
       <a
         onClick={() =>
