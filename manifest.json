@@ -1,0 +1,16 @@
+{
+  "name": "Joanna Chen - Software Engineer and Percussionist",
+  "short_name": "Joanna Chen",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    }
+  ]
+}
