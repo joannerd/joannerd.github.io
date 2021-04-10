@@ -272,10 +272,10 @@ const MusicRecordings = (): JSX.Element => (
 const Music = (): JSX.Element => (
   <article>
     <Title pageTitle="Music | Joanna Chen" />
-    <h2 className={styles.title}>Events</h2>
-    <MusicEvents />
     <h2 className={styles.title}>Recordings</h2>
     <MusicRecordings />
+    <h2 className={styles.title}>Events</h2>
+    <MusicEvents />
   </article>
 );
 

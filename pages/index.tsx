@@ -58,7 +58,7 @@ const Profile = (): JSX.Element => (
         >
           Southern California Marimba
         </a>
-        , where she volunteers as their Production and Media Manager.
+        , where she volunteers as their Operations Manager.
       </p>
     </section>
   </article>
