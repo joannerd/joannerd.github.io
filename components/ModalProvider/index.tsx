@@ -19,15 +19,14 @@ export interface ModalContextValue {
   setImageUrl: Dispatch<SetStateAction<string>>;
 }
 
-export const ModalContext: React.Context<ModalContextValue> = createContext<ModalContextValue>(
-  {
+export const ModalContext: React.Context<ModalContextValue> =
+  createContext<ModalContextValue>({
     modalType: '',
     imageUrl: '',
     openModal: () => {},
     closeModal: () => {},
     setImageUrl: () => {},
-  }
-);
+  });
 
 export const useModal = (): ModalContextValue => useContext(ModalContext);
 

@@ -141,7 +141,7 @@ const Resume = (): JSX.Element => {
       <Title pageTitle="Resume | Joanna Chen" />
       <h2 className={styles.title}>Experience</h2>
       <ul>
-        {experiences.map(({ company, dates, jobs }) => (
+        {experiences.map(({ company, jobs }) => (
           <li className={styles.experience} key={company}>
             <h3 className={styles.company}>{company}</h3>
             {jobs.map(({ title, dates, bullets }) => (
@@ -152,7 +152,8 @@ const Resume = (): JSX.Element => {
                 </span>
                 <ul className={styles.bullets}>
                   {bullets.map((bullet, i) => (
-                    <li key={i}>
+                    // eslint-disable-next-line react/no-array-index-key
+                    <li key={`${title}-bullet-${i}`}>
                       <p className={styles.bullet}>{bullet}</p>
                     </li>
                   ))}
@@ -175,7 +176,8 @@ const Resume = (): JSX.Element => {
                 <p className={styles.bullet}>{description}</p>
               </li>
               {bullets.map((bullet, i) => (
-                <li key={i}>
+                // eslint-disable-next-line react/no-array-index-key
+                <li key={`${title}-bullet-${i}`}>
                   <p className={styles.bullet}>{bullet}</p>
                 </li>
               ))}

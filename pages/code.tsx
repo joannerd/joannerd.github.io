@@ -111,7 +111,6 @@ const GitHubLink = ({
     href={github}
     aria-label={`${title} GitHub`}
     className={styles.icon}
-    
     target="_blank"
     rel="noopener noreferrer"
   >
