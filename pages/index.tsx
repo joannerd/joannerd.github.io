@@ -4,7 +4,7 @@ import Title from '../components/Title';
 
 const Profile = (): JSX.Element => (
   <article className={styles.container}>
-    <Title pageTitle="Joanna Chen - Software Engineer and Percussionist" />
+    <Title pageTitle="Joanna Chen - Software Engineer | Percussionist" />
     <img className={styles.image} src="/images/boba-jo.jpg" alt="Joanna Chen" />
     <section className={styles.profile}>
       <h2 className={styles.subtitle}>Software engineer and percussionist</h2>

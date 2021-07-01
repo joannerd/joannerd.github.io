@@ -7,7 +7,7 @@
 }
 
 .nav::before {
-  content: "";
+  content: '';
   position: absolute;
   width: calc(100% + 20px);
   height: calc(100% + 40px);
