@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { AppProps } from 'next/app';
 import Router from 'next/router';
-import Head from 'next/head';
 import { init } from 'emailjs-com';
 import '../styles/reset.css';
 import '../styles/globals.css';
