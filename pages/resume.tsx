@@ -11,11 +11,10 @@ const experiences = [
         title: 'Software Engineer',
         dates: 'Oct 2020 - present',
         bullets: [
-          'As a core member of the Proton team, built 100% of the company’s frontend React web experience (an NFT marketplace, 7 greenfield dApps, an internal dashboard, and Proton Web SDK)',
-          'Drove the adoption of TypeScript, Next.js, React hooks, and accessibility testing and spearheaded team group learning to inspire engineering growth (topics: EOSIO blockchain, web accessibility)',
+          'Built an NFT marketplace, 6 greenfield decentralized applications, an internal dashboard, and the Proton Web SDK as a core member of the Proton team (React, Gatsby, Next.js, Node.js, Greymass EosJS, Firebase, Contentful)',
+          'Drove the adoption of TypeScript, Next.js, and accessibility awareness and spearheaded team group learning to inspire engineering growth (topics: EOSIO blockchain, web accessibility)',
           'Exhibited leadership by communicating with other teams to resolve prod issues while manager was away',
           'Mentored intern through educational calls and thorough code-reviews (received public feedback for being a “great teacher who inspires them to be a better programmer”)',
-          'Hosted a game night to help HR promote collaboration, bonding, and cross-departmental communication',
         ],
       },
     ],
