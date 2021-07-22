@@ -15,7 +15,7 @@ const Profile = (): JSX.Element => (
         hospitality industry.
       </p>
       <p className={styles.paragraph}>
-        On the weekends, Joanna volunteers as the Operations Manager of
+        On the weekends, Joanna volunteers at
         <a
           onClick={() =>
             gtag.event({
@@ -30,12 +30,12 @@ const Profile = (): JSX.Element => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          {' Southern California Marimba'}
+          {' Southern California Marimba '}
         </a>
-        , where she connects her crafty coding skills to her musical roots by
+        and connects her crafty coding skills to her musical roots by
         architecting internal tools to streamline administrative processes. As
         her hobbies, Joanna enjoys hiking, karaoke, concerts, gaming, learning,
-        and getting into that zen work-mode at cafes/breweries!
+        and getting into a zen work mode at cafes/breweries!
       </p>
     </section>
   </article>
