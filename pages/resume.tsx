@@ -4,12 +4,23 @@ import * as gtag from '../lib/gtag';
 
 const experiences = [
   {
-    company: 'Metallicus Inc.',
-    dates: 'Oct 2020 - present',
+    company: 'Zendesk',
+    dates: 'August 2021 - present',
     jobs: [
       {
         title: 'Software Engineer',
-        dates: 'Oct 2020 - present',
+        dates: 'August 2021 - present',
+        bullets: [],
+      },
+    ],
+  },
+  {
+    company: 'Metallicus Inc',
+    dates: 'Oct 2020 - July 2021',
+    jobs: [
+      {
+        title: 'Software Engineer',
+        dates: 'Oct 2020 - July 2021',
         bullets: [
           'Built an NFT marketplace, 6 greenfield decentralized applications, an internal dashboard, and the Proton Web SDK as a core member of the Proton team (React, Gatsby, Next.js, Node.js, Greymass EosJS, Firebase, Contentful)',
           'Drove the adoption of TypeScript, Next.js, and accessibility awareness and spearheaded team group learning to inspire engineering growth (topics: EOSIO blockchain, web accessibility)',

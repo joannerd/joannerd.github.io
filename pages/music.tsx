@@ -8,34 +8,38 @@ import * as gtag from '../lib/gtag';
 const musicIds = [
   {
     id: '678236268',
-    name: 'Takashi - Mend (SoundCloud)',
+    name: 'Mend by James Takashi (SoundCloud)',
     isSoundCloud: true,
   },
   {
     id: '575082645',
-    name: 'Sueyoshi - Mirage pour Marimba (SoundCloud)',
+    name: 'Mirage pour Marimba by Yasuo Sueyoshi (SoundCloud)',
     isSoundCloud: true,
   },
+  // {
+  //   id: 'iNYOCcg3GNA',
+  //   name: 'Black House',
+  // },
   {
-    id: 'iNYOCcg3GNA',
-    name: 'Black House',
+    id: 'XBq3IN3nKqg',
+    name: 'Feed the Birds from Mary Poppins',
   },
   {
-    id: 'v6C7oUaxNec',
-    name: 'Volans - She Who Sleeps With A Small Blanket',
+    id: 'x7xrRkymO74',
+    name: "Transformation of Pachelbel's Canon by Nanae Mimura",
   },
   {
     id: '0kCnhBc8Fvw',
-    name: 'LBT - If We Hold On Together',
+    name: 'If We Hold On Together from the Land Before Time',
+  },
+  {
+    id: 'v6C7oUaxNec',
+    name: 'She Who Sleeps With A Small Blanket by Kevin Volans',
   },
   // {
   //   id: 'nSkBmDacal8',
   //   name: 'Allevi - LA Lullaby',
   // },
-  {
-    id: 'x7xrRkymO74',
-    name: "Mimura - Transformation of Pachelbel's Canon",
-  },
   // {
   //   id: 'x4ldxK6fcNQ',
   //   name: 'Lunsqui - Shi',
@@ -47,6 +51,16 @@ const musicIds = [
 ];
 
 const musicEvents = [
+  {
+    year: '2021',
+    events: [
+      {
+        name: 'Southern California Marimba: Online International Artist Competition',
+        shortName: 'SCM: Online IAC',
+        location: 'scmarimba.org',
+      },
+    ],
+  },
   {
     year: '2020',
     events: [
@@ -74,8 +88,8 @@ const musicEvents = [
         location: 'Toronto, ON',
       },
       {
-        name: 'Southern California Marimba International Artist Competition',
-        shortName: 'SCMIAC',
+        name: 'Southern California Marimba: International Artist Competition',
+        shortName: 'SCM: IAC',
         location: 'Orange, CA',
       },
       {
