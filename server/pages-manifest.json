@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/code": "pages/code.html",
+  "/": "pages/index.html",
+  "/music": "pages/music.html",
+  "/photo": "pages/photo.html",
+  "/resume": "pages/resume.html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}
