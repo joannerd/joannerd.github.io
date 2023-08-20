@@ -126,11 +126,6 @@ const education = [
     description: 'Bachelor of Music: Percussion (3.87 GPA)',
     dates: 'Aug 2014 - May 2018',
   },
-  {
-    school: 'Massachusetts Institute of Technology',
-    description: '2.S972/ICE-P435 (VR/AR Workshop)',
-    dates: 'Aug 2017 - Dec 2017',
-  },
 ];
 
 const Resume = (): JSX.Element => {

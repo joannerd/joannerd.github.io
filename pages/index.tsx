@@ -1,5 +1,4 @@
 import styles from '../styles/Profile.module.css';
-import * as gtag from '../lib/gtag';
 import Title from '../components/Title';
 
 const Profile = (): JSX.Element => (
@@ -9,33 +8,18 @@ const Profile = (): JSX.Element => (
     <section className={styles.profile}>
       <h2 className={styles.subtitle}>Software Engineer</h2>
       <p className={styles.paragraph}>
-        Los Angeles based software engineer with a diverse professional
-        background ranging from the innovative blockchain space, mission-driven
-        EdTech field, rigorous classical music craft, and client-oriented
-        hospitality industry.
+        Hi I’m Joanna, a software engineer with a diverse professional
+        background ranging from full-stack software engineering, education,
+        percussion, and event production. In my day to day, I’m the type of
+        engineer who is an empathetic and patient teammate, an autonomous
+        critical thinker, a motivated constant learner, and an active
+        contributor who takes ownership and enjoys collaboration.
       </p>
       <p className={styles.paragraph}>
-        On the weekends, Joanna volunteers at
-        <a
-          onClick={() =>
-            gtag.event({
-              action: 'open_link',
-              category: 'engagement',
-              label: 'Visit https://scmarimba.org/',
-              value: 1,
-            })
-          }
-          className={styles.link}
-          href="https://scmarimba.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {' Southern California Marimba '}
-        </a>
-        and connects her crafty coding skills to her musical roots by
-        architecting internal tools to streamline administrative processes. As
-        her hobbies, Joanna enjoys hiking, karaoke, concerts, gaming, learning,
-        and getting into a zen work mode at cafes/breweries!
+        Aside from being an engineer, I coach high school percussion ensemble
+        stay in touch with my musical roots as a marimba/voice artist. I spend
+        spend my free time as a dog mom and avid concert attendee who loves
+        exploring breweries, walking in nature, and playing board games.
       </p>
     </section>
   </article>
