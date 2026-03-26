@@ -240,7 +240,7 @@ const musicEvents = [
   },
 ];
 
-const MusicEvents = (): JSX.Element => (
+const MusicEvents = (): React.JSX.Element => (
   <ul className={styles.events}>
     {musicEvents.map(({ year, events }) => (
       <li className={styles.event} key={year}>
@@ -257,7 +257,7 @@ const MusicEvents = (): JSX.Element => (
   </ul>
 );
 
-const MusicRecordings = (): JSX.Element => (
+const MusicRecordings = (): React.JSX.Element => (
   <ul className={styles.projects}>
     {musicIds.map(({ id, name, isSoundCloud }) => (
       <iframe
@@ -283,7 +283,7 @@ const MusicRecordings = (): JSX.Element => (
   </ul>
 );
 
-const Music = (): JSX.Element => (
+const Music = (): React.JSX.Element => (
   <article>
     <Title pageTitle="Music | Joanna Chen" />
     <h2 className={styles.title}>Recordings</h2>

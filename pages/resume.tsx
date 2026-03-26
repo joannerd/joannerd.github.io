@@ -141,7 +141,7 @@ const education = [
   },
 ];
 
-const Resume = (): JSX.Element => {
+const Resume = (): React.JSX.Element => {
   const viewResume = () => {
     gtag.event({
       action: 'view_resume',

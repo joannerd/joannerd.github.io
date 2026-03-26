@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const Title = ({ pageTitle }: { pageTitle: string }): JSX.Element => {
+const Title = ({ pageTitle }: { pageTitle: string }): React.JSX.Element => {
   const description =
     'Joanna Chen: Los Angeles based software engineer and percussionist.';
 

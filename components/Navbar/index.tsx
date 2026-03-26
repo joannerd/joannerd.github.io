@@ -24,7 +24,7 @@ const routes = [
   },
 ];
 
-const Navbar = (): JSX.Element => {
+const Navbar = (): React.JSX.Element => {
   const router = useRouter();
   return (
     <nav className={styles.nav}>

@@ -1,5 +1,4 @@
 import styles from './SocialLinks.module.css';
-import { useModal, MODAL_TYPES } from '../ModalProvider';
 import * as gtag from '../../lib/gtag';
 
 interface Props {
@@ -31,39 +30,11 @@ const links = [
   },
 ];
 
-const SocialLinks = ({ hasScrolledToBottom }: Props): JSX.Element => {
-  const { openModal } = useModal();
-
-  const sendEmailGaEvent = () => {
-    openModal(MODAL_TYPES.EMAIL);
-    gtag.event({
-      action: 'open_contact_form',
-      category: 'engagement',
-      label: 'Open contact form',
-      value: 1,
-    });
-  };
-
+const SocialLinks = ({ hasScrolledToBottom }: Props): React.JSX.Element => {
   return (
     <section
       className={hasScrolledToBottom ? styles.hiddenLinks : styles.links}
     >
-      <span role="button" tabIndex={-1} className={styles.icon} aria-hidden>
-        <i
-          tabIndex={0}
-          onClick={sendEmailGaEvent}
-          role="button"
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              sendEmailGaEvent();
-            }
-          }}
-          key="Email Joanna"
-          aria-label="Email Joanna"
-          className="fa fa-envelope"
-        />
-        <span className={styles.tooltip}>Email</span>
-      </span>
       {links.map(({ href, label, className }) => (
         <span
           role="button"

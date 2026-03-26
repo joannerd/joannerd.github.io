@@ -29,7 +29,7 @@ const photos = [
   },
 ];
 
-const Photo = (): JSX.Element => (
+const Photo = (): React.JSX.Element => (
   <article className={styles.projects}>
     <Title pageTitle="Photography | Joanna Chen" />
     {photos.map(({ link, id }) => (

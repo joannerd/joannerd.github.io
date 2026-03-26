@@ -74,7 +74,7 @@ interface ProjectProps {
 const LiveLink = ({
   live,
   title,
-}: Pick<ProjectProps, 'live' | 'title'>): JSX.Element => (
+}: Pick<ProjectProps, 'live' | 'title'>): React.JSX.Element => (
   <a
     onClick={() =>
       gtag.event({
@@ -98,7 +98,7 @@ const LiveLink = ({
 const GitHubLink = ({
   github,
   title,
-}: Pick<ProjectProps, 'github' | 'title'>): JSX.Element => (
+}: Pick<ProjectProps, 'github' | 'title'>): React.JSX.Element => (
   <a
     onClick={() =>
       gtag.event({
@@ -125,7 +125,7 @@ const Project = ({
   title,
   tech,
   img,
-}: ProjectProps): JSX.Element => (
+}: ProjectProps): React.JSX.Element => (
   <article className={styles.project}>
     {img.length ? <img className={styles.image} src={img} alt={title} /> : null}
     <section className={styles.content}>
@@ -139,7 +139,7 @@ const Project = ({
   </article>
 );
 
-const ProjectsList = (): JSX.Element => {
+const ProjectsList = (): React.JSX.Element => {
   return (
     <article className={styles.projects}>
       <Title pageTitle="Code | Joanna Chen" />

@@ -5,36 +5,22 @@
   "homepage": "https://joannerd.github.io",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export && cp .nojekyll out/.nojekyll",
+    "build": "next build",
     "start": "next start",
-    "check:lint": "eslint './**/*.ts*'",
-    "check:type": "$(npm bin)/tsc --noEmit",
     "check:prettier": "prettier --write components pages",
-    "check:all": "yarn check:prettier && yarn check:lint && yarn check:type",
-    "deploy": "gh-pages -b main -d .next"
+    "deploy": "gh-pages -b main -d out"
   },
   "dependencies": {
-    "emailjs-com": "^2.6.4",
-    "gh-pages": "^2.1.1",
-    "next": "^11.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "gh-pages": "^6.3.0",
+    "next": "^16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@types/gtag.js": "^0.0.4",
-    "@types/node": "^14.14.35",
-    "@types/react": "^17.0.3",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
-    "eslint": "^7.22.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-next": "^11.0.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.3"
+    "@types/gtag.js": "^0.0.20",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "prettier": "^3.8.1",
+    "typescript": "^6.0.2"
   }
 }
