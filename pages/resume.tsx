@@ -5,12 +5,25 @@ import * as gtag from '../lib/gtag';
 const experiences = [
   {
     company: 'Zendesk',
-    dates: 'August 2021 - present',
+    dates: 'August 2021 - March 2026',
     jobs: [
       {
-        title: 'Software Engineer',
-        dates: 'August 2021 - present',
-        bullets: [],
+        title: 'Software Engineer (Cloud Infrastructure, Optimize Team)',
+        dates: 'October 2025 - March 2026',
+        bullets: [
+          'Leveraged Cursor AI Agents to build cost-aggregation pipelines with Python, Kubernetes, and S3 for internal teams to govern AI spend across multi-cloud environments (AWS Bedrock, OpenAI, Gemini)',
+          'Designed DataDog alerting system to improve reliability and quickly catch errors in automated pipelines (i.e. Kubernetes cronjobs, AWS Lambda functions, AWS Step Functions, and Quicksight data refreshes)',
+        ],
+      },
+      {
+        title: 'Software Engineer (Core Services, Permissions Team)',
+        dates: 'August 2021 - October 2025',
+        bullets: [
+          'Built thoughtful and well-tested Enterprise features enabling granular permission control for customers in the Support product with modern Ruby/Rails monoliths, Scala/Rego microservices, JavaScript/TypeScript/React/Ember frontends, and Cypress/Rspec E2E test suites automated with Jenkins pipelines',
+          'Proactively monitored reliability of services, tackled ambiguity and areas of concern, and worked with product to prioritize production issues in tandem with company roadmap and OKRs',
+          'Led project discovery, planning, development, delivery, documentation, and release plan for new multi-product user management permission to improve customer trust and security while simplifying complex business logic and fixing legacy bugs',
+          'Conducted decision record discussions to enforce best practices and Zendesk standards when designing, building and deploying solutions for building new product features and resolving customer issues',
+        ],
       },
     ],
   },
@@ -137,7 +150,7 @@ const Resume = (): JSX.Element => {
       value: 1,
     });
     window.open(
-      'https://brewer-dev.s3-us-west-1.amazonaws.com/portfolio/Joanna_Chen_Resume.pdf'
+      'https://drive.google.com/file/d/1KnUuV7c9LObp_Mu6D_lPBj9uQ39hCiRi/view'
     );
   };
 
@@ -205,12 +218,12 @@ const Resume = (): JSX.Element => {
       <button
         role="link"
         type="button"
-        aria-label="Joanna Chen resume"
+        aria-label="View Joanna Chen's resume"
         className={styles.resume}
         onClick={viewResume}
       >
         <i className="fas fa-file-download" />
-        <span className={styles.tooltip}>Download resume</span>
+        <span className={styles.tooltip}>View resume</span>
       </button>
     </article>
   );
