@@ -4,22 +4,19 @@ import Title from '../components/Title';
 const Profile = (): JSX.Element => (
   <article className={styles.container}>
     <Title pageTitle="Joanna Chen - Software Engineer | Percussionist" />
-    <img className={styles.image} src="/images/boba-jo.jpg" alt="Joanna Chen" />
+    <img className={styles.image} src="/images/waterfall-jo.jpg" alt="Joanna Chen" />
     <section className={styles.profile}>
       <h2 className={styles.subtitle}>Software Engineer</h2>
       <p className={styles.paragraph}>
-        Hi I’m Joanna, a software engineer with a diverse professional
-        background ranging from full-stack software engineering, education,
-        percussion, and event production. In my day to day, I’m the type of
-        engineer who is an empathetic and patient teammate, an autonomous
-        critical thinker, a motivated constant learner, and an active
-        contributor who takes ownership and enjoys collaboration.
+        Hi I’m Joanna, a software engineer with a diverse professional background 
+        ranging between engineering, curriculum writing, music education, event production, 
+        and non-profit work. In my day to day, I’m the type of engineer who is an empathetic 
+        and reliable team player that takes ownership and enjoys helping out those around me.
       </p>
       <p className={styles.paragraph}>
-        Aside from being an engineer, I coach high school percussion ensemble
-        stay in touch with my musical roots as a marimba/voice artist. I spend
-        spend my free time as a dog mom and avid concert attendee who loves
-        exploring breweries, walking in nature, and playing board games.
+        Aside from being an engineer, I enjoy cultivating mindfulness through yoga, 
+        staying in touch with my musical roots by being an avid concert attendee, 
+        and wandering in nature with my senior doggo named Lemon.
       </p>
     </section>
   </article>
