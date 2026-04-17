@@ -1,0 +1,33 @@
+name: cypress-smoke
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  cypress-smoke:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Run Cypress smoke tests
+        uses: cypress-io/github-action@v6
+        with:
+          start: yarn dev
+          wait-on: 'http://localhost:3000'
+          browser: chrome

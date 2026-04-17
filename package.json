@@ -7,6 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "check:prettier": "prettier --write components pages",
     "deploy": "gh-pages -b main -d out"
   },
@@ -20,6 +22,7 @@
     "@types/gtag.js": "^0.0.20",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
+    "cypress": "^15.13.1",
     "prettier": "^3.8.1",
     "typescript": "^6.0.2"
   }
