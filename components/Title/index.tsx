@@ -1,8 +1,7 @@
 import Head from 'next/head';
 
 const Title = ({ pageTitle }: { pageTitle: string }): React.JSX.Element => {
-  const description =
-    'Joanna Chen: Los Angeles based software engineer and percussionist.';
+  const description = 'Joanna Chen: Los Angeles based software engineer.';
 
   return (
     <Head>
@@ -23,9 +22,8 @@ const Title = ({ pageTitle }: { pageTitle: string }): React.JSX.Element => {
       <meta name="title" content={pageTitle} />
       <meta
         name="keywords"
-        content="software engineer development metal pay proton blockchain XPR MTL NFT app academy web
-        frontend fullstack programming ruby typescript javascript c# node rails react redux
-        express .net core percussionist percussion marimba"
+        content="joanna chen software engineer zendesk metallicus metal pay proton app academy
+        web frontend fullstack ruby on rails typescript javascript node react marimba"
       />
       <link rel="manifest" href="/manifest.json" />
       <link rel="canonical" href="https://joannerd.github.io/" />
