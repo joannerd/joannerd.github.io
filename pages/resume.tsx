@@ -11,7 +11,7 @@ const experiences = [
         title: 'Software Engineer (Cloud Infrastructure, Optimize Team)',
         dates: 'October 2025 - March 2026',
         bullets: [
-          'Leveraged Cursor AI Agents to build cost-aggregation pipelines with Python, Kubernetes, and S3 for internal teams to govern AI spend across multi-cloud environments (AWS Bedrock, OpenAI, Gemini)',
+          'Leveraged Cursor AI agents to build cost-aggregation pipelines with Python, Kubernetes, and S3 for internal teams to govern AI spend across multi-cloud environments (AWS Bedrock, OpenAI, Gemini)',
           'Designed DataDog alerting system to improve reliability and quickly catch errors in automated pipelines (i.e. Kubernetes cronjobs, AWS Lambda functions, AWS Step Functions, and Quicksight data refreshes)',
         ],
       },
@@ -19,10 +19,10 @@ const experiences = [
         title: 'Software Engineer (Core Services, Permissions Team)',
         dates: 'August 2021 - October 2025',
         bullets: [
-          'Built thoughtful and well-tested Enterprise features enabling granular permission control for customers in the Support product with modern Ruby/Rails monoliths, Scala/Rego microservices, JavaScript/TypeScript/React/Ember frontends, and Cypress/Rspec E2E test suites automated with Jenkins pipelines',
-          'Proactively monitored reliability of services, tackled ambiguity and areas of concern, and worked with product to prioritize production issues in tandem with company roadmap and OKRs',
-          'Led project discovery, planning, development, delivery, documentation, and release plan for new multi-product user management permission to improve customer trust and security while simplifying complex business logic and fixing legacy bugs',
-          'Conducted decision record discussions to enforce best practices and Zendesk standards when designing, building and deploying solutions for building new product features and resolving customer issues',
+          'Built thoughtful and well-tested Enterprise features enabling granular permission control for customers in modern Ruby/Rails monoliths, Scala/Rego microservices, JavaScript/TypeScript/React/Ember frontends, and Cypress/Rspec E2E test suites automated with Jenkins pipelines',
+          'Led end-to-end delivery of a multi-product user management permission system from discovery through release to improve customer security, simplify legacy business logic, and resolve long-standing bugs',
+          'Drove architectural decision records (ADRs) for user permissions to standardize engineering practices and improve consistency in how new features and production fixes were scoped',
+          'Proactively monitored service reliability using DataDog, triaging production issues and aligning prioritization with OKRs to maintain SLA commitments',
         ],
       },
     ],
@@ -35,10 +35,10 @@ const experiences = [
         title: 'Software Engineer',
         dates: 'Oct 2020 - July 2021',
         bullets: [
-          'Built an NFT marketplace, 6 greenfield decentralized applications, an internal dashboard, and the Proton Web SDK as a core member of the Proton team (React, Gatsby, Next.js, Node.js, Greymass EosJS, Firebase, Contentful)',
-          'Drove the adoption of TypeScript, Next.js, and accessibility awareness and spearheaded team group learning to inspire engineering growth (topics: EOSIO blockchain, web accessibility)',
-          'Exhibited leadership by communicating with other teams to resolve prod issues while manager was away',
-          'Mentored intern through educational calls and thorough code-reviews (received public feedback for being a “great teacher who inspires them to be a better programmer”)',
+          'Shipped an NFT marketplace and minting platform, 6 greenfield dApps, an internal dashboard, and the Proton Web SDK as a core member of the Proton team (React, Gatsby, Next.js, Node.js, Cloud Firestore)',
+          'Drove the adoption of TypeScript, Next.js, and accessibility awareness while spearheading group learning about the EOSIO blockchain and web accessibility',
+          'Mentored intern through educational pair-programming and thorough code-reviews (received public feedback for being a “great teacher who inspires them to be a better programmer”)',
+          'Hosted company game nights to help HR promote collaboration, bonding, and cross-departmental communication',
         ],
       },
     ],
@@ -48,28 +48,20 @@ const experiences = [
     dates: 'Jan 2020 - Oct 2020',
     jobs: [
       {
-        title: 'Software Engineer Intern',
-        dates: 'June 2020 - Sep 2020',
-        bullets: [
-          'Architected frontend for learning management system with modern tech (TypeScript, React, Material-UI)',
-          'Developed API endpoints in C# following test-driven development (.NET Core, CQRS)',
-          'Contributed to domain-model planning to solidify domain-driven-design before app development',
-        ],
-      },
-      {
         title: 'Curriculum Developer',
         dates: 'March 2020 - Oct 2020',
         bullets: [
-          'Rapidly researched and taught React, Node.js, Flask, and OOP with educational projects and tutorials',
-          'Launched new React, Redux, and Hooks curriculum and managed team of senior developer contractors',
-          'Presented lectures on React lifecycle methods, React hooks, frontend state management, and user auth',
+          'Rapidly wrote and launched a full React/Redux/Hooks curriculum from scratch, coordinating a team of senior contractor developers to hit release deadlines',
+          'Built a learning management system (TypeScript, React, Material-UI, C#/.NET Core) following test-driven development and domain-driven design, enabling structured content delivery at scale',
+          'Produced multi-format educational content (articles, projects, videos) covering Node.js, Flask, React, and OOP taught to cohorts of software engineering students',
         ],
       },
       {
         title: 'Technical Interviewer',
         dates: 'Jan 2020 - March 2020',
         bullets: [
-          'Conducted video technical and behavioral screens on HackerRank in JavaScript, Ruby, and Python',
+          'Conducted rigorous technical screening for applicants on HackerRank, evaluating algorithmic skills in JavaScript, Python, and Ruby',
+          'Performed non-technical interviews to gauge cultural fit and alignment',
         ],
       },
     ],
@@ -82,9 +74,9 @@ const experiences = [
         title: 'Production Manager',
         dates: 'Jan 2020 - March 2020',
         bullets: [
-          'Custom staff role due to 4-years of experience as an essential, cross-departmental student employee',
           'Solved logistics problems thoroughly and quickly in high-pressure, client-facing concerts and events',
-          'Supervised and trained a team of 30+ student employees on professional concert services standards',
+          'Improved team efficiency and communication practice by designing wireframes and logistical plans for 400+ concerts',
+          'Trained and supervised a team of 30+ student employees to maintain professional concert services standards',
         ],
       },
     ],
@@ -150,7 +142,7 @@ const Resume = (): React.JSX.Element => {
       value: 1,
     });
     window.open(
-      'https://drive.google.com/file/d/1KnUuV7c9LObp_Mu6D_lPBj9uQ39hCiRi/view'
+      'https://drive.google.com/file/d/1XaCjzsBh5SAHWBQwqB0sdxwThJYi-xW8/view'
     );
   };
 
